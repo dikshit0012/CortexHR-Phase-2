@@ -1,0 +1,49 @@
+diff --git a/task 8/app/main.py b/task 8/app/main.py
+index a7d1673..7642cd9 100644
+--- a/task 8/app/main.py	
++++ b/task 8/app/main.py	
+@@ -7,6 +7,7 @@ Endpoints
+     POST /v1/anomaly/payroll             one payroll record     -> one official result row
+     POST /v1/anomaly/attendance/batch    1..max_batch_size attendance records -> results in input order
+     POST /v1/anomaly/payroll/batch       1..max_batch_size payroll records    -> results in input order
++    POST /v1/chat                        (Task 9) HR question -> intent, confidence, approved FAQ reply or safe fallback
+ 
+ Models and the reference workbook are loaded ONCE per process, in the lifespan handler. With several worker
+ processes every process holds its own copy in memory.
+@@ -22,6 +23,7 @@ from fastapi.exceptions import RequestValidationError
+ from fastapi.responses import JSONResponse
+ 
+ from .bootstrap import load_service
++from .chat import load_chat_service_safely, router as chat_router
+ from .config import Settings
+ from .schemas import (AnomalyResult, AttendanceBatchRequest, AttendanceRecord, BatchResponse, PayrollBatchRequest,
+                       PayrollRecord)
+@@ -97,21 +99,26 @@ def anomaly_payroll_batch(body: PayrollBatchRequest, service: AnomalyService = D
+     return {"detector": "payroll", "count": len(results), "results": results}
+ 
+ 
+-def create_app(settings: Optional[Settings] = None, service: Optional[AnomalyService] = None) -> FastAPI:
+-    """App factory. `service` lets tests inject a ready service (or a test double) without touching production code."""
++def create_app(settings: Optional[Settings] = None, service: Optional[AnomalyService] = None, chat_service: Optional[Any] = None) -> FastAPI:
++    """App factory. `service` / `chat_service` let tests inject a ready service (or a test double) without touching production code."""
+ 
+     @asynccontextmanager
+     async def lifespan(app: FastAPI):
+         # Startup: load everything once. A StartupError here stops the process with a clear message.
+         app.state.service = service if service is not None else load_service(settings or Settings.from_env())
+         log.info("models loaded: %s, %s", app.state.service.attendance.version, app.state.service.payroll.version)
++        # Task 9: the chat model is loaded once too. If it is unavailable only /v1/chat answers 503; the anomaly endpoints are unaffected.
++        app.state.chat = chat_service if chat_service is not None else load_chat_service_safely()
+         yield
+         app.state.service = None
++        app.state.chat = None
+ 
+     app = FastAPI(title="CortexHR Anomaly Service", version="1.0.0", lifespan=lifespan,
+                   description="Attendance and payroll anomaly detection (Tasks 5-7) behind a validated API.")
+     app.state.service = None
++    app.state.chat = None
+     app.include_router(router)
++    app.include_router(chat_router)
+ 
+     @app.exception_handler(RequestValidationError)
+     async def _validation_error(_: Request, exc: RequestValidationError):

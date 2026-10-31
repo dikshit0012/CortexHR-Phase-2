@@ -1,0 +1,7 @@
+# Task 9 local artifacts (rebuild with scripts/train_intent_model.py)
+models/*
+!models/.gitkeep
+__pycache__/
+.pytest_cache/
+*.tmp
+.env

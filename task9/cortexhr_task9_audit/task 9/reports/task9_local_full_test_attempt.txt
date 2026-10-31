@@ -1,0 +1,18 @@
+
+=================================== ERRORS ====================================
+___________________ ERROR collecting tests/test_chat_api.py ___________________
+ImportError while importing test module 'C:\Users\mruni\OneDrive\Desktop\pahse 2 task\files\cortexhr_task9_audit\task 9\tests\test_chat_api.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Program Files\Python314\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_chat_api.py:22: in <module>
+    from app.main import create_app
+..\task 8\app\main.py:21: in <module>
+    from fastapi import APIRouter, Depends, FastAPI, HTTPException, Request
+E   ModuleNotFoundError: No module named 'fastapi'
+=========================== short test summary info ===========================
+ERROR tests/test_chat_api.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 2.72s

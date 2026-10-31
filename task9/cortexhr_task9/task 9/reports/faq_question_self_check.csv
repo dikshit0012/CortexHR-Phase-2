@@ -1,0 +1,31 @@
+faq_id,question,predicted_intent,confidence,outcome,answered_with
+FAQ-01,How many casual leaves do I get?,hr_policy_leave,0.886,answered_correctly,FAQ-01
+FAQ-02,How many sick leaves do I get?,,0.6138,fallback (confidence below threshold),
+FAQ-03,How does earned leave work?,,0.4632,fallback (confidence below threshold),
+FAQ-04,Is leave without pay allowed?,,0.3739,fallback (confidence below threshold),
+FAQ-05,What is the maternity leave policy?,hr_policy_leave,0.8387,answered_correctly,FAQ-05
+FAQ-06,What are the office hours?,working_hours,0.9724,answered_correctly,FAQ-06
+FAQ-07,Do we have to work on Saturdays?,,0.2221,fallback (confidence below threshold),
+FAQ-08,How does overtime pay work?,,0.2055,fallback (no intent covers this FAQ),
+FAQ-09,When is salary paid?,payslip_date,0.6981,answered_correctly,FAQ-09
+FAQ-10,How is LOP calculated?,pf_info,0.6515,fallback (no intent covers this FAQ),
+FAQ-11,When is the performance bonus paid?,,0.1807,fallback (no intent covers this FAQ),
+FAQ-12,How often are salaries revised?,,0.1544,fallback (no intent covers this FAQ),
+FAQ-13,How is PF calculated?,pf_info,0.969,answered_correctly,FAQ-13
+FAQ-14,Who is covered by ESI?,,0.1575,fallback (no intent covers this FAQ),
+FAQ-15,What is professional tax?,,0.117,fallback (no intent covers this FAQ),
+FAQ-16,How is TDS decided?,,0.3177,fallback (confidence below threshold),
+FAQ-17,When do I get Form 16?,tax_declaration,0.8889,answered_correctly,FAQ-17
+FAQ-18,How long is the notice period?,notice_period_policy,0.9458,answered_correctly,FAQ-18
+FAQ-19,Can I buy out my notice period?,notice_period_policy,0.9714,answered_correctly,FAQ-19
+FAQ-20,What is the probation period?,probation_policy,0.8777,answered_correctly,FAQ-20
+FAQ-21,What is the work from home policy?,wfh_policy,0.9548,answered_correctly,FAQ-21
+FAQ-22,How do I claim travel expenses?,reimbursement_policy,0.9457,answered_correctly,FAQ-22
+FAQ-23,Who approves my expenses?,,0.2829,fallback (confidence below threshold),
+FAQ-24,What insurance do I have?,insurance_benefits,0.8905,answered_correctly,FAQ-24
+FAQ-25,How do I add a dependent to insurance?,insurance_benefits,0.9731,answered_correctly,FAQ-25
+FAQ-26,What training is available?,,0.1021,fallback (confidence below threshold),
+FAQ-27,How do I update my bank details?,,0.1657,fallback (no intent covers this FAQ),
+FAQ-28,Who do I contact for payroll queries?,who_to_contact,0.8771,answered_correctly,FAQ-28
+FAQ-29,What is the dress code?,,0.1806,fallback (no intent covers this FAQ),
+FAQ-30,How are holidays decided?,holiday_list,0.8741,answered_correctly,FAQ-30

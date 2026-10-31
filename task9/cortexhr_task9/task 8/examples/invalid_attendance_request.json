@@ -1,0 +1,18 @@
+{
+  "attendance_feature_id": "AF-EX-0201",
+  "employee_id": "EMP-0002",
+  "month": "2026-10-01",
+  "scheduled_days": 21,
+  "present_days": -3,
+  "half_days_unpaid": 0,
+  "paid_leave_days": 1,
+  "unpaid_absence_days": 0,
+  "longest_unpaid_streak_days": 0,
+  "late_arrivals": 1,
+  "avg_hours_worked": 8.6,
+  "overtime_hours": 2.0,
+  "attendance_rate": 1.5,
+  "wfh_days": 4,
+  "job_level": 4,
+  "department_id": "D08"
+}

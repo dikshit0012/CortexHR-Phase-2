@@ -1,0 +1,6 @@
+attendance_monthly_features: reference_rows=7339 task7_flags=254 api_rows=7339 api_flags=254
+  flag_id_set_differences=0; ranking_order_match=True; invalid_reason_codes=False
+  field_differences={"anomaly_score": 0, "employee_id": 0, "flagged": 0, "model_version": 0, "money_at_risk": 0, "period": 0, "reason_code": 0, "reason_text": 0, "record_id": 0, "source_dataset": 0}
+payroll_monthly_features: reference_rows=7355 task7_flags=253 api_rows=7355 api_flags=253
+  flag_id_set_differences=0; ranking_order_match=True; invalid_reason_codes=False
+  field_differences={"anomaly_score": 0, "employee_id": 0, "flagged": 0, "model_version": 0, "money_at_risk": 0, "period": 0, "reason_code": 0, "reason_text": 0, "record_id": 0, "source_dataset": 0}

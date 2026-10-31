@@ -1,0 +1,44 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+**/.venv/
+**/venv/
+
+# Python cache & build
+__pycache__/
+**/*__pycache__*
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+**/.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Task 6 - payroll detector local evaluation data and label-linked reports
+task 6/reports/**/private/
+task 6/reports/**/task6_flagged_records_with_labels.csv
+task 6/reports/**/task6_examples_masked.csv
+task 6/reports/**/task6_missed_errors.csv
+task 6/data/raw/*.xlsx
+task 6/data/raw/unlock_CX-06.csv
+
+# Task 8 - anomaly service: the reference workbook, fitted artifacts (rebuilt by scripts/build_artifacts.py) and local config
+task 8/data/
+task 8/**/*.xlsx
+task 8/**/*.csv
+task 8/models/*.joblib
+task 8/models/*.joblib.tmp
+task 8/models/*.metadata.json
+task 8/.env
+.env

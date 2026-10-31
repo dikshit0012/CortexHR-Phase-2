@@ -1,0 +1,6 @@
+Windows startup failure checks (real calls to the Task 8 startup loaders)
+missing workbook setting: StartupError: CORTEXHR_WORKBOOK is not set. Point it at the reference workbook (02_CortexHR_AI_ML_Dataset.xlsx).
+workbook path missing: StartupError: Reference workbook not found: C:\Users\mruni\OneDrive\Desktop\pahse 2 task\CortexHR-\task 5\data\raw\missing.xlsx (check CORTEXHR_WORKBOOK).
+wrong workbook structure: StartupError: Reference workbook wrong-structure.xlsx is missing a required sheet: ['attendance_monthly_features', 'payroll_monthly_features'].
+required artifact missing: StartupError: Model artifact missing: attendance-anomaly-v1.joblib. Rebuild with: python scripts/build_artifacts.py
+incompatible artifact: StartupError: Model artifact attendance-anomaly-v1.joblib was built with scikit-learn 0.0.0 but this environment has 1.9.1. Rebuild with: python scripts/build_artifacts.py

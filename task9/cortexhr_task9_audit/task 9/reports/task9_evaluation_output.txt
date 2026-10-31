@@ -1,0 +1,121 @@
+{
+  "model_version": "hr-intent-v1",
+  "scikit_learn_version": "1.9.1",
+  "test_rows": 132,
+  "test_data_sha256": "73c12f1603a6a46999bb9bfc726d2e952d079173c3e50e5167b470127ffc9e31",
+  "training_rows": 858,
+  "overlap_with_training": {
+    "exact_after_cleaning": 0,
+    "same_base_phrase_after_filler_removal": 0
+  },
+  "accuracy": 0.803,
+  "macro_f1": 0.7997,
+  "weighted_f1": 0.7997,
+  "misclassified": 26,
+  "top_confused_pairs_both_directions": [
+    {
+      "intent_a": "chitchat",
+      "intent_b": "help",
+      "confusions_both_directions": 2
+    },
+    {
+      "intent_a": "attrition_risk_query",
+      "intent_b": "headcount_forecast",
+      "confusions_both_directions": 1
+    },
+    {
+      "intent_a": "chitchat",
+      "intent_b": "salary_band_query",
+      "confusions_both_directions": 1
+    },
+    {
+      "intent_a": "chitchat",
+      "intent_b": "greet",
+      "confusions_both_directions": 1
+    },
+    {
+      "intent_a": "chitchat",
+      "intent_b": "team_members",
+      "confusions_both_directions": 1
+    },
+    {
+      "intent_a": "goodbye",
+      "intent_b": "thanks",
+      "confusions_both_directions": 1
+    },
+    {
+      "intent_a": "headcount_forecast",
+      "intent_b": "hr_policy_leave",
+      "confusions_both_directions": 1
+    },
+    {
+      "intent_a": "help",
+      "intent_b": "salary_of_other",
+      "confusions_both_directions": 1
+    },
+    {
+      "intent_a": "help",
+      "intent_b": "who_to_contact",
+      "confusions_both_directions": 1
+    },
+    {
+      "intent_a": "holiday_list",
+      "intent_b": "insurance_benefits",
+      "confusions_both_directions": 1
+    }
+  ],
+  "mean_confidence_correct": 0.6469,
+  "mean_confidence_wrong": 0.2929,
+  "threshold_info_only": {
+    "threshold": 0.64,
+    "note": "Reported for information. The threshold was fixed from the training dev split BEFORE this evaluation and was not changed.",
+    "answered": 58,
+    "fallback": 74,
+    "accuracy_when_answered": 0.9655,
+    "wrong_answers_above_threshold": 2,
+    "correct_predictions_sent_to_fallback": 50
+  },
+  "end_to_end": {
+    "note": "Full pipeline (classifier + threshold + approved-FAQ rules). A 'wrong approved answer' = an FAQ answer was returned although the predicted intent differs from the true intent.",
+    "messages": 132,
+    "approved_faq_answers_returned": 13,
+    "wrong_approved_answers": 0,
+    "wrong_approved_answer_ids": [],
+    "fallbacks": 119,
+    "fallback_reasons": {
+      "low_confidence": 74,
+      "no_approved_answer": 45
+    },
+    "confident_wrong_predictions": [
+      {
+        "test_id": "TST-045",
+        "text": "how many days notice do I need to serve",
+        "true_intent": "notice_period_policy",
+        "predicted": "wfh_policy",
+        "confidence": 0.7023,
+        "outcome": "no_approved_answer"
+      },
+      {
+        "test_id": "TST-084",
+        "text": "my team name",
+        "true_intent": "my_department",
+        "predicted": "team_members",
+        "confidence": 0.8569,
+        "outcome": "no_approved_answer"
+      }
+    ]
+  }
+}
+
+per-intent F1 (lowest 10):
+                      precision  recall  f1-score  support
+help                       0.50    0.25      0.33      4.0
+chitchat                   0.43    0.75      0.55      4.0
+team_members               0.67    0.50      0.57      4.0
+thanks                     0.67    0.50      0.57      4.0
+who_to_contact             0.60    0.75      0.67      4.0
+out_of_scope               1.00    0.50      0.67      4.0
+notice_period_policy       1.00    0.50      0.67      4.0
+holiday_list               1.00    0.50      0.67      4.0
+pf_info                    0.57    1.00      0.73      4.0
+headcount_forecast         0.75    0.75      0.75      4.0

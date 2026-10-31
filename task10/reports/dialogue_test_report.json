@@ -1,0 +1,822 @@
+{
+ "DLG-01": [
+  {
+   "dialogue_id": "DLG-01",
+   "turn": 1,
+   "user_role": "employee",
+   "text": "how many casual leaves do I have left",
+   "expected_intent": "leave_balance",
+   "context_note": "",
+   "actual_intent": "leave_balance",
+   "confidence": 0.6767,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "You have 7 CL, 5 SL and 12 EL days left.",
+   "service_calls": [
+    "GET /api/v1/leave/balance?employee=me"
+   ],
+   "observed_http": [
+    "GET /api/v1/leave/balance?employee=me"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-01",
+   "turn": 2,
+   "user_role": "employee",
+   "text": "and sick leave?",
+   "expected_intent": "leave_balance",
+   "context_note": "follow-up: reuse entity/slot from previous turn",
+   "actual_intent": "leave_balance",
+   "confidence": 0.1966,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {},
+   "followup": true,
+   "reply": "You have 7 CL, 5 SL and 12 EL days left.",
+   "service_calls": [
+    "GET /api/v1/leave/balance?employee=me"
+   ],
+   "observed_http": [
+    "GET /api/v1/leave/balance?employee=me"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "resolved as a follow-up (context reused)": true,
+    "follow-up reuses the earlier intent and answers the same question": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-01",
+   "turn": 3,
+   "user_role": "employee",
+   "text": "thanks",
+   "expected_intent": "thanks",
+   "context_note": "",
+   "actual_intent": "thanks",
+   "confidence": 0.9956,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "You are welcome!",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-02": [
+  {
+   "dialogue_id": "DLG-02",
+   "turn": 1,
+   "user_role": "employee",
+   "text": "is my March payslip ready",
+   "expected_intent": "payslip_status",
+   "context_note": "",
+   "actual_intent": "payslip_status",
+   "confidence": 0.9458,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "month": "2026-03"
+   },
+   "followup": false,
+   "reply": "Your payslip for 2026-03 is ready. You can download it from the Payslips screen.",
+   "service_calls": [
+    "GET /api/v1/payslips/me/2026-03"
+   ],
+   "observed_http": [
+    "GET /api/v1/payslips/me/2026-03"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "slots contain {'month': '2026-03'}": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-02",
+   "turn": 2,
+   "user_role": "employee",
+   "text": "who is my manager",
+   "expected_intent": "my_manager",
+   "context_note": "",
+   "actual_intent": "my_manager",
+   "confidence": 0.9741,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "Your manager is Hema Lead.",
+   "service_calls": [
+    "GET /api/v1/employees/me"
+   ],
+   "observed_http": [
+    "GET /api/v1/employees/me"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-03": [
+  {
+   "dialogue_id": "DLG-03",
+   "turn": 1,
+   "user_role": "employee",
+   "text": "how do I apply for leave",
+   "expected_intent": "apply_leave_howto",
+   "context_note": "",
+   "actual_intent": "apply_leave_howto",
+   "confidence": 0.982,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "Open the Leave screen, choose the leave type and dates, then submit. Your manager gets an approval request.",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-03",
+   "turn": 2,
+   "user_role": "employee",
+   "text": "what is the leave policy",
+   "expected_intent": "hr_policy_leave",
+   "context_note": "",
+   "actual_intent": "hr_policy_leave",
+   "confidence": 0.9396,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "You get 12 casual leave and 12 sick leave days each financial year, plus earned leave at 1.25 days per month (carry forward up to 30 days).",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-03",
+   "turn": 3,
+   "user_role": "employee",
+   "text": "ok bye",
+   "expected_intent": "goodbye",
+   "context_note": "",
+   "actual_intent": "goodbye",
+   "confidence": 0.9812,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "Goodbye! Message me anytime.",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-04": [
+  {
+   "dialogue_id": "DLG-04",
+   "turn": 1,
+   "user_role": "employee",
+   "text": "show my attendance for last month",
+   "expected_intent": "attendance_summary",
+   "context_note": "",
+   "actual_intent": "attendance_summary",
+   "confidence": 0.7642,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "month": "2026-03"
+   },
+   "followup": false,
+   "reply": "In 2026-03 you were present 20 of 22 days with 2 late arrivals.",
+   "service_calls": [
+    "GET /api/v1/attendance/summary?employee=me&month=2026-03"
+   ],
+   "observed_http": [
+    "GET /api/v1/attendance/summary?employee=me&month=2026-03"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "slots contain {'month': '2026-03'}": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-04",
+   "turn": 2,
+   "user_role": "employee",
+   "text": "any unusual days?",
+   "expected_intent": "unusual_attendance",
+   "context_note": "",
+   "actual_intent": null,
+   "confidence": 0.5874,
+   "action": "fallback",
+   "authorization": "n/a",
+   "slots": {
+    "month": "2026-03"
+   },
+   "followup": false,
+   "reply": "I'm not sure I understood your question. Please rephrase it, or contact HR for assistance.",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": false,
+    "authorization as configured": false,
+    "exactly one service call, matching the configured endpoint": false,
+    "answered (template filled, no failure)": false
+   },
+   "notes": [],
+   "passed": false
+  }
+ ],
+ "DLG-05": [
+  {
+   "dialogue_id": "DLG-05",
+   "turn": 1,
+   "user_role": "employee",
+   "text": "what is Priya Nair salary",
+   "expected_intent": "salary_of_other",
+   "context_note": "",
+   "actual_intent": "salary_of_other",
+   "confidence": 0.7321,
+   "action": "refused",
+   "authorization": "refuse_always",
+   "slots": {},
+   "followup": false,
+   "reply": "Sorry, I cannot share another person's pay. You can ask about your own payslip.",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true,
+    "refused with the official response_template": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-05",
+   "turn": 2,
+   "user_role": "employee",
+   "text": "show my payslip for last month",
+   "expected_intent": "payslip_status",
+   "context_note": "",
+   "actual_intent": "payslip_status",
+   "confidence": 0.9689,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "month": "2026-03"
+   },
+   "followup": false,
+   "reply": "Your payslip for 2026-03 is ready. You can download it from the Payslips screen.",
+   "service_calls": [
+    "GET /api/v1/payslips/me/2026-03"
+   ],
+   "observed_http": [
+    "GET /api/v1/payslips/me/2026-03"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "slots contain {'month': '2026-03'}": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-06": [
+  {
+   "dialogue_id": "DLG-06",
+   "turn": 1,
+   "user_role": "employee",
+   "text": "hi",
+   "expected_intent": "greet",
+   "context_note": "",
+   "actual_intent": "greet",
+   "confidence": 0.0634,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "Hello! I am the Zenith Nova HR assistant. Ask me about leave, payslips, attendance or policies.",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-06",
+   "turn": 2,
+   "user_role": "employee",
+   "text": "what can you do",
+   "expected_intent": "chitchat",
+   "context_note": "",
+   "actual_intent": "chitchat",
+   "confidence": 0.919,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "I am an AI assistant for Zenith Nova HR. I can answer policy questions and look up your own HR data.",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-06",
+   "turn": 3,
+   "user_role": "employee",
+   "text": "work from home policy",
+   "expected_intent": "wfh_policy",
+   "context_note": "",
+   "actual_intent": "wfh_policy",
+   "confidence": 0.9727,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "Most roles follow a hybrid pattern with about three office days a week. Remote roles are listed in your offer letter.",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-07": [
+  {
+   "dialogue_id": "DLG-07",
+   "turn": 1,
+   "user_role": "hr",
+   "text": "who is at risk of leaving in Sales",
+   "expected_intent": "attrition_risk_query",
+   "context_note": "",
+   "actual_intent": "attrition_risk_query",
+   "confidence": 0.954,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "department": "Sales"
+   },
+   "followup": false,
+   "reply": "3 employees in Sales are in the high-risk band. Top drivers: overtime, tenure. Predictions support HR; they do not decide.",
+   "service_calls": [
+    "GET /ai/v1/attrition/risk?department=Sales"
+   ],
+   "observed_http": [
+    "GET /ai/v1/attrition/risk"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "slots contain {'department': 'Sales'}": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-07",
+   "turn": 2,
+   "user_role": "hr",
+   "text": "and in Engineering?",
+   "expected_intent": "attrition_risk_query",
+   "context_note": "follow-up: reuse entity/slot from previous turn",
+   "actual_intent": "attrition_risk_query",
+   "confidence": 0.3006,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "department": "Engineering"
+   },
+   "followup": true,
+   "reply": "3 employees in Engineering are in the high-risk band. Top drivers: overtime, tenure. Predictions support HR; they do not decide.",
+   "service_calls": [
+    "GET /ai/v1/attrition/risk?department=Engineering"
+   ],
+   "observed_http": [
+    "GET /ai/v1/attrition/risk"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "resolved as a follow-up (context reused)": true,
+    "slots contain {'department': 'Engineering'}": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-07",
+   "turn": 3,
+   "user_role": "hr",
+   "text": "why is it high",
+   "expected_intent": "attrition_risk_query",
+   "context_note": "follow-up: reuse entity/slot from previous turn",
+   "actual_intent": "attrition_risk_query",
+   "confidence": 0.6529,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "department": "Engineering"
+   },
+   "followup": true,
+   "reply": "3 employees in Engineering are in the high-risk band. Top drivers: overtime, tenure. Predictions support HR; they do not decide.",
+   "service_calls": [
+    "GET /ai/v1/attrition/risk?department=Engineering"
+   ],
+   "observed_http": [
+    "GET /ai/v1/attrition/risk"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "resolved as a follow-up (context reused)": true,
+    "slots contain {'department': 'Engineering'}": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-08": [
+  {
+   "dialogue_id": "DLG-08",
+   "turn": 1,
+   "user_role": "hr",
+   "text": "any unusual payroll this month",
+   "expected_intent": "payroll_flags",
+   "context_note": "",
+   "actual_intent": "payroll_flags",
+   "confidence": 0.979,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "month": "2026-04"
+   },
+   "followup": false,
+   "reply": "2 payslips were flagged for 2026-04. Top reason: duplicate.",
+   "service_calls": [
+    "GET /ai/v1/anomaly/payroll?month=2026-04"
+   ],
+   "observed_http": [
+    "GET /ai/v1/anomaly/payroll"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "slots contain {'month': '2026-04'}": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-08",
+   "turn": 2,
+   "user_role": "hr",
+   "text": "show details",
+   "expected_intent": "payroll_flags",
+   "context_note": "follow-up: reuse entity/slot from previous turn",
+   "actual_intent": "payroll_flags",
+   "confidence": 0.3805,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "month": "2026-04"
+   },
+   "followup": true,
+   "reply": "2 payslips were flagged for 2026-04. Top reason: duplicate.",
+   "service_calls": [
+    "GET /ai/v1/anomaly/payroll?month=2026-04"
+   ],
+   "observed_http": [
+    "GET /ai/v1/anomaly/payroll"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "resolved as a follow-up (context reused)": true,
+    "slots contain {'month': '2026-04'}": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-09": [
+  {
+   "dialogue_id": "DLG-09",
+   "turn": 1,
+   "user_role": "hr",
+   "text": "suggest a salary band for Data Analyst",
+   "expected_intent": "salary_band_query",
+   "context_note": "",
+   "actual_intent": "salary_band_query",
+   "confidence": 0.9086,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "role": "Data Analyst"
+   },
+   "followup": false,
+   "reply": "Suggested band for Data Analyst: 600 to 900 (median 750). This is guidance, not a decision.",
+   "service_calls": [
+    "POST /ai/v1/salary-band"
+   ],
+   "observed_http": [
+    "POST /ai/v1/salary-band"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "slots contain {'role': 'Data Analyst'}": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-09",
+   "turn": 2,
+   "user_role": "hr",
+   "text": "what about Software Engineer",
+   "expected_intent": "salary_band_query",
+   "context_note": "follow-up: reuse entity/slot from previous turn",
+   "actual_intent": "salary_band_query",
+   "confidence": 0.2266,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "role": "Software Engineer"
+   },
+   "followup": true,
+   "reply": "Suggested band for Software Engineer: 600 to 900 (median 750). This is guidance, not a decision.",
+   "service_calls": [
+    "POST /ai/v1/salary-band"
+   ],
+   "observed_http": [
+    "POST /ai/v1/salary-band"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "resolved as a follow-up (context reused)": true,
+    "slots contain {'role': 'Software Engineer'}": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-10": [
+  {
+   "dialogue_id": "DLG-10",
+   "turn": 1,
+   "user_role": "hr",
+   "text": "forecast headcount for next quarter",
+   "expected_intent": "headcount_forecast",
+   "context_note": "",
+   "actual_intent": "headcount_forecast",
+   "confidence": 0.9799,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "Forecast headcount for 2026-Q3: 120 (80% range 600 to 900).",
+   "service_calls": [
+    "GET /ai/v1/forecast/headcount"
+   ],
+   "observed_http": [
+    "GET /ai/v1/forecast/headcount"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-10",
+   "turn": 2,
+   "user_role": "hr",
+   "text": "for Support only",
+   "expected_intent": "headcount_forecast",
+   "context_note": "follow-up: reuse entity/slot from previous turn",
+   "actual_intent": "headcount_forecast",
+   "confidence": 0.2337,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {},
+   "followup": true,
+   "reply": "Forecast headcount for 2026-Q3: 120 (80% range 600 to 900).",
+   "service_calls": [
+    "GET /ai/v1/forecast/headcount"
+   ],
+   "observed_http": [
+    "GET /ai/v1/forecast/headcount"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "resolved as a follow-up (context reused)": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-11": [
+  {
+   "dialogue_id": "DLG-11",
+   "turn": 1,
+   "user_role": "hr",
+   "text": "score this resume for Data Analyst",
+   "expected_intent": "resume_score_request",
+   "context_note": "",
+   "actual_intent": "resume_score_request",
+   "confidence": 0.981,
+   "action": "answered",
+   "authorization": "ok",
+   "slots": {
+    "role": "Data Analyst"
+   },
+   "followup": false,
+   "reply": "Match score 80/100 for Data Analyst. Matched skills: sql. Missing: spark.",
+   "service_calls": [
+    "POST /ai/v1/resume/score"
+   ],
+   "observed_http": [
+    "POST /ai/v1/resume/score"
+   ],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "exactly one service call, matching the configured endpoint": true,
+    "answered (template filled, no failure)": true,
+    "slots contain {'role': 'Data Analyst'}": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-11",
+   "turn": 2,
+   "user_role": "hr",
+   "text": "thanks",
+   "expected_intent": "thanks",
+   "context_note": "",
+   "actual_intent": "thanks",
+   "confidence": 0.9956,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "You are welcome!",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ],
+ "DLG-12": [
+  {
+   "dialogue_id": "DLG-12",
+   "turn": 1,
+   "user_role": "employee",
+   "text": "tell me a joke",
+   "expected_intent": "out_of_scope",
+   "context_note": "",
+   "actual_intent": "out_of_scope",
+   "confidence": 0.8944,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "I can help with HR topics such as leave, payslips, attendance and policies.",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  },
+  {
+   "dialogue_id": "DLG-12",
+   "turn": 2,
+   "user_role": "employee",
+   "text": "help",
+   "expected_intent": "help",
+   "context_note": "",
+   "actual_intent": "help",
+   "confidence": 0.9738,
+   "action": "static",
+   "authorization": "ok",
+   "slots": {},
+   "followup": false,
+   "reply": "Try: \"leave balance\", \"payslip for March\", \"who is my manager\", \"work from home policy\".",
+   "service_calls": [],
+   "observed_http": [],
+   "checks": {
+    "intent == official expected_intent": true,
+    "authorization as configured": true,
+    "no service call (none configured / refused)": true
+   },
+   "notes": [],
+   "passed": true
+  }
+ ]
+}

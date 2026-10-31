@@ -1,0 +1,27 @@
+test_id,text,true_intent,predicted_intent,confidence,second_choice,second_confidence,true_intent_probability
+TST-084,my team name,my_department,team_members,0.8569,my_department,0.033,0.033
+TST-045,how many days notice do I need to serve,notice_period_policy,wfh_policy,0.7023,notice_period_policy,0.0775,0.0775
+TST-013,what are the rules on taking leave,hr_policy_leave,working_hours,0.5535,hr_policy_leave,0.0704,0.0704
+TST-039,who do I ask for benefits help,who_to_contact,help,0.5356,who_to_contact,0.1512,0.1512
+TST-008,ok thanks bye,goodbye,thanks,0.4763,goodbye,0.4719,0.4719
+TST-113,evaluate this cv for Accountant,resume_score_request,salary_band_query,0.4123,resume_score_request,0.2001,0.2001
+TST-126,what should I call you,chitchat,salary_band_query,0.4103,chitchat,0.0988,0.0988
+TST-129,what can this bot do,help,chitchat,0.3777,help,0.0686,0.0686
+TST-123,who is leading the ipl,out_of_scope,my_manager,0.3526,who_to_contact,0.0711,0.0636
+TST-130,list your features,help,chitchat,0.2821,holiday_list,0.1239,0.0188
+TST-096,which days were flagged for me,unusual_attendance,payroll_flags,0.2771,unusual_attendance,0.1724,0.1724
+TST-021,which days is the office closed,holiday_list,wfh_policy,0.2491,working_hours,0.1167,0.0916
+TST-022,do we get Holi off,holiday_list,insurance_benefits,0.2355,hr_policy_leave,0.1417,0.0592
+TST-088,who are my teammates,team_members,chitchat,0.2333,team_members,0.215,0.215
+TST-075,is salary slip of this month out,payslip_status,payslip_date,0.2197,salary_of_other,0.2033,0.1605
+TST-105,how many employees next quarter,headcount_forecast,hr_policy_leave,0.209,headcount_forecast,0.1837,0.1837
+TST-028,when do we get paid,payslip_date,insurance_benefits,0.1786,payslip_date,0.1469,0.1469
+TST-001,yo,greet,chitchat,0.1673,help,0.0595,0.0476
+TST-103,list people likely to leave in Operations,attrition_risk_query,headcount_forecast,0.1672,attrition_risk_query,0.1082,0.1082
+TST-009,appreciate it,thanks,who_to_contact,0.1445,out_of_scope,0.0691,0.0171
+TST-132,show commands,help,salary_of_other,0.1247,help,0.0717,0.0717
+TST-121,will it rain tomorrow,out_of_scope,who_to_contact,0.1185,tax_declaration,0.097,0.0356
+TST-085,who works under me,team_members,my_manager,0.1095,out_of_scope,0.0907,0.0644
+TST-046,how do I quit the company,notice_period_policy,pf_info,0.0884,notice_period_policy,0.0778,0.0778
+TST-033,how to get my travel money back,reimbursement_policy,pf_info,0.0779,insurance_benefits,0.0719,0.0714
+TST-011,cheers,thanks,pf_info,0.0569,out_of_scope,0.0525,0.0214

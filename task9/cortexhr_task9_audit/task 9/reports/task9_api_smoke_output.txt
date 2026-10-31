@@ -1,0 +1,37 @@
+# /v1/chat smoke test over real HTTP (uvicorn, 2026-10-29 03:28 UTC)
+# Server: real Task 8 create_app() + real Task 9 startup (model loaded once from models/hr_intent_classifier.joblib).
+# LIMITATION: Task 5-7 source and the reference workbook were not available in this sandbox, so the anomaly detectors were
+# replaced by a placeholder object. Anomaly SCORING was therefore not exercised; /v1/health and /v1/models routing was.
+
+$ curl -X POST /v1/chat -d '{"message": "How long is the notice period?"}'
+{"intent":"notice_period_policy","confidence":0.9458,"reply":"30 days for L1-L2, 60 days for L3, 90 days for L4 and above.","fallback":false}
+HTTP 200
+
+$ curl -X POST /v1/chat -d '{"message": "whn is salary credited yaar"}'
+{"intent":"payslip_date","confidence":0.8913,"reply":"On the first working day of the following month.","fallback":false}
+HTTP 200
+
+$ curl -X POST /v1/chat -d '{"message": "what is the dress code"}'
+{"intent":null,"confidence":0.1836,"reply":"I'm not sure I understood your question. Please rephrase it, or contact HR for assistance.","fallback":true}
+HTTP 200
+
+$ curl -X POST /v1/chat -d '{"message": "show my payslip for June"}'
+{"intent":"payslip_status","confidence":0.9754,"reply":"I don't have an approved answer for that question yet. Please contact HR for assistance. Who do I contact for payroll queries? payroll@znova-demo.example","fallback":true}
+HTTP 200
+
+$ curl -X POST /v1/chat -d '{"message": "   "}'
+{"intent":null,"confidence":null,"reply":"I'm not sure I understood your question. Please rephrase it, or contact HR for assistance.","fallback":true}
+HTTP 200
+
+$ curl -X POST /v1/chat -d "{}"  (missing field)
+{"detail":[{"loc":["body","message"],"type":"missing","msg":"Field required"}]}
+HTTP 422
+
+$ curl -X POST /v1/chat -d {"message": 123}
+{"detail":[{"loc":["body","message"],"type":"string_type","msg":"Input should be a valid string"}]}
+HTTP 422
+
+$ curl /v1/health
+{"status":"ok","service":"cortexhr-anomaly","models_loaded":true}
+HTTP 200
+

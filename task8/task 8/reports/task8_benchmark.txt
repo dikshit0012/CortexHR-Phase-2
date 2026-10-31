@@ -1,0 +1,6 @@
+Python=3.14.6 NumPy=2.5.4 pandas=3.1.0 scikit-learn=1.9.1 joblib=1.6.0 openpyxl=3.1.5 FastAPI=0.162.0
+TestClient lifespan startup (workbook + artifact loading; no fitting): 7659.4 ms
+attendance single: 5 measured runs after 1 warm-up; median=1376.0 ms min=1352.8 ms max=1511.0 ms
+payroll single: 5 measured runs after 1 warm-up; median=2305.7 ms min=2218.9 ms max=2376.0 ms
+attendance batch 100: 5 measured runs after 1 warm-up; median=1614.7 ms min=1510.6 ms max=1954.9 ms
+payroll batch 100: 5 measured runs after 1 warm-up; median=2756.2 ms min=2697.5 ms max=3280.9 ms
