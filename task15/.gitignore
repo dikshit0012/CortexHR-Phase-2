@@ -1,0 +1,5 @@
+# confidential validation data (04_Validation_Vault / unlock_CX-15) and reports with per-person protected values
+private/
+reports/private/
+__pycache__/
+.pytest_cache/

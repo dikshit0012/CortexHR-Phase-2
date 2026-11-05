@@ -1,0 +1,26 @@
+# Python environments and generated caches
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+
+# Candidate and employee data or individual-level outputs
+task11/data/resumes.csv
+task11/data/resume_job_labels.csv
+task11/reports/
+task11/README_task11.md
+task12/data/
+task12/reports/
+task12/private/
+task13/data/
+task13/model_artifacts/
+task13/reports/
+task14/attrition_risk_explanations.csv
+task14/data/
+task14/reports/
+task14/model_artifacts/
+task14/README.md
+task14/FINAL_AUDIT_task14.md
+task15/data/
+task15/models/
+task15/reports/
+task15/private/

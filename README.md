@@ -16,6 +16,7 @@
 - [Architecture](#architecture)
 - [How I Verified It Works](#how-i-verified-it-works)
 - [Limitations and What I Would Do Next](#limitations-and-what-i-would-do-next)
+- [Phase 3 Tasks (11–15)](#phase-3-tasks-11-15)
 
 ## Introduction
 
@@ -142,3 +143,15 @@ The automated tests cover synthetic feature transformation, missing-value handli
 - Negative-tenure rows are excluded rather than corrected while their source dates are unresolved.
 - Monthly records are unavailable for some simulated historical rows; their missing summaries are imputed from training data, which can make data availability informative to a model.
 - Before broader use, add explicit input-schema validation, review fairness and data-quality behavior with the data owner, and evaluate model behavior on a separately held-out dataset. Model training and deployment are outside this Task 2 pipeline.
+
+## Phase 3 Tasks (11–15)
+
+The `task11`–`task15` directories contain project source, tests, and configuration. Raw resumes, employee-level datasets and outputs, confidential files, and trained model artifacts are intentionally excluded; do not add them to this repository.
+
+| Task | Focus |
+|---|---|
+| 11 | Resume ranking and evaluation |
+| 12 | Resume fairness auditing and text preprocessing |
+| 13 | Attrition model validation |
+| 14 | Attrition risk scoring |
+| 15 | Salary band recommendations |
