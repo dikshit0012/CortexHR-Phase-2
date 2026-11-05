@@ -1,12 +1,21 @@
 """Task 14 tests: model, scoring, bands, SHAP, reasons, sensitive-data rules, output schema, edge cases."""
 import json
+import os
 import re
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import pytest
 
 from cortexhr_task14 import config
+if config.locate_cortexhr_src() is None:
+    pytest.skip("Task 14 tests require the separately supplied Task 2-4 cortexhr package.", allow_module_level=True)
+
+task13_root = Path(os.environ.get("CORTEXHR_TASK13_ROOT", config.TASK14_ROOT.parent / "task13"))
+if not (task13_root / "model_artifacts" / "attrition-v2" / "model.joblib").is_file():
+    pytest.skip("Task 14 tests require the Task 13 attrition-v2 model artifact.", allow_module_level=True)
+
 from cortexhr_task14 import reason_generator as rg
 from cortexhr_task14.employee_scoring import ScoringDataError, validate_features, validate_ids, validate_probabilities
 from cortexhr_task14.model_loader import ModelVerificationError, verify_model

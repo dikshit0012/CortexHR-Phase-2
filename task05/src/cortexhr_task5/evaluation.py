@@ -10,6 +10,7 @@ sheet if present.
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 from typing import Dict, Optional, Set, Union
 
@@ -19,22 +20,26 @@ ID_COL = "attendance_feature_id"
 WORKBOOK_NAME = "02_CortexHR_AI_ML_Dataset.xlsx"
 
 
-def find_workbook() -> Path:
-    """Locate the CortexHR workbook without a hard-coded Desktop path."""
+def find_workbook(workbook: Optional[Union[str, Path]] = None) -> Path:
+    """Find the workbook from an explicit path, environment override, or task-local data folder."""
     here = Path(__file__).resolve()
+    configured = workbook or os.environ.get("CORTEXHR_WORKBOOK")
+    if configured:
+        path = Path(configured).expanduser()
+        if not path.is_file():
+            raise FileNotFoundError(f"CortexHR workbook not found at {path}.")
+        return path.resolve()
+
     candidates = [
         here.parents[2] / "data" / "raw" / WORKBOOK_NAME,
-        Path(r"c:\Users\mruni\OneDrive\Desktop\Phase 1 All task\Task 1\cortexhr-ml\data\raw") / WORKBOOK_NAME,
-        Path(r"c:\Users\mruni\OneDrive\Desktop\Phase 1 All task\task 4\files\cortexhr-ml\data\raw") / WORKBOOK_NAME,
-        Path(r"c:\Users\mruni\OneDrive\Desktop\Phase 1 All task\task 2\files\extracted\cortexhr-ml-task5\data\raw") / WORKBOOK_NAME,
     ]
     for path in candidates:
-        if path.exists():
-            return path
+        if path.is_file():
+            return path.resolve()
     tried = "\n".join(f"  - {p}" for p in candidates)
     raise FileNotFoundError(
-        "Could not find 02_CortexHR_AI_ML_Dataset.xlsx. Put it in task05/data/raw/ "
-        f"or keep a copy in Task 1/cortexhr-ml/data/raw/.\nTried:\n{tried}"
+        f"Could not find {WORKBOOK_NAME}. Set CORTEXHR_WORKBOOK or place the authorized workbook "
+        f"in task05/data/raw/.\nTried:\n{tried}"
     )
 
 

@@ -259,3 +259,26 @@ scores = mv.predict_attrition(mv.build_scoring_table(), loaded)   # probability 
 * If V2 is promoted: SHAP explanations for HR, and monotonic constraints on features such as tenure and engagement.
 * Answer O2 and then include `dept_attrition_rate_prior_12m` in both models and re-test.
 * Decide the operating point with Task 4's cost matrix applied to the now-calibrated probabilities.
+
+## 19. Set up from this repository
+
+The Task 2-4 `cortexhr` package and master workbook are external prerequisites and are intentionally not copied into this repository. Obtain both from an approved source. Set `CORTEXHR_ML_SRC` to the directory containing the `cortexhr` package (normally the package's `src` directory) and `CORTEXHR_WORKBOOK` to the authorized workbook. The workbook must contain the `attrition_dataset`, attendance, and payroll sheets used by Task 2.
+
+Task 13 creates the `attrition-v2` artifact under the Git-ignored `model_artifacts` directory. Task 14 loads that artifact and requires scikit-learn 1.8.x compatibility, so build it with the version pinned in this task's requirements.
+
+From the repository root in Windows PowerShell:
+
+```powershell
+python -m venv .venv-task13
+.\.venv-task13\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r task13\requirements.txt
+
+$env:CORTEXHR_ML_SRC = 'C:\approved-source\cortexhr-ml\src'
+$env:CORTEXHR_WORKBOOK = 'C:\approved-data\02_CortexHR_AI_ML_Dataset.xlsx'
+
+python -m pytest task13\tests
+python task13\run_task13.py
+```
+
+Without the external source package, the module fails explicitly during import. Without the workbook, the data-backed tests and training run cannot proceed; no substitute dataset is generated. The local model and generated reports must not be committed.

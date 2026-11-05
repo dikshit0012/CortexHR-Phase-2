@@ -188,26 +188,26 @@ Response: exactly `intent` (string or null), `confidence` (0-1 or null), `reply`
 
 The model, FAQ and rules are loaded **once** in the app's lifespan handler; a request only calls `predict_proba`. Responses never contain stack traces, paths, training text or the FAQ table; logs record the reason code and exception *type* only, never message text.
 
-Environment variables (all optional): `CORTEXHR_TASK9_ROOT` (folder containing `src/cortexhr_task9`; default `<repo>/task 9`), `CORTEXHR_INTENT_MODEL`, `CORTEXHR_FAQ_FILE`, `CORTEXHR_CHAT_THRESHOLD`.
+Environment variables (all optional): `CORTEXHR_TASK9_ROOT` (folder containing `src/cortexhr_task9`; this checkout's canonical path is `<repo>/task09/cortexhr_task9/task 9`), `CORTEXHR_INTENT_MODEL`, `CORTEXHR_FAQ_FILE`, `CORTEXHR_CHAT_THRESHOLD`.
 
 ## 11. Run it locally
 
-Use the same environment as Task 8 (`task 8/requirements.txt`; **Task 9 adds no runtime dependency**). `matplotlib` is optional and only draws `confusion_matrix.png` (I used 3.10.8). The artifact records the scikit-learn / NumPy / SciPy / joblib versions it was built with and the service **refuses to load it on a mismatch**, so build it in the environment you serve from (the one in `models/` was built here on Linux with scikit-learn 1.9.1 and will not be reused as-is on another machine; it is git-ignored). `joblib` uses pickle: only load artifacts you built yourself.
+Use the same environment as Task 8 (`task08/task 8/requirements.txt`; **Task 9 adds no runtime dependency**). `matplotlib` is optional and only draws `confusion_matrix.png`. The artifact records the scikit-learn / NumPy / SciPy / joblib versions it was built with and the service **refuses to load it on a mismatch**, so build it in the environment you serve from. The model in `models/` is git-ignored and must be rebuilt locally. `joblib` uses pickle: only load artifacts you built yourself.
 
 Windows PowerShell (not run on Windows - see limitations):
 
 ```powershell
-Set-Location 'C:\path\to\CortexHR-'
-.\.venv\Scripts\python.exe -m pip install -r '.\task 8\requirements.txt'
-Set-Location '.\task 9'
-..\.venv\Scripts\python.exe .\scripts\train_intent_model.py          # builds models\hr_intent_classifier.joblib (+ dev reports)
-..\.venv\Scripts\python.exe .\scripts\evaluate_intent_model.py       # evaluates on chatbot_test_set (read-only)
-..\.venv\Scripts\python.exe -m pytest -v                             # 152 tests
+Set-Location 'C:\path\to\CortexHR-Phase-2-3'
+python -m pip install -r '.\task08\task 8\requirements.txt'
+python '.\task09\cortexhr_task9\task 9\scripts\train_intent_model.py'    # builds local model + dev reports
+python '.\task09\cortexhr_task9\task 9\scripts\evaluate_intent_model.py' # evaluates on chatbot_test_set (read-only)
+python -m pytest '.\task09\cortexhr_task9\task 9\tests' -v
 
 # start the Task 8 service (it loads the chat model once at startup)
-Set-Location '..\task 8'
+Set-Location '.\task08\task 8'
+$env:CORTEXHR_TASK9_ROOT = (Resolve-Path '..\..\task09\cortexhr_task9\task 9').Path
 $env:CORTEXHR_WORKBOOK = 'C:\path\to\02_CortexHR_AI_ML_Dataset.xlsx'
-..\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
 Test it from a second PowerShell window:
@@ -219,7 +219,7 @@ Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/v1/chat -ContentType '
 curl.exe -sS -X POST http://127.0.0.1:8000/v1/chat -H "Content-Type: application/json" -d "{\"message\": \"whn is salary credited yaar\"}"
 ```
 
-Linux/macOS: the same Python commands; `curl -X POST http://127.0.0.1:8000/v1/chat -H 'Content-Type: application/json' -d '{"message": "What is the notice period?"}'`. If Tasks 5-7 live elsewhere, set `CORTEXHR_TASKS_ROOT` as described in the Task 8 README.
+Linux/macOS: use the same Python commands with platform-appropriate paths; `curl -X POST http://127.0.0.1:8000/v1/chat -H 'Content-Type: application/json' -d '{"message": "What is the notice period?"}'`. The Task 5-7 source is in this checkout, so no separate `CORTEXHR_TASKS_ROOT` is required.
 
 ## 12. How I verified it works
 
@@ -228,10 +228,10 @@ Linux/macOS: the same Python commands; `curl -X POST http://127.0.0.1:8000/v1/ch
 * **Live HTTP check:** I started uvicorn and sent real requests (`reports/task9_api_smoke_output.txt`): 200 answers and fallbacks, 422 for `{}` and a number, and `/v1/health` still 200.
 * **Reproducibility:** training is deterministic (a test retrains and compares probabilities and threshold; the evaluation numbers were identical across re-runs).
 
-### What was NOT verified
+### Verification limits from the original Task 9 development run
 
-* **Task 8's own tests and the Task 5-7 tests were not available to me** (only the Task 8 `app/` files, `requirements.txt` and README were provided, and no reference workbook). I therefore could **not** run the real regression suites. What I did instead, against the real Task 8 `create_app` with throw-away stub packages for Tasks 5-7 and a placeholder anomaly service: confirmed that all six Task 8 routes are still registered and that only `/v1/chat` was added, that `/v1/health` and `/v1/models` respond as before, that Task 8's 422 behaviour is unchanged, and that the anomaly endpoints still return 503 when their service is not loaded. **Anomaly scoring itself was not exercised.** Please run your existing Task 5-8 test suites in the real repository before submitting; `git diff` shows the only Task 8 change.
-* **Windows / PowerShell, Python 3.14** were not available; everything ran on Linux with Python 3.12.3 (the artifact does not depend on the Python version, but the commands above are untested on Windows).
+* The original isolated Task 9 assessment did not have the full Task 5-8 source or reference workbook and used temporary Task 8 stubs for route checks; it did **not** verify real anomaly scoring. In this combined repository Tasks 5-8 are present. Follow their READMEs and run their tests and workbook-backed checks locally before relying on the integrated service.
+* The original assessment ran on Linux with Python 3.12.3; its Windows / PowerShell commands were not tested there. Rebuild the model artifact in the actual serving environment rather than reusing a checked-out binary.
 
 ## 13. Known limitations
 
@@ -259,4 +259,4 @@ Linux/macOS: the same Python commands; `curl -X POST http://127.0.0.1:8000/v1/ch
 
 ## 15. Git and data hygiene
 
-The artifact (`models/*.joblib`, `*.metadata.json`) is git-ignored like Task 8's models. The three CSVs are copied into `task 9/data/` so the scripts run out of the box; they appear to be fictional training data, but **if your course rules say the starter datasets must not be committed, add `task 9/data/` to `.gitignore` before committing**. I did not commit, push or rewrite history in your repository.
+The artifact (`models/*.joblib`, `*.metadata.json`) is git-ignored like Task 8's models. The three starter CSVs are included under the canonical Task 9 `data/` directory. Confirm their redistribution is approved before repackaging this repository; never add employee-level inputs or private data.

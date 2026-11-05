@@ -8,6 +8,25 @@ comparison of fairness **and** ranking quality. The ranking is a decision-suppor
 Measure whether the Task 11 screener scores otherwise identical resumes differently when only a protected attribute changes, reduce any such sensitivity without
 removing job-relevant information, and verify ranking quality is preserved.
 
+## Run locally
+Use Python 3.10 or newer and install the Task 11/12 dependencies in a dedicated environment:
+
+```powershell
+python -m pip install -r task11\requirements.txt
+python -m pip install -r task12\requirements.txt
+```
+
+The Task 11 source is included, but its `job_descriptions.csv` and `resumes.csv`, plus Task 12's `resume_bias_pairs.csv`, must be obtained through an approved channel and stored under `task11\data\` and `task12\data\` (or configured with `CORTEXHR_TASK11_DATA` and `CORTEXHR_TASK12_PAIRS`). The protected-attribute input is optional and confidential; if supplied, keep it under the ignored `task12\private\` directory or set `CORTEXHR_TASK12_PRIVATE`. Do not add candidate data or protected attributes to Git.
+
+Run unit/integration tests and the audit after installing the data:
+
+```powershell
+python -m pytest task12\tests
+python task12\scripts\run_task12.py
+```
+
+The data-backed test module reports a clear skip when its Task 11 and twin-pair CSV inputs are absent. The protected-attribute comparison is omitted when the confidential file is not provided.
+
 ## 2. Data (inspected)
 | item | content |
 |---|---|

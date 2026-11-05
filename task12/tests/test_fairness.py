@@ -19,6 +19,18 @@ from cortexhr_task11 import data_loading as dl11  # noqa: E402  (importable once
 from cortexhr_task11.skill_extractor import build_default_extractor  # noqa: E402
 
 SRC = Path(__file__).resolve().parents[1] / "src" / "cortexhr_task12"
+required_inputs = (
+    paths.TASK11_DATA / "job_descriptions.csv",
+    paths.TASK11_DATA / "resumes.csv",
+    paths.PAIRS_CSV,
+)
+missing_inputs = [path for path in required_inputs if not path.is_file()]
+if missing_inputs:
+    pytest.skip(
+        "Task 12 test module requires the approved Task 11 and twin-pair CSVs: "
+        + ", ".join(map(str, missing_inputs)),
+        allow_module_level=True,
+    )
 JOBS = dl11.load_jobs(paths.TASK11_DATA / "job_descriptions.csv")
 RESUMES = dl11.load_resumes(paths.TASK11_DATA / "resumes.csv")
 

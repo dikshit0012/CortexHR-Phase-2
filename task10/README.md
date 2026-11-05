@@ -5,9 +5,9 @@ Turn the Task 9 intent classifier into a conversational HR assistant that **extr
 
 ## 2. Files
 ```
-task 10/
-  data/chatbot_dialogues.csv, chatbot_responses.csv   official starter files (read-only copies, never modified)
-  starter/mock_services/mock_server.py                official mock HR service (byte-identical copy; mock_data/ was NOT supplied)
+task10/
+  data/chatbot_dialogues.csv, chatbot_responses.csv   starter dialogue and policy data (included)
+  starter/mock_services/mock_server.py                mock service code; its mock_data/ CSV files are not included
   src/cortexhr_task10/
     months.py        month extraction -> 'YYYY-MM'          slots.py     department / role / follow-up cues / "slot-only" test
     people.py        employee directory, partial & duplicate names, safe disambiguation question
@@ -17,25 +17,42 @@ task 10/
     sessions.py      in-memory session store          service_client.py   HR + AI HTTP clients (no dialogue logic)
     render.py        service data -> official response_template       dialogue.py   orchestration
     classifier.py    adapter over the Task 9 model      api.py   POST /v1/chat/converse      config.py   settings
-  tests/             174 passing tests, 1 expected failure (DLG-04), see §15-16       scripts/run_evidence.py   regenerates reports/
-  reports/           evidence (see §17)                   task8_main_py_task10.patch   the 3-line integration into the Task 8 app
-task08/task 8/app/converse.py (new), task08/task 8/app/main.py (+3 lines)   wiring only (reuses the Task 9 model already in memory).
-task09/cortexhr_task9/task 9/tests/test_chat_api.py   ONE assertion changed: the route-set check now allows /v1/chat/converse. Tasks 1-7 and the rest of Task 9 are untouched.
+  tests/             synthetic and service-contract tests          scripts/run_evidence.py   evidence runner
+  reports/           retained evidence from an earlier run; some outputs need excluded inputs
+task08/task 8/app/converse.py, task08/task 8/app/main.py    Task 10 route integration
+task09/cortexhr_task9/task 9/                             canonical Task 9 model integration
 ```
 `POST /v1/chat` (Task 9) is unchanged; Task 10 adds `POST /v1/chat/converse` next to it.
 
-## 3. Start the mock HR service (PowerShell, **not verified on Windows**: I only had Linux)
+## Setup prerequisites and tests
+
+The source and starter dialogue/policy CSVs are included, but a clean checkout is **not runnable end to end**. Obtain the mock service CSVs `employees.csv`, `leave_balances.csv`, `leave_requests.csv`, `payslips.csv`, `holidays.csv`, `attendance_monthly.csv`, and `demo_users.csv` through an approved channel. The mock service loads them from `task10\starter\mock_services\mock_data\` at startup. They are intentionally excluded; do not generate or commit employee-level data or demo credentials.
+
+Install the Task 8 environment and run the Task 10 tests from the repository root:
+
 ```powershell
-cd "<starter>\05_Starter\mock_services"        # the folder that contains mock_server.py AND mock_data\
-python -m uvicorn mock_server:app --port 9000
+python -m pip install -r 'task08\task 8\requirements.txt'
+python -m pytest task10\tests
+```
+
+The mock server is a demo only. `X-Demo-User` is spoofable and must never be treated as authentication. HR-only AI routes are external dependencies; this repository does not provide their service implementation.
+
+Before starting the API, build Task 8's anomaly artifacts and train the canonical Task 9 model using their setup guides. Use the same environment and compatible model-library versions for both services. The Task 8 API itself requires the approved reference workbook.
+
+## 3. Start the mock HR service
+```powershell
+Set-Location 'C:\path\to\CortexHR-Phase-2-3\task10\starter\mock_services'
+python -m uvicorn mock_server:app --host 127.0.0.1 --port 9000
 ```
 ## 4. Start the CortexHR API
 ```powershell
-cd "<repo>\task08\task 8"
+Set-Location 'C:\path\to\CortexHR-Phase-2-3\task08\task 8'
 $env:CORTEXHR_HR_BASE_URL       = "http://127.0.0.1:9000"
-$env:CORTEXHR_DEMO_USERS_CSV    = "<starter>\05_Starter\mock_services\mock_data\demo_users.csv"   # REQUIRED for logins; without it every X-Demo-User is rejected (401)
+$env:CORTEXHR_DEMO_USERS_CSV    = "C:\path\to\CortexHR-Phase-2-3\task10\starter\mock_services\mock_data\demo_users.csv"
 $env:CORTEXHR_REFERENCE_DATE    = "2026-04-15"     # optional: pin what "last month" means; default = today
-$env:CORTEXHR_AI_BASE_URL       = "http://127.0.0.1:8000"   # optional: where the /ai/v1/... routes live (see §18)
+$env:CORTEXHR_AI_BASE_URL       = "http://approved-ai-service:8000"   # optional external HR-only routes; see §18
+$env:CORTEXHR_TASK9_ROOT        = "C:\path\to\CortexHR-Phase-2-3\task09\cortexhr_task9\task 9"
+$env:CORTEXHR_WORKBOOK          = "C:\approved-data\02_CortexHR_AI_ML_Dataset.xlsx"
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 ## 5. Send a chat request
@@ -77,16 +94,17 @@ Timeouts (2 s connect / 5 s read), connection errors, 401/403, 404, other 4xx/5x
 
 ## 15. Run the 12 official dialogue tests
 ```powershell
-cd "<repo>\task 10"
-python -m pytest tests/test_official_dialogues.py -v
+Set-Location 'C:\path\to\CortexHR-Phase-2-3'
+python -m pytest task10\tests\test_official_dialogues.py -v
 ```
 ## 16. Run security and regression tests
 ```powershell
-python -m pytest -v                                   # everything in task 10
-cd "<repo>\task05"; python -m pytest tests            # Task 5
-cd "<repo>\task06\task 6"; python -m pytest tests    # Task 6
-cd "<repo>\task07\task 7"; python -m pytest tests    # Task 7
-cd "<repo>\task09\cortexhr_task9\task 9"; python -m pytest  # 152 passed (needs the full Task 8 app, which is now present)
+Set-Location 'C:\path\to\CortexHR-Phase-2-3'
+python -m pytest task10\tests -v
+python -m pytest task05\tests
+python -m pytest 'task06\task 6\tests'
+python -m pytest 'task07\task 7\tests'
+python -m pytest 'task09\cortexhr_task9\task 9\tests'
 ```
 ## 17. Evidence (`task 10/reports/`)
 `dialogue_test_report.md/.json` (12 dialogues) · `multi_turn_transcripts.md` (2 transcripts) · `refusal_evidence.md` · `service_call_audit.md` · `slot_extraction_results.md` · `duplicate_names.md` · `test_output.txt` · `regression_task5_to_9_output.txt`. Regenerate with `python scripts/run_evidence.py`.

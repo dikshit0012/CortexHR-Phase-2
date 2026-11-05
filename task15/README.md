@@ -220,9 +220,15 @@ cd task15
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-$env:CORTEXHR_WORKBOOK = "C:\path\to\CortexHR_Dataset.xlsx"   # optional; default: data/CortexHR_Dataset.xlsx
-# required: place authorized unlock_CX-15 data in private/unlock_CX-15_protected_attributes.csv
+# Set one approved salary-training source (CSV takes precedence when both are set):
+$env:CORTEXHR_SALARY_CSV = "C:\approved-data\salary_training.csv"
+# Or use the master workbook, which must contain the salary_training sheet:
+$env:CORTEXHR_WORKBOOK = "C:\approved-data\CortexHR_Dataset.xlsx"
+# Optional for training; required to run the official protected-attribute fairness audit:
+# provide the approved file at private/unlock_CX-15_protected_attributes.csv (never commit it)
 python scripts/run_task15.py
 python scripts/run_checks.py
 python scripts/build_readme.py
 ```
+
+On a clean clone, no salary data is available, so the data-backed tests and pipeline cannot run until an approved source is supplied. The protected-attribute file is confidential, remains in the Git-ignored `private/` directory, and must not be copied into reports or committed. Use a separate environment for each task; the source includes explicit skips for data-backed tests when the salary dataset is absent.

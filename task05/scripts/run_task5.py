@@ -13,6 +13,7 @@ This script:
 Usage:
     python scripts/run_task5.py
 """
+import argparse
 import sys
 import io
 from pathlib import Path
@@ -38,8 +39,6 @@ from cortexhr_task5.evaluation import (
 )
 
 
-# ---------- Configuration ----------
-XLSX_PATH = str(find_workbook())
 REPORTS_DIR = Path(__file__).resolve().parents[1] / "reports"
 SEED = 42
 CONTAMINATION = 0.03
@@ -53,7 +52,8 @@ def baseline_replica(raw: pd.DataFrame, feature_names, contamination=0.03, seed=
     return set(raw.loc[pred == -1, ID_COL])
 
 
-def main():
+def main(workbook: Path | None = None):
+    xlsx_path = find_workbook(workbook)
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
     print("=" * 70)
@@ -64,8 +64,8 @@ def main():
     # STEP 1: Load data (NO labels)
     # ================================================================
     print("\n[LOAD] Loading attendance_monthly_features...")
-    print(f"   Workbook: {XLSX_PATH}")
-    raw = pd.read_excel(XLSX_PATH, sheet_name="attendance_monthly_features")
+    print(f"   Workbook: {xlsx_path}")
+    raw = pd.read_excel(xlsx_path, sheet_name="attendance_monthly_features")
     print(f"   Rows: {len(raw)}, Columns: {list(raw.columns)}")
     print(f"   Employees: {raw[EMPLOYEE_COL].nunique()}, Months span: {raw[MONTH_COL].nunique()}")
 
@@ -103,14 +103,14 @@ def main():
     print("EVALUATION (labels loaded only now - never used for training)")
     print("=" * 70)
 
-    labels = load_hidden_labels(XLSX_PATH)
+    labels = load_hidden_labels(xlsx_path)
     injected = set(labels[ID_COL])
     print(f"\n[LABELS] Injected anomalies: {len(injected)} records")
     if "anomaly_type" in labels.columns:
         print(f"   Types: {labels['anomaly_type'].value_counts().to_dict()}")
 
     # Load anomaly_baselines for comparison
-    base = pd.read_excel(XLSX_PATH, sheet_name="anomaly_baselines")
+    base = pd.read_excel(xlsx_path, sheet_name="anomaly_baselines")
     b = base[base["task"].str.contains("Attendance", case=False, na=False)].iloc[0]
     base_feats = [c.strip() for c in b["features"].split(",")]
 
@@ -236,4 +236,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Run the Task 5 attendance anomaly detector.")
+    parser.add_argument("--workbook", type=Path, help="authorized CortexHR workbook (overrides CORTEXHR_WORKBOOK)")
+    main(parser.parse_args().workbook)

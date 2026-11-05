@@ -1,6 +1,7 @@
 """Task 13 tests. They use the real workbook (see README) and the artifact written by ``run_task13.py``."""
 import json
 import logging
+import os
 import sys
 import warnings
 from pathlib import Path
@@ -11,6 +12,11 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 warnings.filterwarnings("ignore")
+
+default_ml_src = Path(__file__).resolve().parents[2] / "task 4" / "files" / "cortexhr-ml" / "src"
+ml_src = Path(os.environ.get("CORTEXHR_ML_SRC", default_ml_src))
+if not (ml_src / "cortexhr").is_dir():
+    pytest.skip("Task 13 tests require the separately supplied Task 2-4 cortexhr package.", allow_module_level=True)
 
 from attrition_v2 import calibration as cal                                   # noqa: E402
 from attrition_v2 import config, data_validation as dv, evaluation as ev      # noqa: E402
@@ -26,6 +32,8 @@ REPORTS = config.REPORTS
 
 @pytest.fixture(scope="module")
 def data():
+    if not config.WORKBOOK.is_file():
+        pytest.skip(f"Task 13 data tests require the authorized workbook at {config.WORKBOOK}.")
     return dv.load_data()
 
 
@@ -36,6 +44,8 @@ def folds(data):
 
 @pytest.fixture(scope="module")
 def loaded():
+    if not (config.ARTIFACTS / config.MODEL_VERSION / "model.joblib").is_file():
+        pytest.skip("Task 13 model tests require the locally generated attrition-v2 artifact.")
     return mv.load_model()
 
 

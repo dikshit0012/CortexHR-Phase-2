@@ -126,8 +126,8 @@ Set-Location 'C:\path\to\CortexHR-Phase-2-3\task08\task 8'
 py -3.14 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r .\requirements.txt
 
-# Root of the existing Task 5–7 checkout (omit only in the integrated layout described above).
-$env:CORTEXHR_TASKS_ROOT = 'C:\path\to\CortexHR-'
+# Only needed if Task 5–7 are in a separate checkout; omit for this integrated repository.
+# $env:CORTEXHR_TASKS_ROOT = 'C:\path\to\CortexHR-Phase-2-3'
 
 # Local reference workbook; keep this file outside Git.
 $env:CORTEXHR_WORKBOOK = 'C:\path\to\02_CortexHR_AI_ML_Dataset.xlsx'

@@ -2,7 +2,7 @@
 pandas>=2.2,<4            # 3.0.2
 numpy>=1.26               # 2.4.4
 scipy>=1.11
-scikit-learn>=1.4         # 1.8.0
+scikit-learn==1.8.0       # must match the Task 14 artifact loader
 lightgbm>=4.0             # 4.7.0  (gradient boosting)
 openpyxl>=3.1             # read the master workbook
 matplotlib>=3.8           # calibration plot
