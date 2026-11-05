@@ -29,7 +29,8 @@ class Task9Classifier:
 
     @classmethod
     def load(cls, task9_root: Optional[Path] = None) -> "Task9Classifier":
-        root = Path(task9_root or os.environ.get("CORTEXHR_TASK9_ROOT") or Path(__file__).resolve().parents[3] / "task 9")
+        root = Path(task9_root or os.environ.get("CORTEXHR_TASK9_ROOT") or
+                    Path(__file__).resolve().parents[3] / "task09" / "cortexhr_task9" / "task 9")
         src = str(root / "src")
         if src not in sys.path:
             sys.path.insert(0, src)

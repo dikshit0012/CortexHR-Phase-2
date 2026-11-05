@@ -9,7 +9,8 @@ from fastapi.testclient import TestClient
 
 from cortexhr_task10.config import TASK10_ROOT
 
-T8 = TASK10_ROOT.parent / "task 8"
+T8 = TASK10_ROOT.parent / "task08" / "task 8"
+T9 = TASK10_ROOT.parent / "task09" / "cortexhr_task9" / "task 9"
 pytestmark = pytest.mark.skipif(not (T8 / "app" / "main.py").exists(), reason="task 8/app not present")
 
 RESULT = {"result_id": "AN-0001", "source_dataset": "attendance_monthly_features", "record_id": "ATT-1", "employee_id": "EMP-1", "period": "2026-03-01",
@@ -20,7 +21,7 @@ ATT = {"attendance_feature_id": "ATT-1", "employee_id": "EMP-1", "month": "2026-
 
 @pytest.fixture(scope="module")
 def make_app():
-    sys.path.insert(0, str(T8)); sys.path.insert(0, str(T8.parent / "task 9" / "src"))
+    sys.path.insert(0, str(T8)); sys.path.insert(0, str(T9 / "src"))
     from app.main import create_app
     from cortexhr_task9.chat_service import load_chat_service
     chat = load_chat_service()

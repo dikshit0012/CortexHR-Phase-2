@@ -19,8 +19,8 @@ task 10/
     classifier.py    adapter over the Task 9 model      api.py   POST /v1/chat/converse      config.py   settings
   tests/             174 passing tests, 1 expected failure (DLG-04), see §15-16       scripts/run_evidence.py   regenerates reports/
   reports/           evidence (see §17)                   task8_main_py_task10.patch   the 3-line integration into the Task 8 app
-task 8/app/converse.py (new), task 8/app/main.py (+3 lines)   wiring only (reuses the Task 9 model already in memory).
-task 9/tests/test_chat_api.py   ONE assertion changed: the route-set check now allows /v1/chat/converse. Tasks 1-7 and the rest of Task 9 are untouched.
+task08/task 8/app/converse.py (new), task08/task 8/app/main.py (+3 lines)   wiring only (reuses the Task 9 model already in memory).
+task09/cortexhr_task9/task 9/tests/test_chat_api.py   ONE assertion changed: the route-set check now allows /v1/chat/converse. Tasks 1-7 and the rest of Task 9 are untouched.
 ```
 `POST /v1/chat` (Task 9) is unchanged; Task 10 adds `POST /v1/chat/converse` next to it.
 
@@ -31,7 +31,7 @@ python -m uvicorn mock_server:app --port 9000
 ```
 ## 4. Start the CortexHR API
 ```powershell
-cd "<repo>\task 8"
+cd "<repo>\task08\task 8"
 $env:CORTEXHR_HR_BASE_URL       = "http://127.0.0.1:9000"
 $env:CORTEXHR_DEMO_USERS_CSV    = "<starter>\05_Starter\mock_services\mock_data\demo_users.csv"   # REQUIRED for logins; without it every X-Demo-User is rejected (401)
 $env:CORTEXHR_REFERENCE_DATE    = "2026-04-15"     # optional: pin what "last month" means; default = today
@@ -83,8 +83,10 @@ python -m pytest tests/test_official_dialogues.py -v
 ## 16. Run security and regression tests
 ```powershell
 python -m pytest -v                                   # everything in task 10
-cd "<repo>\task 5"; python -m pytest tests            # likewise task 6, task 7 (use the 'tests' folder: task 5 also has a duplicate test file under 'files (1)')
-cd "<repo>\task 9"; python -m pytest                  # 152 passed (needs the full Task 8 app, which is now present)
+cd "<repo>\task05"; python -m pytest tests            # Task 5
+cd "<repo>\task06\task 6"; python -m pytest tests    # Task 6
+cd "<repo>\task07\task 7"; python -m pytest tests    # Task 7
+cd "<repo>\task09\cortexhr_task9\task 9"; python -m pytest  # 152 passed (needs the full Task 8 app, which is now present)
 ```
 ## 17. Evidence (`task 10/reports/`)
 `dialogue_test_report.md/.json` (12 dialogues) · `multi_turn_transcripts.md` (2 transcripts) · `refusal_evidence.md` · `service_call_audit.md` · `slot_extraction_results.md` · `duplicate_names.md` · `test_output.txt` · `regression_task5_to_9_output.txt`. Regenerate with `python scripts/run_evidence.py`.

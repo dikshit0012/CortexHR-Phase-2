@@ -79,7 +79,7 @@ def test_503_when_task10_chat_is_not_loaded():
 
 # ---------------- regression (#31-#33) ----------------
 def test_31_task9_chat_service_answers_exactly_as_before(real_classifier):
-    sys.path.insert(0, str(REPO / "task 9" / "src"))
+    sys.path.insert(0, str(REPO / "task09" / "cortexhr_task9" / "task 9" / "src"))
     from cortexhr_task9.chat_service import load_chat_service
     r = load_chat_service().reply("How long is the notice period?")
     assert r.intent == "notice_period_policy" and abs(r.confidence - 0.9458) < 0.005 and not r.fallback       # value published in Task 9's own evidence
@@ -89,7 +89,7 @@ def test_31b_task10_changes_exactly_one_file_inside_task9():
     pristine = Path("/home/claude/work/t9/task 9")
     if not pristine.exists():
         pytest.skip("pristine Task 9 copy not available")
-    cur = REPO / "task 9"
+    cur = REPO / "task09" / "cortexhr_task9" / "task 9"
     def digest(root):
         return {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in root.rglob("*")
                 if p.is_file() and "__pycache__" not in p.parts and ".pytest_cache" not in p.parts}
