@@ -140,7 +140,7 @@ python -m venv .venv && source .venv/bin/activate        # Windows: .\.venv\Scri
 pip install -r requirements.txt
 # place the confidential unlock_CX-12_resume_protected_attrs.csv in task12/private/  (git-ignored; or set CORTEXHR_TASK12_PRIVATE)
 python scripts/run_task12.py            # full synthetic stress test (31 resumes); add --stress-step 60 for a quicker run
-python -m pytest -q                     # 49 tests
+python -m pytest -q                     # 50 tests
 ```
 Requires `../task11` (code, data, reports). Overrides: `CORTEXHR_TASK11_ROOT`, `CORTEXHR_TASK11_DATA`, `CORTEXHR_TASK12_PAIRS`, `CORTEXHR_TASK12_PRIVATE`, `CORTEXHR_TASK12_REPORTS`.
 Without the confidential file the score audit still runs; protected-value analyses are skipped and reported as unavailable.

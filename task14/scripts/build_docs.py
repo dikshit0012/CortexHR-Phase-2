@@ -122,7 +122,8 @@ def main() -> None:
     top["mean_abs_shap_percentage_points"] = top["mean_abs_shap_percentage_points"].map("{:.2f}".format)
     top.columns = ["feature", "mean |SHAP| (percentage points)", "may be named in reasons"]
     summary = (f"{n_pass} of {n_checks} output checks pass; {tests['passed']} tests passed, {tests['failed']} failed ({tests['when']}). "
-               f"Task 13 files unchanged: {len(sha['files'])} files match the delivered zip (model.joblib sha256 {sha['files']['model_artifacts/attrition-v2/model.joblib'][:16]}...).")
+               f"Task 13 workspace matches its recorded {len(sha['files'])}-file baseline (source: {sha['source']}; "
+               f"model.joblib sha256 {sha['files']['model_artifacts/attrition-v2/model.joblib'][:16]}...).")
     blocks = {
         "PHASE15": ("### Files inspected\n" + insp + "\n### Risk-band distribution\n" + band_table(out, val) + "\n### Ten example employee explanations\n"
                     "Real rows of `attrition_risk_sample_10.csv` (High 4 / Medium 3 / Low 3, evenly spaced by score). Every one requires human review; "
