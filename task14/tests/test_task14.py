@@ -10,7 +10,7 @@ import pytest
 
 from cortexhr_task14 import config
 if config.locate_cortexhr_src() is None:
-    pytest.skip("Task 14 tests require the separately supplied Task 2-4 cortexhr package.", allow_module_level=True)
+    pytest.skip("Task 14 tests require the Task 2-4 cortexhr package (included at task04/src) or CORTEXHR_ML_SRC.", allow_module_level=True)
 
 task13_root = Path(os.environ.get("CORTEXHR_TASK13_ROOT", config.TASK14_ROOT.parent / "task13"))
 if not (task13_root / "model_artifacts" / "attrition-v2" / "model.joblib").is_file():

@@ -53,6 +53,7 @@ def locate_cortexhr_src() -> Path | None:
     if env and (Path(env) / "cortexhr").is_dir():
         return Path(env).resolve()
     candidates = [
+        REPO_ROOT / "task04" / "src",
         REPO_ROOT / "task 4" / "files" / "cortexhr-ml" / "src",
         REPO_ROOT.parent / "Phase 1 All task" / "task 4" / "files" / "cortexhr-ml" / "src",
         REPO_ROOT.parent / "Phase 1 All task" / "task 1" / "cortexhr-ml" / "src",

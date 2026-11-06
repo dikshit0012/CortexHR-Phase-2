@@ -4,12 +4,12 @@ Task 14 scores the current workforce with the Task 13 `attrition-v2` artifact an
 
 ## Prerequisites
 
-1. Obtain the Task 2-4 `cortexhr` source package and the authorized master workbook through approved channels. The Task 2-4 source is not part of this repository.
-2. Set `CORTEXHR_ML_SRC` to the `src` directory containing the `cortexhr` package and `CORTEXHR_WORKBOOK` to the workbook file.
+1. The shared Task 2-4 `cortexhr` package is included at `task04\src`. Obtain the authorized master workbook through approved channels.
+2. Set `CORTEXHR_ML_SRC` to an alternate `src` directory only if you are not using the included package. Set `CORTEXHR_WORKBOOK` to the authorized workbook file.
 3. Use Task 13 to build `attrition-v2` from the same authorized workbook and package. Task 14 discovers the versioned artifact under `task13\model_artifacts\attrition-v2` by default, or accepts `CORTEXHR_TASK13_ROOT`.
 4. Preserve scikit-learn 1.8.x compatibility between the Task 13 artifact build and Task 14. Task 14's requirements constrain scikit-learn to `<1.9`; use the Task 13 requirements and recorded artifact metadata when building.
 
-The Task 2-4 package and master workbook are external prerequisites; a clean clone cannot run Task 14 end to end by itself.
+The authorized master workbook and Task 13 model artifact are external prerequisites; a clean clone cannot run Task 14 end to end by itself.
 
 ## Install, test, and run
 
@@ -21,7 +21,7 @@ python -m venv .venv-task14
 python -m pip install --upgrade pip
 python -m pip install -r task14\requirements.txt
 
-$env:CORTEXHR_ML_SRC = 'C:\approved-source\cortexhr-ml\src'
+$env:CORTEXHR_ML_SRC = (Resolve-Path task04\src).Path
 $env:CORTEXHR_WORKBOOK = 'C:\approved-data\02_CortexHR_AI_ML_Dataset.xlsx'
 $env:CORTEXHR_TASK13_ROOT = (Resolve-Path task13).Path
 

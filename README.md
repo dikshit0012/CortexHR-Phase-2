@@ -1,6 +1,6 @@
-# CortexHR - Tasks 5-15
+# CortexHR - Tasks 1-15
 
-This repository contains the CortexHR AI/ML project work for Tasks 5-15, arranged in numerical order at the repository root. **Phase 2 contains Tasks 5-10; Phase 3 contains Tasks 11-15.** The folders remain at the root so existing cross-task imports and paths continue to work. This is a collection of separate experiments and services, not one install-and-run application. **Tasks 1-4 are not included**, and several projects rely on an authorized workbook, candidate datasets, a separately supplied `cortexhr` package, or locally generated model artifacts.
+This repository contains the CortexHR AI/ML project work for Tasks 1-15, arranged in numerical order at the repository root. **The shared Task 1-4 audit and modeling package is in `task04`; Phase 2 contains Tasks 5-10; Phase 3 contains Tasks 11-15.** The folders remain at the root so existing cross-task imports and paths continue to work. This is a collection of separate experiments and services, not one install-and-run application. Several projects rely on an authorized workbook, candidate datasets, or locally generated model artifacts.
 
 The programs are for research and decision support. They are not production-ready HR systems and must not be used as the sole basis for employment, compensation, or other consequential decisions. Use only approved data and follow your organization's privacy and retention requirements.
 
@@ -8,6 +8,7 @@ The programs are for research and decision support. They are not production-read
 
 | Phase | Folder | Project | Setup and availability |
 |---|---|---|---|
+| Phase 1 | [`task04/`](task04/README.md) | Attrition audit, feature pipeline, baselines, and evaluation package (Tasks 1-4) | Source and tests included. The authorized workbook, row-level outputs, notebooks, and generated reports are omitted. |
 | Phase 2 | [`task05/`](task05/README.md) | Attendance anomaly detection | Source and synthetic tests included. The authorized workbook is needed to run the real-data pipeline. |
 | Phase 2 | [`task06/`](task06/README.md) | Payroll outlier detection | Detailed setup in [`task 6/`](task06/task%206/README.md). Real-data runs need the authorized workbook. |
 | Phase 2 | [`task07/`](task07/README.md) | Explanations for anomaly flags | Detailed setup in [`task 7/`](task07/task%207/README.md). Reuses Tasks 5-6; real-data runs need the workbook. |
@@ -16,8 +17,8 @@ The programs are for research and decision support. They are not production-read
 | Phase 2 | [`task10/`](task10/README.md) | Conversational HR integration | Mock service code is included, but its required CSV data and demo-user table are not. Requires separately approved mock inputs and integration endpoints. |
 | Phase 3 | [`task11/`](task11/README.md) | Resume ranking | Source and synthetic tests included; the job, resume, and label CSVs must be obtained separately. |
 | Phase 3 | [`task12/`](task12/README.md) | Resume fairness audit | Requires Task 11's data and the audit-pair CSV. The optional protected-attribute file is confidential and must stay outside Git. |
-| Phase 3 | [`task13/`](task13/README.md) | Attrition model V2 | Requires the omitted Task 2-4 `cortexhr` package and master workbook; the model artifact must be generated locally. |
-| Phase 3 | [`task14/`](task14/README.md) | Attrition risk explanations | Requires Task 13's locally generated artifact, the Task 2-4 package, and the authorized workbook. |
+| Phase 3 | [`task13/`](task13/README.md) | Attrition model V2 | Uses the shared `cortexhr` package in `task04\src` (set `CORTEXHR_ML_SRC`); the authorized workbook and model artifact must be supplied/generated locally. |
+| Phase 3 | [`task14/`](task14/README.md) | Attrition risk explanations | Requires Task 13's locally generated artifact and the authorized workbook; the shared package is in `task04\src`. |
 | Phase 3 | [`task15/`](task15/README.md) | Fair-pay band recommendations | Requires the salary-training workbook sheet or an approved CSV; the protected-attribute audit input is optional for general training but required for the official fairness audit. |
 
 ## Set up and run
