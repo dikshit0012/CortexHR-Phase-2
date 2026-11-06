@@ -52,3 +52,7 @@ The master workbook, candidate and employee datasets, protected-attribute files,
 ## Scope and verification
 
 The code and existing reports are included as project evidence, but some reports are retained artifacts and cannot be regenerated without the omitted inputs. A clean clone therefore does not make every end-to-end pipeline runnable. Run the synthetic tests first, then run data-backed tests and pipelines only after obtaining the required authorized inputs. Check the relevant task README for known limitations and any data-dependent test exclusions.
+
+## Latest local test evidence
+
+[Phase 3 test report (Tasks 4, 12, 13 and 14; 2026-11-06)](Phase3_Task_Test_Report_2026-11-06.pdf) records the local test results, warning details, and the environment used for Task 13. These results depend on local data and the separately supplied Task 2-4 package; they are not results from a clean-clone CI run.
