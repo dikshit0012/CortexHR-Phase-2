@@ -1,0 +1,176 @@
+{
+  "leakage": {
+    "max_single_feature_cv_auc": 0.6006055302271092,
+    "top_single_feature": "last_engagement_score",
+    "label_shuffle_auc_v2": 0.47128601069911225,
+    "n_suspicious": 0
+  },
+  "nested_choices": [
+    "E09",
+    "E09",
+    "E02",
+    "E10",
+    "E09"
+  ],
+  "audit": {
+    "raw_shape": [
+      2389,
+      42
+    ],
+    "model_table_shape": [
+      2379,
+      33
+    ],
+    "target": "left_within_12m",
+    "target_counts_raw": {
+      "0": 2040,
+      "1": 349
+    },
+    "target_rate_raw": 0.1460862285475094,
+    "target_counts_model": {
+      "0": 2030,
+      "1": 349
+    },
+    "target_rate_model": 0.14670029424127784,
+    "imbalance_ratio_stay_to_leave": 5.8166189111747855,
+    "duplicate_rows_raw": 6,
+    "duplicate_employee_ids_in_model_rows": 0,
+    "row_rules": {
+      "rows_in": 2389,
+      "duplicates_dropped": 6,
+      "negative_tenure_excluded": 4,
+      "rows_out": 2379
+    },
+    "negative_tenure_ids": [
+      "EMP-0248",
+      "EMP-0280",
+      "EMP-0568",
+      "EMP-0596"
+    ],
+    "missing_share_model_inputs_top": {
+      "attendance_rate_change_3m": 0.842,
+      "avg_variable_pay_3m": 0.8407,
+      "avg_unpaid_absence_days_3m": 0.8407,
+      "months_since_last_promotion": 0.6091,
+      "last_engagement_score": 0.2215,
+      "last_raise_pct": 0.0836,
+      "last_performance_rating": 0.0752,
+      "commute_distance_km": 0.0231,
+      "highest_education": 0.0063
+    },
+    "n_input_columns_with_missing": 9,
+    "dtypes_model_inputs": {
+      "float64": 16,
+      "int64": 11,
+      "str": 6
+    },
+    "source_counts": {
+      "historical_extension": 2000,
+      "master_employee_snapshot": 379
+    },
+    "target_rate_by_source": {
+      "historical_extension": 0.1495,
+      "master_employee_snapshot": 0.1319
+    }
+  },
+  "folds": {
+    "n_folds": 5,
+    "seed": 42,
+    "stratified": true,
+    "shuffle": true,
+    "every_row_tested_once": true,
+    "train_test_overlap": false,
+    "identical_to_independent_StratifiedKFold_rebuild": true,
+    "fold_sizes_test": [
+      476,
+      476,
+      476,
+      476,
+      475
+    ],
+    "fold_positive_rates": [
+      0.1471,
+      0.1471,
+      0.1471,
+      0.1471,
+      0.1453
+    ],
+    "fold_fingerprint": "646e474fae66cb0c"
+  },
+  "tuning_selected": "E09",
+  "tuning_best_mean": "E12",
+  "decision": {
+    "ship_gradient_boosting": false,
+    "checks": {
+      "mean_fold_gain_at_least_0.01": true,
+      "bootstrap_ci_excludes_zero_in_favour": false,
+      "wins_at_least_4_of_5_folds": true,
+      "calibration_not_worse": true
+    },
+    "rule": "Ship the more complex model only if the mean per-fold ROC-AUC gain >= 0.01, the paired bootstrap 95% interval excludes 0, it wins >= 4 of 5 folds, and its calibration is not clearly worse.",
+    "paired_vs_LR_balanced": {
+      "roc_auc_diff_per_fold": [
+        0.0131,
+        0.0156,
+        -0.0113,
+        0.0227,
+        0.0124
+      ],
+      "roc_auc_diff_mean": 0.010492916806902675,
+      "roc_auc_diff_sd": 0.012865288427685181,
+      "folds_won": 4,
+      "n_folds": 5,
+      "pr_auc_diff_mean": 0.04353622600430167,
+      "pooled_pr_auc_diff": 0.04113764971205558,
+      "pooled_pr_auc_diff_ci95": [
+        0.0060872186679836295,
+        0.07448424875875824
+      ],
+      "pooled_roc_auc_diff": 0.00800175025053973,
+      "pooled_diff_ci95": [
+        -0.016174254840118314,
+        0.030990555491090428
+      ],
+      "ci_excludes_zero": false,
+      "paired_t_p_value_5_folds": 0.1422586114555074
+    },
+    "paired_calibrated_vs_calibrated": {
+      "roc_auc_diff_per_fold": [
+        0.016,
+        0.0171,
+        -0.0068,
+        0.0242,
+        0.0105
+      ],
+      "roc_auc_diff_mean": 0.012176258809370788,
+      "roc_auc_diff_sd": 0.011672211357848128,
+      "folds_won": 4,
+      "n_folds": 5,
+      "pr_auc_diff_mean": 0.039844470367003094,
+      "pooled_pr_auc_diff": 0.03833685562891759,
+      "pooled_pr_auc_diff_ci95": [
+        0.004040402662123493,
+        0.0700962946389799
+      ],
+      "pooled_roc_auc_diff": 0.012113427526924236,
+      "pooled_diff_ci95": [
+        -0.010422900637724036,
+        0.03402979345939262
+      ],
+      "ci_excludes_zero": false,
+      "paired_t_p_value_5_folds": 0.08002131196657439
+    }
+  },
+  "final_family": "Logistic Regression",
+  "final_calibration": "sigmoid",
+  "version": "attrition-v2",
+  "artifact": "/home/claude/CortexHR--master/task 13/model_artifacts/attrition-v2",
+  "prediction_check": {
+    "n_scored": 430,
+    "p_min": 0.006283226144305284,
+    "p_max": 0.4911102000393389,
+    "p_mean": 0.1277259662717642,
+    "model_version": "attrition-v2"
+  },
+  "runtime_seconds": 187.4
+}

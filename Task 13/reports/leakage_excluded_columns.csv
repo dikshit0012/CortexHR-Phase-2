@@ -1,0 +1,13 @@
+column,category,reason
+left_within_12m,target,it is the target (the answer we are predicting)
+exit_date,leakage (exists only after exit),"it leaks the outcome: it only exists after the person has left (Task 1, D18/D19)"
+resignation_date,leakage (exists only after exit),"it leaks the outcome: it only exists after the person has left (Task 1, D18/D19)"
+exit_reason,leakage (exists only after exit),"it leaks the outcome: it only exists after the person has left (Task 1, D18/D19)"
+exit_interview_done,leakage (exists only after exit),"it leaks the outcome: it only exists after the person has left (Task 1, D18/D19)"
+fnf_settlement_amount,leakage (exists only after exit),"it leaks the outcome: it only exists after the person has left (Task 1, D18/D19)"
+voluntary_left_within_12m,leakage (exists only after exit),"it leaks the outcome: it only exists after the person has left (Task 1, D18/D19)"
+row_id,identifier / non-feature,"it is a row counter, not an employee trait"
+employee_id,identifier / non-feature,it is an identifier (use it only to group or join)
+source,identifier / non-feature,"it records which simulation produced the row, not anything about the employee"
+observation_date,identifier / non-feature,"it is the prediction date; use it for time windows and splits, not as a feature"
+dept_attrition_rate_prior_12m,unconfirmed (open item O2),not confirmed to use only exits before the observation date; off by default

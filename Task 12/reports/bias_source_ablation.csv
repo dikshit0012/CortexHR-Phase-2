@@ -1,0 +1,8 @@
+variant,masked_categories,mean_gap_primary_job,max_gap_primary_job,nonzero_pairs_primary_job,mean_gap_all_jobs,mean_gap_name_only_pairs,mean_gap_name_and_tier_pairs
+nothing masked (raw text),none,0.00046262,0.00273231,25,0.00009167,0.00057170,0.00036193
+e-mail/URL only,email,0.00017852,0.00066306,25,0.00003435,0.00020666,0.00015255
+institution tier only,tier,0.00046661,0.00278280,25,0.00009252,0.00057784,0.00036393
+name only,name,0.00014231,0.00038721,21,0.00002904,0.00015076,0.00013452
+name + e-mail,"email, name",0.00000000,0.00000000,0,0.00000000,0.00000000,0.00000000
+name + e-mail + location,"email, location, name",0.00000000,0.00000000,0,0.00000000,0.00000000,0.00000000
+all categories (task12_fair),"age, email, graduation, location, name, personal, phone, pronoun, tier, title",0.00000000,0.00000000,0,0.00000000,0.00000000,0.00000000

@@ -1,0 +1,302 @@
+{
+  "files": {
+    "training": {
+      "name": "chatbot_nlu_training.csv",
+      "sha256": "06946774c9ef0bf7b2b8351ba7eff6f1f1ece1a9a4cedefdfe5763525abd03df"
+    },
+    "test": {
+      "name": "chatbot_test_set.csv",
+      "sha256": "73c12f1603a6a46999bb9bfc726d2e952d079173c3e50e5167b470127ffc9e31"
+    },
+    "faq": {
+      "name": "hr_faq.csv",
+      "sha256": "52d16f2cb7dad59156d6d3b4a1f5d9059c5a40905b222ce7913d5f285d15e8a0"
+    }
+  },
+  "training": {
+    "rows": 858,
+    "columns": [
+      "example_id",
+      "text",
+      "intent",
+      "entities"
+    ],
+    "unique_intents": 33,
+    "examples_per_intent": {
+      "apply_leave_howto": 26,
+      "attendance_summary": 26,
+      "attrition_risk_query": 26,
+      "chitchat": 26,
+      "goodbye": 26,
+      "greet": 26,
+      "headcount_forecast": 26,
+      "help": 26,
+      "holiday_list": 26,
+      "hr_policy_leave": 26,
+      "insurance_benefits": 26,
+      "leave_balance": 26,
+      "leave_request_status": 26,
+      "my_department": 26,
+      "my_manager": 26,
+      "notice_period_policy": 26,
+      "out_of_scope": 26,
+      "payroll_flags": 26,
+      "payslip_date": 26,
+      "payslip_status": 26,
+      "pf_info": 26,
+      "probation_policy": 26,
+      "reimbursement_policy": 26,
+      "resume_score_request": 26,
+      "salary_band_query": 26,
+      "salary_of_other": 26,
+      "tax_declaration": 26,
+      "team_members": 26,
+      "thanks": 26,
+      "unusual_attendance": 26,
+      "wfh_policy": 26,
+      "who_to_contact": 26,
+      "working_hours": 26
+    },
+    "empty_messages": 0,
+    "empty_intent_labels": 0,
+    "exact_duplicate_message_groups": 7,
+    "rows_in_exact_duplicate_groups": 14,
+    "duplicate_groups_after_typo_correction": 30,
+    "rows_in_groups_after_typo_correction": 60,
+    "conflicting_duplicate_groups": [],
+    "class_imbalance": {
+      "minimum_examples": 26,
+      "maximum_examples": 26,
+      "max_to_min_ratio": 1.0
+    },
+    "text_signal_counts": {
+      "uppercase": 323,
+      "repeated_whitespace": 0,
+      "repeated_punctuation": 0,
+      "known_typo": 149,
+      "informal_wording": 221
+    }
+  },
+  "test": {
+    "rows": 132,
+    "columns": [
+      "test_id",
+      "text",
+      "expected_intent",
+      "expected_entities"
+    ],
+    "empty_messages": 0,
+    "empty_intent_labels": 0
+  },
+  "faq": {
+    "rows": 30,
+    "columns": [
+      "faq_id",
+      "question",
+      "answer",
+      "category",
+      "policy_source"
+    ],
+    "has_intent_column": false
+  },
+  "training_test_overlap": {
+    "exact_after_cleaning_test_rows": 0,
+    "same_base_phrase_after_filler_removal_test_rows": 0,
+    "base_phrase_method": "Exact equality after clean_text and removal of configured filler words; semantic paraphrases are not detected."
+  },
+  "review_sample": {
+    "seed": 42,
+    "rows_reviewed": 25,
+    "messages": [
+      {
+        "example_id": "NLU-0655",
+        "text": "can you tell me who reports to me",
+        "intent": "team_members",
+        "signals": []
+      },
+      {
+        "example_id": "NLU-0115",
+        "text": "salary range for a support executive",
+        "intent": "salary_band_query",
+        "signals": []
+      },
+      {
+        "example_id": "NLU-0026",
+        "text": "quick question: what is your name pls",
+        "intent": "chitchat",
+        "signals": [
+          "informal_wording"
+        ]
+      },
+      {
+        "example_id": "NLU-0760",
+        "text": "I want to know show my payslip for June",
+        "intent": "payslip_status",
+        "signals": [
+          "uppercase"
+        ]
+      },
+      {
+        "example_id": "NLU-0282",
+        "text": "can you tell me hey there",
+        "intent": "greet",
+        "signals": [
+          "informal_wording"
+        ]
+      },
+      {
+        "example_id": "NLU-0251",
+        "text": "what is the pf contribution please",
+        "intent": "pf_info",
+        "signals": []
+      },
+      {
+        "example_id": "NLU-0229",
+        "text": "how many days was I present in July",
+        "intent": "attendance_summary",
+        "signals": [
+          "uppercase"
+        ]
+      },
+      {
+        "example_id": "NLU-0143",
+        "text": "quick question: which epxenses can I claim",
+        "intent": "reimbursement_policy",
+        "signals": [
+          "uppercase",
+          "known_typo"
+        ]
+      },
+      {
+        "example_id": "NLU-0755",
+        "text": "hey, who reports to me urgently",
+        "intent": "team_members",
+        "signals": [
+          "informal_wording"
+        ]
+      },
+      {
+        "example_id": "NLU-0105",
+        "text": "I want to know how many leaves do we get in a year ?",
+        "intent": "hr_policy_leave",
+        "signals": [
+          "uppercase"
+        ]
+      },
+      {
+        "example_id": "NLU-0693",
+        "text": "hey, rmeote work rules",
+        "intent": "wfh_policy",
+        "signals": [
+          "known_typo",
+          "informal_wording"
+        ]
+      },
+      {
+        "example_id": "NLU-0759",
+        "text": "can you tell me which department am I in ?",
+        "intent": "my_department",
+        "signals": [
+          "uppercase"
+        ]
+      },
+      {
+        "example_id": "NLU-0559",
+        "text": "please namaste urgently",
+        "intent": "greet",
+        "signals": []
+      },
+      {
+        "example_id": "NLU-0090",
+        "text": "which of my days look unusual urgently",
+        "intent": "unusual_attendance",
+        "signals": []
+      },
+      {
+        "example_id": "NLU-0605",
+        "text": "plesae talk to you later ?",
+        "intent": "goodbye",
+        "signals": [
+          "known_typo"
+        ]
+      },
+      {
+        "example_id": "NLU-0433",
+        "text": "I want to know salary credit date for May",
+        "intent": "payslip_date",
+        "signals": [
+          "uppercase"
+        ]
+      },
+      {
+        "example_id": "NLU-0033",
+        "text": "hey, what is your name please",
+        "intent": "chitchat",
+        "signals": [
+          "informal_wording"
+        ]
+      },
+      {
+        "example_id": "NLU-0031",
+        "text": "who do I report to",
+        "intent": "my_manager",
+        "signals": [
+          "uppercase"
+        ]
+      },
+      {
+        "example_id": "NLU-0096",
+        "text": "what is the fair pay band for Accountant pls",
+        "intent": "salary_band_query",
+        "signals": [
+          "uppercase",
+          "informal_wording"
+        ]
+      },
+      {
+        "example_id": "NLU-0224",
+        "text": "new regime or old regime please",
+        "intent": "tax_declaration",
+        "signals": []
+      },
+      {
+        "example_id": "NLU-0239",
+        "text": "what is Divya Menon saalry",
+        "intent": "salary_of_other",
+        "signals": [
+          "uppercase",
+          "known_typo"
+        ]
+      },
+      {
+        "example_id": "NLU-0518",
+        "text": "hey, when is the next pbulic holiday",
+        "intent": "holiday_list",
+        "signals": [
+          "known_typo",
+          "informal_wording"
+        ]
+      },
+      {
+        "example_id": "NLU-0617",
+        "text": "please steps to apply for earned laeve",
+        "intent": "apply_leave_howto",
+        "signals": [
+          "known_typo"
+        ]
+      },
+      {
+        "example_id": "NLU-0028",
+        "text": "can you tell me thank you",
+        "intent": "thanks",
+        "signals": []
+      },
+      {
+        "example_id": "NLU-0575",
+        "text": "what happens after probation urgently",
+        "intent": "probation_policy",
+        "signals": []
+      }
+    ]
+  }
+}

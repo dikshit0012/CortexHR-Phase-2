@@ -1,0 +1,4 @@
+Model,MAE,R2,CV_MAE_train_only,CV_R2_train_only,train_MAE,train_R2,selected
+Average-by-role baseline,110298,0.927767,116140,0.927439,113569,0.931235,False
+Linear Regression,82826.1,0.960904,84584.7,0.962297,81168.4,0.965594,False
+Gradient Boosting Regression,60795.9,0.977716,65719.3,0.973177,53964.3,0.985764,True

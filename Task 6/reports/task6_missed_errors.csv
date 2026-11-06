@@ -1,0 +1,4 @@
+record_ref,label,overtime_hours_paid,overtime_eligible,pf_employee,prev_pf_employee,fixed_gross_vs_role_median,gross_vs_expected,employee_other_months_max_ot_hours,employee_other_months_median_ot_hours
+REC-10a77e744fcf0cf7,MISSED_DEDUCTION,0.0,N,0.0,,,1.0,0.0,0.0
+REC-2acf6d9699826454,OVERTIME_SPIKE,6.0,Y,1460.9,1511.28,1.00229211766204,0.9999998985483486,26.0,5.5
+REC-0de0776c1a849b2a,OVERTIME_SPIKE,12.0,Y,1298.52,1298.52,1.0,1.0,10.0,3.5

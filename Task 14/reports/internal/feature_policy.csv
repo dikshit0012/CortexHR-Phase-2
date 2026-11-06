@@ -1,0 +1,34 @@
+feature,label,theme,named_in_reasons,exclusion_reason,missing_value_named
+job_level,Job level,level_role,True,,False
+tenure_months,Length of service,tenure,True,,False
+total_experience_years,Total experience,experience,False,"possible proxy for age (experience accumulates over a working life; age is not in the data, so this is not measured); not cited as a precaution",False
+previous_employers_count,Previous employers,career_history,True,,False
+commute_distance_km,Commute distance,location,False,reveals home location; possible proxy for region / community; not cited as a precaution,False
+annual_fixed_pay,Annual fixed pay,pay_level,True,,False
+comp_ratio,Pay compared with role mid-point,pay_level,True,,False
+raises_received,Pay revisions received,raises,True,,False
+last_raise_pct,Size of latest raise,raises,True,,True
+months_since_last_raise,Time since last raise,raises,True,,False
+promotions_received,Promotions received,promotion,True,,False
+months_since_last_promotion,Time since last promotion,promotion,True,,True
+internal_transfers,Internal transfers,career_history,True,,False
+last_performance_rating,Latest performance rating,performance,True,,False
+last_engagement_score,Latest engagement score,engagement,True,,False
+manager_changes_12m,Manager changes,career_history,True,,False
+training_hours_12m,Training hours,development,True,,False
+attendance_rate_3m,Attendance rate,attendance,True,,False
+late_arrivals_3m,Late arrivals,attendance,True,,False
+avg_overtime_hours_per_month_3m,Overtime hours,workload,True,,False
+avg_hours_worked_3m,Daily hours worked,workload,True,,False
+wfh_share_3m,Work-from-home share,work_arrangement,True,,False
+unpaid_leave_days_6m,Unpaid leave days,leave,False,"leave and absence can reveal health, family or religious circumstances; not cited as a precaution",False
+paid_leave_days_6m,Paid leave days,leave,False,"leave and absence can reveal health, family or religious circumstances; not cited as a precaution",False
+attendance_rate_change_3m,Attendance trend,attendance,True,,False
+avg_unpaid_absence_days_3m,Unpaid absence days,leave,False,"leave and absence can reveal health, family or religious circumstances; not cited as a precaution",False
+avg_variable_pay_3m,Variable pay,pay_level,True,,False
+department_id,Department,level_role,True,,False
+role_id,Role,level_role,True,,False
+work_location,Office location,location,False,possible proxy for region / community background; not cited as a precaution,False
+work_mode,Work mode,work_arrangement,True,,False
+employment_type,Employment type,work_arrangement,True,,False
+highest_education,Highest education,education,False,possible proxy for socio-economic background; not cited as a precaution,False

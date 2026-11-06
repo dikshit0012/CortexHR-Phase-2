@@ -1,0 +1,26 @@
+pair_id,attribute_changed,n_differing_lines,header (candidate name),contact line (e-mail / name),education line (institution tier),other (unintended difference)
+BP-01,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-02,candidate_name (gender-coded) only,2,1,1,0,0
+BP-03,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-04,candidate_name (gender-coded) only,2,1,1,0,0
+BP-05,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-06,candidate_name (gender-coded) only,2,1,1,0,0
+BP-07,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-08,candidate_name (gender-coded) only,2,1,1,0,0
+BP-09,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-10,candidate_name (gender-coded) only,2,1,1,0,0
+BP-11,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-12,candidate_name (gender-coded) only,2,1,1,0,0
+BP-13,candidate_name (gender-coded) and college tier,1,1,0,0,0
+BP-14,candidate_name (gender-coded) only,2,1,1,0,0
+BP-15,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-16,candidate_name (gender-coded) only,2,1,1,0,0
+BP-17,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-18,candidate_name (gender-coded) only,2,1,1,0,0
+BP-19,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-20,candidate_name (gender-coded) only,1,1,0,0,0
+BP-21,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-22,candidate_name (gender-coded) only,2,1,1,0,0
+BP-23,candidate_name (gender-coded) and college tier,3,1,1,1,0
+BP-24,candidate_name (gender-coded) only,2,1,1,0,0
+BP-25,candidate_name (gender-coded) and college tier,3,1,1,1,0

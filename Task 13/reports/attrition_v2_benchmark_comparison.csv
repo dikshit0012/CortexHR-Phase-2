@@ -1,0 +1,13 @@
+row_type,model,roc_auc_mean,roc_auc_std,pr_auc_mean,precision_mean,recall_mean,f1_mean,accuracy_mean,comment,diff_roc_auc_vs_official,diff_pr_auc_vs_official
+official_benchmark,Dummy (always stays),0.5,0.0,0.146,0.0,0.0,0.0,0.854,Looks 85% accurate yet catches nobody: why accuracy alone misleads,,
+official_benchmark,Logistic Regression (class_weight=balanced),0.713,0.01,0.332,0.26,0.63,0.368,0.683,Clean features only (reference target),,
+official_benchmark,"Decision Tree (depth 4, balanced)",0.65,0.019,0.256,0.234,0.524,0.322,0.676,Clean features only (reference target),,
+official_benchmark,"Random Forest (300 trees, balanced)",0.715,0.018,0.336,0.523,0.089,0.151,0.854,Clean features only (reference target),,
+official_benchmark,LEAKY Logistic Regression (adds exit information),1.0,0.0,1.0,1.0,1.0,1.0,1.0,Too good to be true: this is data leakage,,
+reproduced_baseline,Dummy (always stays),0.5,0.0,0.1467,0.0,0.0,0.0,0.8533,compare with official row: Dummy (always stays),0.0,0.0007
+reproduced_baseline,Logistic Regression (balanced) [Task 3 baseline],0.7121,0.0184,0.3087,0.2648,0.6334,0.373,0.6864,compare with official row: Logistic Regression (class_weight=balanced),-0.0009,-0.0233
+reproduced_baseline,"Decision Tree (depth 4, balanced)",0.6544,0.0378,0.255,0.2364,0.5246,0.3248,0.6814,"compare with official row: Decision Tree (depth 4, balanced)",0.0044,-0.001
+reproduced_baseline,"Random Forest (300 trees, balanced)",0.7063,0.0217,0.3043,0.5,0.0086,0.0169,0.8541,"compare with official row: Random Forest (300 trees, balanced)",-0.0087,-0.0317
+new_model,"LightGBM V2 (brief defaults, E00)",0.7086,0.0211,0.3118,0.3054,0.3553,0.3279,0.7856,no official counterpart; compare with the official Logistic Regression / Random Forest rows,,
+new_model,LightGBM tuned (config picked on the same folds; optimistic),0.7265,0.0195,0.3597,0.2756,0.6305,0.3826,0.7015,no official counterpart; compare with the official Logistic Regression / Random Forest rows,,
+new_model,Tuned V2 (nested CV; honest),0.7226,0.0207,0.3522,0.2744,0.6048,0.3755,0.7062,no official counterpart; compare with the official Logistic Regression / Random Forest rows,,

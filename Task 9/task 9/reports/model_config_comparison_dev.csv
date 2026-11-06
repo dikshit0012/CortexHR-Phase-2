@@ -1,0 +1,7 @@
+config,dev_accuracy,dev_macro_f1,dev_accuracy_with_injected_typos,mean_max_probability,share_answered_at_0.60,accuracy_when_answered_at_0.60
+"word-only, C=1 (brief baseline)",0.5478,0.5455,0.4767,0.1513,0.0047,1.0000
+"word-only, C=10",0.5501,0.5464,0.4790,0.3931,0.2587,0.9324
+"word-only, C=30",0.5524,0.5489,0.4802,0.4797,0.3683,0.9114
+"word+char, C=1",0.6072,0.6014,0.5559,0.2581,0.0501,1.0000
+"word+char, C=10",0.5979,0.5931,0.5478,0.4874,0.3974,0.9296
+"word+char, C=30",0.5991,0.5921,0.5490,0.5617,0.4767,0.9095

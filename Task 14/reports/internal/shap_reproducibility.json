@@ -1,0 +1,12 @@
+{
+  "employees_recomputed": 86,
+  "of": 430,
+  "max_abs_difference": 4.999819742251832e-11,
+  "identical_top3_sets": 86,
+  "base_value_new": 0.12882972900916745,
+  "settings": {
+    "nsamples": 1500,
+    "seed": 42,
+    "background_rows": 40
+  }
+}

@@ -1,0 +1,11 @@
+perturbation,screener,n_resumes,mean_gap,max_gap,non_zero,above_tolerance_0.01
+age_and_date_of_birth_disclosed,task11_text_only,31,0.00823194,0.01455414,31,10
+age_and_date_of_birth_disclosed,task12_fair,31,0.00000000,0.00000000,0,0
+gender_and_marital_status_disclosed,task11_text_only,31,0.00472860,0.00832576,31,0
+gender_and_marital_status_disclosed,task12_fair,31,0.00000000,0.00000000,0,0
+graduation_year_old_vs_recent,task11_text_only,31,0.00149957,0.00265084,31,0
+graduation_year_old_vs_recent,task12_fair,31,0.00000000,0.00000000,0,0
+gendered_title_Mr_vs_Ms,task11_text_only,31,0.00097556,0.00239033,31,0
+gendered_title_Mr_vs_Ms,task12_fair,31,0.00000000,0.00000000,0,0
+pronouns_he_vs_she,task11_text_only,31,0.00000000,0.00000000,0,0
+pronouns_he_vs_she,task12_fair,31,0.00000000,0.00000000,0,0

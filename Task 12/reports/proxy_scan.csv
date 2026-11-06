@@ -1,0 +1,3 @@
+attribute,versus,chi2,dof,p_value,cramers_v,note
+inferred_gender,target_job_family,5.19088295,9,0.81736108,0.16750769,small expected counts; descriptive only
+college_tier,target_job_family,15.36834897,18,0.63653905,0.20380402,small expected counts; descriptive only

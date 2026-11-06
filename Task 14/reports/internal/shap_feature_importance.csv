@@ -1,0 +1,34 @@
+feature,label,mean_abs_shap,mean_abs_shap_percentage_points,named_in_reasons,share_of_total
+job_level,Job level,0.0341908730626,3.41908730626,True,0.102472155207
+total_experience_years,Total experience,0.0296843604277,2.96843604277,False,0.0889658589125
+tenure_months,Length of service,0.0287061841012,2.87061841012,True,0.0860342041353
+last_engagement_score,Latest engagement score,0.0251866567653,2.51866567653,True,0.0754859636515
+comp_ratio,Pay compared with role mid-point,0.0223560240784,2.23560240784,True,0.0670023829163
+manager_changes_12m,Manager changes,0.019611675417,1.9611675417,True,0.0587774007271
+role_id,Role,0.0195726046016,1.95726046016,True,0.0586603030839
+work_mode,Work mode,0.0165310239167,1.65310239167,True,0.0495444981892
+last_raise_pct,Size of latest raise,0.0143701399437,1.43701399437,True,0.0430681956548
+highest_education,Highest education,0.0127886489891,1.27886489891,False,0.0383283697291
+avg_overtime_hours_per_month_3m,Overtime hours,0.0126093420088,1.26093420088,True,0.037790975651
+department_id,Department,0.0109260404833,1.09260404833,True,0.0327460171653
+attendance_rate_change_3m,Attendance trend,0.0100778164035,1.00778164035,True,0.0302038372861
+commute_distance_km,Commute distance,0.00980388307837,0.980388307837,False,0.0293828422165
+last_performance_rating,Latest performance rating,0.00970125692419,0.970125692419,True,0.0290752653032
+annual_fixed_pay,Annual fixed pay,0.00958243852349,0.958243852349,True,0.0287191592285
+work_location,Office location,0.00909296427698,0.909296427698,False,0.0272521747246
+avg_hours_worked_3m,Daily hours worked,0.00857677789116,0.857677789116,True,0.0257051322917
+months_since_last_raise,Time since last raise,0.0049175567793,0.49175567793,True,0.0147382209459
+previous_employers_count,Previous employers,0.00481148434488,0.481148434488,True,0.0144203153182
+unpaid_leave_days_6m,Unpaid leave days,0.00369696627698,0.369696627698,False,0.0110800359335
+avg_variable_pay_3m,Variable pay,0.00309808940279,0.309808940279,True,0.00928516500729
+employment_type,Employment type,0.00266454671186,0.266454671186,True,0.00798581082488
+paid_leave_days_6m,Paid leave days,0.00222345874488,0.222345874488,False,0.00666384298483
+late_arrivals_3m,Late arrivals,0.00143540301302,0.143540301302,True,0.00430199135502
+avg_unpaid_absence_days_3m,Unpaid absence days,0.0014348787107,0.14348787107,False,0.00430041998862
+attendance_rate_3m,Attendance rate,0.00132611088465,0.132611088465,True,0.00397443610596
+promotions_received,Promotions received,0.00111288166233,0.111288166233,True,0.00333537497626
+internal_transfers,Internal transfers,0.00098654615907,0.098654615907,True,0.00295673968157
+training_hours_12m,Training hours,0.000864655095814,0.0864655095814,True,0.00259142464765
+wfh_share_3m,Work-from-home share,0.000605365306512,0.0605365306512,True,0.00181431715805
+months_since_last_promotion,Time since last promotion,0.000575303816047,0.0575303816047,True,0.00172422101715
+raises_received,Pay revisions received,0.00053817644,0.053817644,True,0.0016129479814

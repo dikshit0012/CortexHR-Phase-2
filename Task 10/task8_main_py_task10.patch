@@ -1,0 +1,26 @@
+--- /tmp/main_before.py	2026-10-30 03:15:08.942346165 +0000
++++ app/main.py	2026-10-30 03:15:08.957432994 +0000
+@@ -25,6 +25,7 @@
+ from .bootstrap import load_service
+ from .chat import load_chat_service_safely, router as chat_router
+ from .config import Settings
++from .converse import attach_converse, converse_router
+ from .schemas import (AnomalyResult, AttendanceBatchRequest, AttendanceRecord, BatchResponse, PayrollBatchRequest,
+                       PayrollRecord)
+ from .scoring import AnomalyService
+@@ -109,6 +110,7 @@
+         log.info("models loaded: %s, %s", app.state.service.attendance.version, app.state.service.payroll.version)
+         # Task 9: the chat model is loaded once too. If it is unavailable only /v1/chat answers 503; the anomaly endpoints are unaffected.
+         app.state.chat = chat_service if chat_service is not None else load_chat_service_safely()
++        attach_converse(app)                                                     # Task 10 (own failure domain)
+         yield
+         app.state.service = None
+         app.state.chat = None
+@@ -119,6 +121,7 @@
+     app.state.chat = None
+     app.include_router(router)
+     app.include_router(chat_router)
++    app.include_router(converse_router())                                       # Task 10: POST /v1/chat/converse
+ 
+     @app.exception_handler(RequestValidationError)
+     async def _validation_error(_: Request, exc: RequestValidationError):

@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "attendance_feature_id": "AF-EX-0101",
+      "employee_id": "EMP-0002",
+      "month": "2026-10-01",
+      "scheduled_days": 21,
+      "present_days": 20,
+      "half_days_unpaid": 0,
+      "paid_leave_days": 1,
+      "unpaid_absence_days": 0,
+      "longest_unpaid_streak_days": 0,
+      "late_arrivals": 1,
+      "avg_hours_worked": 8.6,
+      "overtime_hours": 2.0,
+      "attendance_rate": 0.9524,
+      "wfh_days": 4,
+      "job_level": 4,
+      "department_id": "D08"
+    },
+    {
+      "attendance_feature_id": "AF-EX-0102",
+      "employee_id": "EMP-0004",
+      "month": "2026-10-01",
+      "scheduled_days": 21,
+      "present_days": 0,
+      "half_days_unpaid": 0,
+      "paid_leave_days": 0,
+      "unpaid_absence_days": 21,
+      "longest_unpaid_streak_days": 21,
+      "late_arrivals": 0,
+      "avg_hours_worked": 0.0,
+      "overtime_hours": 0.0,
+      "attendance_rate": 0.0,
+      "wfh_days": 4,
+      "job_level": 4,
+      "department_id": "D08"
+    },
+    {
+      "attendance_feature_id": "AF-EX-0103",
+      "employee_id": "EMP-0006",
+      "month": "2026-10-01",
+      "scheduled_days": 21,
+      "present_days": 19,
+      "half_days_unpaid": 0,
+      "paid_leave_days": 2,
+      "unpaid_absence_days": 0,
+      "longest_unpaid_streak_days": 0,
+      "late_arrivals": 1,
+      "avg_hours_worked": 8.6,
+      "overtime_hours": 2.0,
+      "attendance_rate": 0.9048,
+      "wfh_days": 4,
+      "job_level": 4,
+      "department_id": "D08"
+    }
+  ]
+}

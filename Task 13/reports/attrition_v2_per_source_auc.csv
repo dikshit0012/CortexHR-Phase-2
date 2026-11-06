@@ -1,0 +1,9 @@
+model,auc_historical_extension,auc_master_employee_snapshot
+Dummy (always stays),0.5,0.5
+Logistic Regression (unweighted),0.7093,0.6896
+Logistic Regression (balanced) [Task 3 baseline],0.7142,0.6883
+"Decision Tree (depth 4, balanced)",0.6561,0.5657
+"Random Forest (300 trees, balanced)",0.7082,0.683
+"LightGBM V2 (brief defaults, E00)",0.7078,0.7069
+LightGBM tuned (config picked on the same folds; optimistic),0.7279,0.7097
+Tuned V2 (nested CV; honest),0.7218,0.701

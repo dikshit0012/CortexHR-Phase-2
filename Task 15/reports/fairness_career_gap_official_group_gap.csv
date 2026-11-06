@@ -1,0 +1,28 @@
+model,grouping,quantity,max_gap_between_group_means,group_means,dropped_missing
+Average-by-role baseline,career_gap,actual salary (historical pay),235416,"Career gap 12+ months=610,232; Career gap 3-9 months=755,579; No career gap=845,648",0
+Average-by-role baseline,career_gap,predicted salary (model),156333,"Career gap 12+ months=680,155; Career gap 3-9 months=771,276; No career gap=836,488",0
+Average-by-role baseline,career_gap,signed error (predicted - actual),79082.8,"Career gap 12+ months=69,923; Career gap 3-9 months=15,698; No career gap=-9,160",0
+Average-by-role baseline,career_gap,absolute error,19593.2,"Career gap 12+ months=109,341; Career gap 3-9 months=92,280; No career gap=111,873",0
+Average-by-role baseline,career_gap,actual pay vs role band (ratio),0.0382735,Career gap 12+ months=0.956; Career gap 3-9 months=0.994; No career gap=0.993,0
+Average-by-role baseline,career_gap,predicted pay vs role band (ratio),0.0169662,Career gap 12+ months=1.015; Career gap 3-9 months=1.025; No career gap=1.008,0
+Average-by-role baseline,career_gap,recommended mid,156333,"Career gap 12+ months=680,155; Career gap 3-9 months=771,276; No career gap=836,488",0
+Average-by-role baseline,career_gap,recommended low,125549,"Career gap 12+ months=538,142; Career gap 3-9 months=608,074; No career gap=663,691",0
+Average-by-role baseline,career_gap,recommended high,189183,"Career gap 12+ months=833,434; Career gap 3-9 months=944,235; No career gap=1,022,617",0
+Linear Regression,career_gap,actual salary (historical pay),235416,"Career gap 12+ months=610,232; Career gap 3-9 months=755,579; No career gap=845,648",0
+Linear Regression,career_gap,predicted salary (model),162515,"Career gap 12+ months=679,467; Career gap 3-9 months=766,456; No career gap=841,982",0
+Linear Regression,career_gap,signed error (predicted - actual),72900.4,"Career gap 12+ months=69,235; Career gap 3-9 months=10,877; No career gap=-3,665",0
+Linear Regression,career_gap,absolute error,16652.3,"Career gap 12+ months=95,971; Career gap 3-9 months=79,319; No career gap=82,077",0
+Linear Regression,career_gap,actual pay vs role band (ratio),0.0382735,Career gap 12+ months=0.956; Career gap 3-9 months=0.994; No career gap=0.993,0
+Linear Regression,career_gap,predicted pay vs role band (ratio),0.0156857,Career gap 12+ months=1.006; Career gap 3-9 months=1.007; No career gap=0.991,0
+Linear Regression,career_gap,recommended mid,162573,"Career gap 12+ months=679,467; Career gap 3-9 months=766,456; No career gap=842,041",0
+Linear Regression,career_gap,recommended low,147435,"Career gap 12+ months=567,062; Career gap 3-9 months=645,479; No career gap=714,497",0
+Linear Regression,career_gap,recommended high,164643,"Career gap 12+ months=845,747; Career gap 3-9 months=942,264; No career gap=1,010,390",0
+Gradient Boosting Regression,career_gap,actual salary (historical pay),235416,"Career gap 12+ months=610,232; Career gap 3-9 months=755,579; No career gap=845,648",0
+Gradient Boosting Regression,career_gap,predicted salary (model),180257,"Career gap 12+ months=661,041; Career gap 3-9 months=750,839; No career gap=841,298",0
+Gradient Boosting Regression,career_gap,signed error (predicted - actual),55548.8,"Career gap 12+ months=50,809; Career gap 3-9 months=-4,740; No career gap=-4,350",0
+Gradient Boosting Regression,career_gap,absolute error,11590.3,"Career gap 12+ months=70,196; Career gap 3-9 months=58,606; No career gap=60,233",0
+Gradient Boosting Regression,career_gap,actual pay vs role band (ratio),0.0382735,Career gap 12+ months=0.956; Career gap 3-9 months=0.994; No career gap=0.993,0
+Gradient Boosting Regression,career_gap,predicted pay vs role band (ratio),0.0348318,Career gap 12+ months=1.019; Career gap 3-9 months=0.984; No career gap=0.996,0
+Gradient Boosting Regression,career_gap,recommended mid,180257,"Career gap 12+ months=661,041; Career gap 3-9 months=750,839; No career gap=841,298",0
+Gradient Boosting Regression,career_gap,recommended low,160850,"Career gap 12+ months=571,123; Career gap 3-9 months=649,417; No career gap=731,973",0
+Gradient Boosting Regression,career_gap,recommended high,196387,"Career gap 12+ months=747,991; Career gap 3-9 months=846,197; No career gap=944,377",0

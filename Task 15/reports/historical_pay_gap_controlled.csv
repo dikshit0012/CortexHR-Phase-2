@@ -1,0 +1,5 @@
+group,reference,n_group,n_reference,pay_difference_pct,ci95_low_pct,ci95_high_pct,interval_excludes_zero,grouping
+Career gap 12+ months,No career gap,199,2549,-3.99769,-4.98595,-2.86095,True,career_gap
+Career gap 3-9 months,No career gap,186,2549,-1.10957,-2.43771,0.214564,False,career_gap
+Female,Male,1222,1652,-1.49961,-2.09495,-0.910989,True,gender
+Other,Male,60,1652,0.525485,-1.5969,2.13143,False,gender

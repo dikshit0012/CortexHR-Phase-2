@@ -1,0 +1,4 @@
+variant,cv_mae_train_only,mae,r2,label_correction_factors,career_gap: signed-error gap (INR),career_gap: predicted-vs-role-band gap (ratio),gender: signed-error gap (INR),gender: predicted-vs-role-band gap (ratio)
+M0 original (historical labels),65719.3,60795.9,0.977716,,55548.8,0.0348318,23756.8,0.016981
+M1 label correction for career-gap pay difference,,60746.3,0.977865,Career gap 12+ months: x1.0425; Career gap 3-9 months: x1.0132,58911.4,0.0359381,24083.4,0.0136067
+M2 drop work_location and highest_education,64802.9,60250,0.978141,,57390.3,0.0369806,22713.7,0.013263

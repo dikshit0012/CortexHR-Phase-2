@@ -1,0 +1,9 @@
+# Task 15 - fair pay bands
+pandas>=2.2,<4
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+openpyxl>=3.1
+matplotlib>=3.8
+joblib>=1.3
+pytest>=8.0

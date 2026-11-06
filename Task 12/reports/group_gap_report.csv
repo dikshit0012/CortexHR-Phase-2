@@ -1,0 +1,13 @@
+screener,scope,attribute,group_means,max_group_gap
+task11_as_shipped,twin_resumes_only (50),inferred_gender,"{""Female"": 0.356299, ""Male"": 0.356299}",0.00000000
+task11_as_shipped,twin_resumes_only (50),college_tier,"{""Tier 1"": 0.431741, ""Tier 2"": 0.309128, ""Tier 3"": 0.292489}",0.13925212
+task11_as_shipped,all_resumes (185),inferred_gender,"{""Female"": 0.377473, ""Male"": 0.363186}",0.01428704
+task11_as_shipped,all_resumes (185),college_tier,"{""Tier 1"": 0.38244, ""Tier 2"": 0.349737, ""Tier 3"": 0.379628}",0.03270376
+task11_text_only,twin_resumes_only (50),inferred_gender,"{""Female"": 0.356805, ""Male"": 0.356859}",0.00005421
+task11_text_only,twin_resumes_only (50),college_tier,"{""Tier 1"": 0.43262, ""Tier 2"": 0.305778, ""Tier 3"": 0.297242}",0.13537798
+task11_text_only,all_resumes (185),inferred_gender,"{""Female"": 0.375535, ""Male"": 0.361782}",0.01375301
+task11_text_only,all_resumes (185),college_tier,"{""Tier 1"": 0.380865, ""Tier 2"": 0.346885, ""Tier 3"": 0.379326}",0.03397949
+task12_fair,twin_resumes_only (50),inferred_gender,"{""Female"": 0.360186, ""Male"": 0.360186}",0.00000000
+task12_fair,twin_resumes_only (50),college_tier,"{""Tier 1"": 0.436506, ""Tier 2"": 0.308976, ""Tier 3"": 0.299927}",0.13657823
+task12_fair,all_resumes (185),inferred_gender,"{""Female"": 0.379227, ""Male"": 0.365467}",0.01375974
+task12_fair,all_resumes (185),college_tier,"{""Tier 1"": 0.384752, ""Tier 2"": 0.350384, ""Tier 3"": 0.383071}",0.03436819

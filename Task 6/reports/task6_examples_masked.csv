@@ -1,0 +1,9 @@
+record_ref,employee_ref,month,error_type_label,gross_pay,net_pay,gross_vs_expected,fixed_gross_vs_role_median,detection_reasons
+REC-46a9d0f29e12d43c,EMP-836d04ad52f96b7f,2025-05,DOUBLE_PAYMENT,178808.0,157942.92,1.0,0.75,"possible duplicate payment (same employee, month and identical amounts as another payslip)"
+REC-cf3c255be3730b26,EMP-0af5f811c5caea84,2025-05,DOUBLE_PAYMENT,151737.0,136809.04,1.0,1.083,"possible duplicate payment (same employee, month and identical amounts as another payslip)"
+REC-2e75127c88585ea8,EMP-eee37b4a0248e69f,2025-06,MISSED_DEDUCTION,145428.0,133612.31,1.0,0.967,provident fund is 0 although it was deducted last month
+REC-7712bb95e77058ef,EMP-af7c80e077406ca3,2025-08,MISSED_DEDUCTION,109666.19,104131.09,1.0,1.116,provident fund is 0 although it was deducted last month
+REC-81a023deca0057ea,EMP-510ad43753a5999c,2025-05,STALE_SALARY,126527.28,114846.94,0.88,1.263,gross pay does not reconcile with fixed pay + overtime + variable pay
+REC-dd27032878270c3b,EMP-d3b9ac3846899fd7,2025-05,STALE_SALARY,232085.04,191662.5,0.88,0.894,gross pay does not reconcile with fixed pay + overtime + variable pay
+REC-0bda126b20a07207,EMP-22d2929f7ca77fc6,2025-08,ZERO_PAY,0.0,0.0,0.0,0.941,zero net pay although the employee had payable days; gross pay does not reconcile with fixed pay + overtime + variable pay
+REC-c31443ffadf2e726,EMP-ccbb476be66f84fb,2026-03,ZERO_PAY,0.0,0.0,0.0,0.919,zero net pay although the employee had payable days; gross pay does not reconcile with fixed pay + overtime + variable pay

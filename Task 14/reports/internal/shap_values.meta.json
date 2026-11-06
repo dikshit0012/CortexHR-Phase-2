@@ -1,0 +1,12 @@
+{
+  "fingerprint": "d3c780e5142b34ab",
+  "settings": {
+    "explainer": "shap.KernelExplainer",
+    "output": "attrition-v2 predict_proba[:, 1] (probability units)",
+    "background_rows": 40,
+    "nsamples": 1500,
+    "seed": 42,
+    "features": 33,
+    "feature_masking": "whole input features (pipeline-aware)"
+  }
+}

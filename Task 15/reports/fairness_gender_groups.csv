@@ -1,0 +1,10 @@
+model,grouping,group,n,reliable_n,mean_actual_salary,mean_predicted_salary,mean_signed_error,mean_signed_error_pct_of_actual,mae,mean_actual_vs_role_band,mean_predicted_vs_role_band,mean_rec_low,mean_rec_mid,mean_rec_high
+Average-by-role baseline,gender,Female,246,True,799998,808966,8968.69,2.91126,102751,0.981038,1.00349,641965,808967,989332
+Average-by-role baseline,gender,Male,330,True,839974,829866,-10108.6,2.36331,117833,0.997246,1.01473,657801,829866,1.01465e+06
+Average-by-role baseline,gender,Other,11,False,836786,833164,-3622.47,-0.650814,53050.3,0.998902,0.992686,657387,833164,1.01869e+06
+Linear Regression,gender,Female,246,True,799998,817725,17727.5,2.36057,83325.8,0.981038,0.996979,691481,817725,988727
+Linear Regression,gender,Male,330,True,839974,831045,-8929.08,-0.0677945,83584.6,0.997246,0.990575,705106,831134,998412
+Linear Regression,gender,Other,11,False,836786,833231,-3555.08,0.524466,48897.4,0.998902,0.999532,711303,833231,995366
+Gradient Boosting Regression,gender,Female,246,True,799998,813156,13158.5,2.29039,58808.5,0.981038,0.996655,706947,813156,914045
+Gradient Boosting Regression,gender,Male,330,True,839974,829376,-10598.3,0.681909,62850.1,0.997246,0.997928,720991,829376,931250
+Gradient Boosting Regression,gender,Other,11,False,836786,827434,-9351.98,-1.50793,43615.4,0.998902,0.980947,720995,827434,927536

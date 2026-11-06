@@ -1,0 +1,16 @@
+feature,gain,gain_share
+num__last_engagement_score,1407.0174,0.2154
+num__months_since_last_raise,1324.1526,0.2027
+num__commute_distance_km,498.9921,0.0764
+num__manager_changes_12m,471.4549,0.0722
+num__wfh_share_3m,449.3165,0.0688
+num__tenure_months,439.9285,0.0674
+num__comp_ratio,428.9733,0.0657
+num__last_performance_rating,315.3217,0.0483
+num__avg_overtime_hours_per_month_3m,173.6883,0.0266
+num__last_raise_pct,152.5188,0.0234
+num__late_arrivals_3m,118.3016,0.0181
+num__avg_hours_worked_3m,110.3882,0.0169
+cat__highest_education_B.E. Electronics,94.9194,0.0145
+cat__employment_type_Fixed-Term Contract,75.9184,0.0116
+num__months_since_last_promotion,66.8045,0.0102

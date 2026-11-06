@@ -1,0 +1,23 @@
+column,decision,reason
+role_id,allowed,the job itself: the main driver of the value of a role
+job_level,allowed,responsibility level (1 Associate ... 7 CEO)
+department_id,allowed,function / pay market of the role
+prior_experience_years,allowed,relevant experience before joining; a standard pay factor
+market_index,allowed,pay-inflation index (5.5% a year): converts hire-year pay to a common price level; not a person attribute
+work_location,allowed (governed),"cost-of-labour category; may proxy for region, so it is evaluated and can be removed (mitigation M2)"
+highest_education,allowed (governed),"qualification; may proxy for socio-economic background, so it is evaluated and can be removed (mitigation M2)"
+career_gap_months,audit-only,required for fairness testing; using it would build a past pay penalty into recommendations
+gender,audit-only,"protected attribute from unlock_CX-15; fairness analysis only, never a predictive input"
+age_years,audit-only,"protected attribute from unlock_CX-15; fairness analysis only, never a predictive input"
+age_band,audit-only,"protected attribute from unlock_CX-15; fairness analysis only, never a predictive input"
+person_ref,audit-only,unlock_CX-15 join key; used only to link authorized audit labels and never a predictive input
+record_type,audit-only,unlock_CX-15 provenance metadata; never a predictive input
+band_min_2026,excluded,"2026 role band: circular (target / (band_mid x market_index) averages 0.99, log-correlation 0.99); it is the pay structure being recommended, and role_id already carries the role information"
+band_mid_2026,excluded,as above
+band_max_2026,excluded,as above
+hire_date,excluded,date of joining; replaced by market_index (avoids a duplicate time trend and date-derived age signals)
+hire_year,excluded,redundant with market_index
+skills_count,excluded,documented as a noise variable; no job-relevant meaning
+source,excluded,"data provenance (real vs extension rows), not a job attribute"
+hire_id,excluded,identifier
+offered_annual_fixed,target,"annual fixed pay offered at hire (INR, nominal)"

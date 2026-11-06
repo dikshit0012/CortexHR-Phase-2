@@ -1,0 +1,28 @@
+model,grouping,quantity,max_gap_between_group_means,group_means,dropped_missing
+Average-by-role baseline,gender,actual salary (historical pay),39976.6,"Female=799,998; Male=839,974; Other=836,786",0
+Average-by-role baseline,gender,predicted salary (model),24197.2,"Female=808,966; Male=829,866; Other=833,164",0
+Average-by-role baseline,gender,signed error (predicted - actual),19077.3,"Female=8,969; Male=-10,109; Other=-3,622",0
+Average-by-role baseline,gender,absolute error,64782.7,"Female=102,751; Male=117,833; Other=53,050",0
+Average-by-role baseline,gender,actual pay vs role band (ratio),0.0178638,Female=0.981; Male=0.997; Other=0.999,0
+Average-by-role baseline,gender,predicted pay vs role band (ratio),0.0220445,Female=1.003; Male=1.015; Other=0.993,0
+Average-by-role baseline,gender,recommended mid,24197.1,"Female=808,967; Male=829,866; Other=833,164",0
+Average-by-role baseline,gender,recommended low,15836.3,"Female=641,965; Male=657,801; Other=657,387",0
+Average-by-role baseline,gender,recommended high,29361.6,"Female=989,332; Male=1,014,654; Other=1,018,693",0
+Linear Regression,gender,actual salary (historical pay),39976.6,"Female=799,998; Male=839,974; Other=836,786",0
+Linear Regression,gender,predicted salary (model),15505.8,"Female=817,725; Male=831,045; Other=833,231",0
+Linear Regression,gender,signed error (predicted - actual),26656.6,"Female=17,727; Male=-8,929; Other=-3,555",0
+Linear Regression,gender,absolute error,34687.2,"Female=83,326; Male=83,585; Other=48,897",0
+Linear Regression,gender,actual pay vs role band (ratio),0.0178638,Female=0.981; Male=0.997; Other=0.999,0
+Linear Regression,gender,predicted pay vs role band (ratio),0.00895727,Female=0.997; Male=0.991; Other=1.000,0
+Linear Regression,gender,recommended mid,15506,"Female=817,725; Male=831,134; Other=833,231",0
+Linear Regression,gender,recommended low,19822.7,"Female=691,481; Male=705,106; Other=711,303",0
+Linear Regression,gender,recommended high,9684.35,"Female=988,727; Male=998,412; Other=995,366",0
+Gradient Boosting Regression,gender,actual salary (historical pay),39976.6,"Female=799,998; Male=839,974; Other=836,786",0
+Gradient Boosting Regression,gender,predicted salary (model),16219.8,"Female=813,156; Male=829,376; Other=827,434",0
+Gradient Boosting Regression,gender,signed error (predicted - actual),23756.8,"Female=13,158; Male=-10,598; Other=-9,352",0
+Gradient Boosting Regression,gender,absolute error,19234.7,"Female=58,808; Male=62,850; Other=43,615",0
+Gradient Boosting Regression,gender,actual pay vs role band (ratio),0.0178638,Female=0.981; Male=0.997; Other=0.999,0
+Gradient Boosting Regression,gender,predicted pay vs role band (ratio),0.016981,Female=0.997; Male=0.998; Other=0.981,0
+Gradient Boosting Regression,gender,recommended mid,16219.7,"Female=813,156; Male=829,376; Other=827,434",0
+Gradient Boosting Regression,gender,recommended low,14048.4,"Female=706,947; Male=720,991; Other=720,995",0
+Gradient Boosting Regression,gender,recommended high,17204.3,"Female=914,045; Male=931,250; Other=927,536",0

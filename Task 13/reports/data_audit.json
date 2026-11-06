@@ -1,0 +1,61 @@
+{
+  "raw_shape": [
+    2389,
+    42
+  ],
+  "model_table_shape": [
+    2379,
+    33
+  ],
+  "target": "left_within_12m",
+  "target_counts_raw": {
+    "0": 2040,
+    "1": 349
+  },
+  "target_rate_raw": 0.1460862285475094,
+  "target_counts_model": {
+    "0": 2030,
+    "1": 349
+  },
+  "target_rate_model": 0.14670029424127784,
+  "imbalance_ratio_stay_to_leave": 5.8166189111747855,
+  "duplicate_rows_raw": 6,
+  "duplicate_employee_ids_in_model_rows": 0,
+  "row_rules": {
+    "rows_in": 2389,
+    "duplicates_dropped": 6,
+    "negative_tenure_excluded": 4,
+    "rows_out": 2379
+  },
+  "negative_tenure_ids": [
+    "EMP-0248",
+    "EMP-0280",
+    "EMP-0568",
+    "EMP-0596"
+  ],
+  "missing_share_model_inputs_top": {
+    "attendance_rate_change_3m": 0.842,
+    "avg_variable_pay_3m": 0.8407,
+    "avg_unpaid_absence_days_3m": 0.8407,
+    "months_since_last_promotion": 0.6091,
+    "last_engagement_score": 0.2215,
+    "last_raise_pct": 0.0836,
+    "last_performance_rating": 0.0752,
+    "commute_distance_km": 0.0231,
+    "highest_education": 0.0063
+  },
+  "n_input_columns_with_missing": 9,
+  "dtypes_model_inputs": {
+    "float64": 16,
+    "int64": 11,
+    "str": 6
+  },
+  "source_counts": {
+    "historical_extension": 2000,
+    "master_employee_snapshot": 379
+  },
+  "target_rate_by_source": {
+    "historical_extension": 0.1495,
+    "master_employee_snapshot": 0.1319
+  }
+}

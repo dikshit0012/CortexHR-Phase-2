@@ -1,0 +1,6 @@
+# Confidential validation data (04_Validation_Vault / unlock_CX-12) and reports that contain per-resume protected values
+private/
+reports/private/
+task12_PRIVATE_do_not_commit.zip
+__pycache__/
+.pytest_cache/

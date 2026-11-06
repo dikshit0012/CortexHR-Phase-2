@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+models/*.joblib
+models/*.joblib.tmp
+models/*.metadata.json
+*.xlsx

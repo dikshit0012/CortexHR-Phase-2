@@ -1,0 +1,17 @@
+# Task 8 - Anomaly Service. The Task 5-7 packages are imported from the repository (see app/_paths.py).
+# Artifacts record the scikit-learn version they were built with; the service refuses to start on a mismatch,
+# so run scripts/build_artifacts.py in the same environment you serve from.
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.1
+httpx2==2.16.0        # used by Starlette's TestClient
+joblib==1.6.0
+numpy==2.5.4
+pandas==3.1.0
+scikit-learn==1.9.1
+scipy==1.18.1
+openpyxl==3.1.5
+threadpoolctl==3.7.0
+python-dateutil==3.0.0
+tzdata==2026.5
+pytest==9.2.0

@@ -1,0 +1,139 @@
+{
+  "job_descriptions": {
+    "rows": 10,
+    "columns": [
+      "job_id",
+      "job_title",
+      "department_id",
+      "job_level",
+      "min_experience_years",
+      "required_skills",
+      "nice_to_have_skills",
+      "education_preference",
+      "work_location",
+      "openings",
+      "description_text"
+    ],
+    "missing_values": {
+      "job_id": 0,
+      "job_title": 0,
+      "department_id": 0,
+      "job_level": 0,
+      "min_experience_years": 0,
+      "required_skills": 0,
+      "nice_to_have_skills": 0,
+      "education_preference": 0,
+      "work_location": 0,
+      "openings": 0,
+      "description_text": 0
+    }
+  },
+  "resumes": {
+    "rows": 185,
+    "columns": [
+      "resume_id",
+      "candidate_name",
+      "email",
+      "city",
+      "total_experience_years",
+      "current_title",
+      "current_company",
+      "highest_education",
+      "college_tier",
+      "skills",
+      "certifications",
+      "source_format",
+      "layout_difficulty",
+      "target_job_family",
+      "resume_text"
+    ],
+    "missing_values": {
+      "resume_id": 0,
+      "candidate_name": 0,
+      "email": 0,
+      "city": 0,
+      "total_experience_years": 0,
+      "current_title": 0,
+      "current_company": 0,
+      "highest_education": 0,
+      "college_tier": 0,
+      "skills": 0,
+      "certifications": 114,
+      "source_format": 0,
+      "layout_difficulty": 0,
+      "target_job_family": 0,
+      "resume_text": 0
+    },
+    "layout_difficulty_counts": {
+      "Clean": 96,
+      "Two-column": 25,
+      "Tables": 25,
+      "Missing sections": 21,
+      "All-caps": 18
+    }
+  },
+  "resume_job_labels": {
+    "rows": 555,
+    "columns": [
+      "resume_id",
+      "job_id",
+      "human_suitability_score",
+      "shortlist",
+      "required_skill_coverage",
+      "nice_skill_coverage",
+      "reviewer_note"
+    ],
+    "missing_values": {
+      "resume_id": 0,
+      "job_id": 0,
+      "human_suitability_score": 0,
+      "shortlist": 0,
+      "required_skill_coverage": 0,
+      "nice_skill_coverage": 0,
+      "reviewer_note": 0
+    },
+    "score_counts": {
+      "1": 106,
+      "2": 274,
+      "3": 80,
+      "4": 72,
+      "5": 23
+    },
+    "shortlist_counts": {
+      "N": 460,
+      "Y": 95
+    },
+    "labelled_resumes": 185,
+    "labelled_pairs_per_job": {
+      "J01": 64,
+      "J02": 47,
+      "J03": 60,
+      "J04": 62,
+      "J05": 57,
+      "J06": 49,
+      "J07": 49,
+      "J08": 55,
+      "J09": 57,
+      "J10": 55
+    },
+    "shortlisted_per_job": {
+      "J01": 7,
+      "J02": 3,
+      "J03": 12,
+      "J04": 16,
+      "J05": 9,
+      "J06": 6,
+      "J07": 8,
+      "J08": 9,
+      "J09": 14,
+      "J10": 11
+    },
+    "shortlist_equals_score_ge_4": true
+  },
+  "relationships": {
+    "possible_resume_job_pairs": 1850,
+    "labelled_pairs": 555,
+    "labelled_fraction_of_possible_pairs": 0.3,
+    "note": "Only a subset of resume-job pairs carries a human label; evaluation uses that labelled pool per job. Unlabelled pairs are NOT treated as non-relevant."
+  }
+}

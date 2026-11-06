@@ -1,0 +1,6 @@
+# Task 12 fairness audit. Reuses Task 11 (../task11/src) - no copy of its code.
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.3
+scipy>=1.11
+pytest>=7.0

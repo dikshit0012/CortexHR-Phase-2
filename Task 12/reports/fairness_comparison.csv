@@ -1,0 +1,25 @@
+scope,before_screener,after_screener,metric,before,after,improvement_absolute,improvement_pct
+primary_job_25_pairs,task11_as_shipped,task12_fair,Average twin gap,0.00000000,0.00000000,0.00000000,
+primary_job_25_pairs,task11_as_shipped,task12_fair,Median twin gap,0.00000000,0.00000000,0.00000000,
+primary_job_25_pairs,task11_as_shipped,task12_fair,Maximum twin gap,0.00000000,0.00000000,0.00000000,
+primary_job_25_pairs,task11_as_shipped,task12_fair,Minimum twin gap,0.00000000,0.00000000,0.00000000,
+primary_job_25_pairs,task11_as_shipped,task12_fair,Non-zero gap pairs,0.00000000,0.00000000,0.00000000,
+primary_job_25_pairs,task11_as_shipped,task12_fair,Pairs above tolerance (0.01),0.00000000,0.00000000,0.00000000,
+primary_job_25_pairs,task11_text_only,task12_fair,Average twin gap,0.00017996,0.00000000,0.00017996,100.00000000
+primary_job_25_pairs,task11_text_only,task12_fair,Median twin gap,0.00015195,0.00000000,0.00015195,100.00000000
+primary_job_25_pairs,task11_text_only,task12_fair,Maximum twin gap,0.00067665,0.00000000,0.00067665,100.00000000
+primary_job_25_pairs,task11_text_only,task12_fair,Minimum twin gap,0.00000392,0.00000000,0.00000392,100.00000000
+primary_job_25_pairs,task11_text_only,task12_fair,Non-zero gap pairs,25.00000000,0.00000000,25.00000000,100.00000000
+primary_job_25_pairs,task11_text_only,task12_fair,Pairs above tolerance (0.01),0.00000000,0.00000000,0.00000000,
+all_10_jobs_250_comparisons,task11_as_shipped,task12_fair,Average twin gap,0.00000000,0.00000000,0.00000000,
+all_10_jobs_250_comparisons,task11_as_shipped,task12_fair,Median twin gap,0.00000000,0.00000000,0.00000000,
+all_10_jobs_250_comparisons,task11_as_shipped,task12_fair,Maximum twin gap,0.00000000,0.00000000,0.00000000,
+all_10_jobs_250_comparisons,task11_as_shipped,task12_fair,Minimum twin gap,0.00000000,0.00000000,0.00000000,
+all_10_jobs_250_comparisons,task11_as_shipped,task12_fair,Non-zero gap pairs,0.00000000,0.00000000,0.00000000,
+all_10_jobs_250_comparisons,task11_as_shipped,task12_fair,Pairs above tolerance (0.01),0.00000000,0.00000000,0.00000000,
+all_10_jobs_250_comparisons,task11_text_only,task12_fair,Average twin gap,0.00003466,0.00000000,0.00003466,100.00000000
+all_10_jobs_250_comparisons,task11_text_only,task12_fair,Median twin gap,0.00001132,0.00000000,0.00001132,100.00000000
+all_10_jobs_250_comparisons,task11_text_only,task12_fair,Maximum twin gap,0.00067665,0.00000000,0.00067665,100.00000000
+all_10_jobs_250_comparisons,task11_text_only,task12_fair,Minimum twin gap,0.00000020,0.00000000,0.00000020,100.00000000
+all_10_jobs_250_comparisons,task11_text_only,task12_fair,Non-zero gap pairs,250.00000000,0.00000000,250.00000000,100.00000000
+all_10_jobs_250_comparisons,task11_text_only,task12_fair,Pairs above tolerance (0.01),0.00000000,0.00000000,0.00000000,

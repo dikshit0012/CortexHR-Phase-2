@@ -1,0 +1,10 @@
+model,grouping,group,n,reliable_n,mean_actual_salary,mean_predicted_salary,mean_signed_error,mean_signed_error_pct_of_actual,mae,mean_actual_vs_role_band,mean_predicted_vs_role_band,mean_rec_low,mean_rec_mid,mean_rec_high
+Average-by-role baseline,career_gap,Career gap 12+ months,40,True,610232,680155,69923.2,7.07451,109341,0.955663,1.01476,538142,680155,833434
+Average-by-role baseline,career_gap,Career gap 3-9 months,42,True,755579,771276,15697.8,3.50673,92279.6,0.993936,1.02489,608074,771276,944235
+Average-by-role baseline,career_gap,No career gap,505,True,845648,836488,-9159.62,2.09631,111873,0.992956,1.00793,663691,836488,1.02262e+06
+Linear Regression,career_gap,Career gap 12+ months,40,True,610232,679467,69235.1,6.10793,95971.5,0.955663,1.0064,567062,679467,845747
+Linear Regression,career_gap,Career gap 3-9 months,42,True,755579,766456,10877.4,2.05985,79319.2,0.993936,1.00696,645479,766456,942264
+Linear Regression,career_gap,No career gap,505,True,845648,841982,-3665.33,0.461912,82076.6,0.992956,0.991274,714497,842041,1.01039e+06
+Gradient Boosting Regression,career_gap,Career gap 12+ months,40,True,610232,661041,50809,7.55258,70196.5,0.955663,1.01911,571123,661041,747991
+Gradient Boosting Regression,career_gap,Career gap 3-9 months,42,True,755579,750839,-4739.77,-0.374535,58606.2,0.993936,0.98428,649417,750839,846197
+Gradient Boosting Regression,career_gap,No career gap,505,True,845648,841298,-4349.76,0.961396,60233.4,0.992956,0.996396,731973,841298,944377

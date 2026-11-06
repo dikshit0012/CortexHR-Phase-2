@@ -1,0 +1,94 @@
+{
+  "feature": "total_experience_years",
+  "employees": 430,
+  "importance": {
+    "rank_of_33": 2,
+    "mean_abs_shap_pp": 2.968436042767441,
+    "share_of_total_abs_shap": 0.08896585891246177,
+    "top_features_pp": {
+      "job_level": 3.419087306255814,
+      "total_experience_years": 2.968436042767441,
+      "tenure_months": 2.870618410116279,
+      "last_engagement_score": 2.5186656765348836,
+      "comp_ratio": 2.2356024078372094
+    },
+    "direction": {
+      "spearman_value_vs_shap": 0.9834657320273721,
+      "meaning": "positive = more recorded experience -> higher model risk"
+    }
+  },
+  "relationships_in_scoring_data": {
+    "spearman_with_tenure_months": 0.5033998312104702,
+    "spearman_with_job_level": 0.6469269931169686,
+    "spearman_with_annual_fixed_pay": 0.5927022872446731,
+    "spearman_with_previous_employers_count": 0.1609935031629636,
+    "experience_less_than_tenure_rows": 17,
+    "min_max_total_experience_years": [
+      0.0,
+      31.8
+    ],
+    "median_total_experience_years": 8.6
+  },
+  "logistic_coefficient_per_sd_by_member": [
+    0.7614051645416968,
+    0.4376018802380286,
+    0.748845774891643,
+    0.49732761498163575,
+    0.397643668653469
+  ],
+  "what_if_everyone_at_median_experience": {
+    "mean_abs_change_pp": 2.987444515940567,
+    "max_abs_change_pp": 15.989933550936792,
+    "spearman_scores": 0.9021443888222066,
+    "employees_whose_band_changes": 82,
+    "top43_overlap": 28,
+    "note": "model unchanged; only the input is altered for this what-if"
+  },
+  "what_if_mean_abs_change_pp_all_features_top8": {
+    "job_level": 3.8652544229170056,
+    "tenure_months": 3.2279794738320793,
+    "total_experience_years": 2.987444515940567,
+    "last_engagement_score": 2.6181742633863836,
+    "role_id": 2.4651238571237566,
+    "annual_fixed_pay": 2.4419954324395943,
+    "comp_ratio": 2.3697901608581438,
+    "work_mode": 1.439582660798374
+  },
+  "what_if_rank_of_feature": 3,
+  "if_it_were_not_suppressed": {
+    "employees_with_it_in_top3_risk_raising": 128,
+    "employees_with_it_as_top_driver": 65,
+    "employees_where_it_is_a_risk_raising_contribution_of_at_least_0.5pp": 164,
+    "mean_abs_contribution_pp": 2.968436042767441
+  },
+  "all_excluded_features": {
+    "features": [
+      "total_experience_years",
+      "commute_distance_km",
+      "unpaid_leave_days_6m",
+      "paid_leave_days_6m",
+      "avg_unpaid_absence_days_3m",
+      "work_location",
+      "highest_education"
+    ],
+    "mean_abs_shap_pp_total": 6.872516050465115,
+    "employees_where_largest_contributor_is_excluded": 77,
+    "of_which_total_experience_years": 55
+  },
+  "training_table_association": {
+    "rows": 2379,
+    "leavers": 349,
+    "univariate_auc_total_experience_years": 0.491878272897935,
+    "coef_per_sd_with_tenure_and_job_level": {
+      "tenure_months": -0.3455859675028959,
+      "job_level": -0.2657992957103804,
+      "total_experience_years": 0.3335633388141081
+    },
+    "bootstrap_95ci_experience_coef": [
+      -0.0007202737170971967,
+      0.5895684999990778
+    ],
+    "note": "association in the training table, not causation; tenure and job level are correlated with experience"
+  },
+  "age_data_available": false
+}

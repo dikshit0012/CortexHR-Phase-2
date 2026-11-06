@@ -1,0 +1,284 @@
+{
+  "tolerance": 0.01,
+  "n_pairs": 25,
+  "attributes_in_pairs": {
+    "candidate_name (gender-coded) and college tier": 13,
+    "candidate_name (gender-coded) only": 12
+  },
+  "protected_attributes_available": [
+    "inferred_gender",
+    "college_tier"
+  ],
+  "primary_job_gap_summary": {
+    "task11_as_shipped": {
+      "n_pairs": 25,
+      "average_gap": 0.0,
+      "median_gap": 0.0,
+      "maximum_gap": 0.0,
+      "minimum_gap": 0.0,
+      "non_zero_gap_pairs": 0,
+      "pairs_exceeding_tolerance": 0,
+      "tolerance": 0.01
+    },
+    "task11_text_only": {
+      "n_pairs": 25,
+      "average_gap": 0.0001799584723491926,
+      "median_gap": 0.00015195496606396075,
+      "maximum_gap": 0.0006766491495946991,
+      "minimum_gap": 3.92212996450092e-06,
+      "non_zero_gap_pairs": 25,
+      "pairs_exceeding_tolerance": 0,
+      "tolerance": 0.01
+    },
+    "task12_fair": {
+      "n_pairs": 25,
+      "average_gap": 0.0,
+      "median_gap": 0.0,
+      "maximum_gap": 0.0,
+      "minimum_gap": 0.0,
+      "non_zero_gap_pairs": 0,
+      "pairs_exceeding_tolerance": 0,
+      "tolerance": 0.01
+    }
+  },
+  "all_jobs_gap_summary": {
+    "task11_as_shipped": {
+      "n_pairs": 250,
+      "average_gap": 0.0,
+      "median_gap": 0.0,
+      "maximum_gap": 0.0,
+      "minimum_gap": 0.0,
+      "non_zero_gap_pairs": 0,
+      "pairs_exceeding_tolerance": 0,
+      "tolerance": 0.01
+    },
+    "task11_text_only": {
+      "n_pairs": 250,
+      "average_gap": 3.465589198017653e-05,
+      "median_gap": 1.1316268971592325e-05,
+      "maximum_gap": 0.0006766491495946991,
+      "minimum_gap": 2.020584075662548e-07,
+      "non_zero_gap_pairs": 250,
+      "pairs_exceeding_tolerance": 0,
+      "tolerance": 0.01
+    },
+    "task12_fair": {
+      "n_pairs": 250,
+      "average_gap": 0.0,
+      "median_gap": 0.0,
+      "maximum_gap": 0.0,
+      "minimum_gap": 0.0,
+      "non_zero_gap_pairs": 0,
+      "pairs_exceeding_tolerance": 0,
+      "tolerance": 0.01
+    }
+  },
+  "gap_reduction_pct_primary": {
+    "task11_as_shipped": null,
+    "task11_text_only": 100.0
+  },
+  "gap_reduction_pct_all_jobs": {
+    "task11_as_shipped": null,
+    "task11_text_only": 100.0
+  },
+  "ranking_quality": {
+    "task11_as_shipped": {
+      "top5_hits": 46,
+      "precision_at_5": 0.9199999999999999,
+      "recall_at_5": 0.5380140692640691,
+      "ndcg_at_5": 0.9115312843448976
+    },
+    "task11_text_only": {
+      "top5_hits": 46,
+      "precision_at_5": 0.9199999999999999,
+      "recall_at_5": 0.5380140692640691,
+      "ndcg_at_5": 0.9225995863535079
+    },
+    "task12_fair": {
+      "top5_hits": 46,
+      "precision_at_5": 0.9199999999999999,
+      "recall_at_5": 0.5380140692640691,
+      "ndcg_at_5": 0.9212512768424009
+    }
+  },
+  "top5_sets_changed_vs_as_shipped": {
+    "task11_text_only_vs_task11_as_shipped": 3,
+    "task12_fair_vs_task11_as_shipped": 3
+  },
+  "component_gaps_all_jobs": {
+    "task11_as_shipped": {
+      "mean_tfidf_gap": 0.0,
+      "mean_skill_overlap_gap": 0.0
+    },
+    "task11_text_only": {
+      "mean_tfidf_gap": 5.775981996696093e-05,
+      "mean_skill_overlap_gap": 0.0
+    },
+    "task12_fair": {
+      "mean_tfidf_gap": 0.0,
+      "mean_skill_overlap_gap": 0.0
+    }
+  },
+  "job_stratified_group_analysis": {
+    "inferred_gender": {
+      "min_group_size": 3,
+      "jobs_with_comparable_groups": 10,
+      "jobs_without_comparable_groups": 0,
+      "equal_job_weighted_mean_gap": 0.041330886909866374,
+      "maximum_within_job_gap": {
+        "job_id": "J02",
+        "max_group_gap": 0.06893331441961534
+      },
+      "mean_job_centered_score_by_group": {
+        "Female": 0.011446459814987217,
+        "Male": -0.007630973209991462
+      },
+      "mean_job_centered_skill_overlap_by_group": {
+        "Female": 0.023998642656537405,
+        "Male": -0.015999095104358266
+      },
+      "mean_job_centered_human_score_by_group": {
+        "Female": 0.08438313028096314,
+        "Male": -0.05625542018730869
+      }
+    },
+    "college_tier": {
+      "min_group_size": 3,
+      "jobs_with_comparable_groups": 9,
+      "jobs_without_comparable_groups": 1,
+      "equal_job_weighted_mean_gap": 0.10993948140095872,
+      "maximum_within_job_gap": {
+        "job_id": "J08",
+        "max_group_gap": 0.20545560842500565
+      },
+      "mean_job_centered_score_by_group": {
+        "Tier 1": 0.011644907770740766,
+        "Tier 2": -0.019030094041084723,
+        "Tier 3": 0.012008249171549534
+      },
+      "mean_job_centered_skill_overlap_by_group": {
+        "Tier 1": 0.015569071816118009,
+        "Tier 2": -0.031419686811829134,
+        "Tier 3": 0.02258328068692441
+      },
+      "mean_job_centered_human_score_by_group": {
+        "Tier 1": 0.09201121454944039,
+        "Tier 2": -0.09316328230556632,
+        "Tier 3": 0.032400669704194404
+      }
+    }
+  },
+  "extraction_consistency": {
+    "task11_as_shipped": {
+      "pair_job_comparisons": 250,
+      "inconsistent_skill_extraction": 0,
+      "inconsistent_experience_extraction": 0
+    },
+    "task11_text_only": {
+      "pair_job_comparisons": 250,
+      "inconsistent_skill_extraction": 0,
+      "inconsistent_experience_extraction": 0
+    },
+    "task12_fair": {
+      "pair_job_comparisons": 250,
+      "inconsistent_skill_extraction": 0,
+      "inconsistent_experience_extraction": 0
+    }
+  },
+  "ablation": [
+    {
+      "variant": "nothing masked (raw text)",
+      "masked_categories": "none",
+      "mean_gap_primary_job": 0.00046261749472723267,
+      "max_gap_primary_job": 0.0027323087195007534,
+      "nonzero_pairs_primary_job": 25,
+      "mean_gap_all_jobs": 9.16717042715218e-05,
+      "mean_gap_name_only_pairs": 0.0005717002424044104,
+      "mean_gap_name_and_tier_pairs": 0.0003619257276406071
+    },
+    {
+      "variant": "e-mail/URL only",
+      "masked_categories": "email",
+      "mean_gap_primary_job": 0.0001785193506906019,
+      "max_gap_primary_job": 0.000663064824832027,
+      "nonzero_pairs_primary_job": 25,
+      "mean_gap_all_jobs": 3.435043943151537e-05,
+      "mean_gap_name_only_pairs": 0.00020665671745436395,
+      "mean_gap_name_and_tier_pairs": 0.0001525463967548215
+    },
+    {
+      "variant": "institution tier only",
+      "masked_categories": "tier",
+      "mean_gap_primary_job": 0.0004666052280858202,
+      "max_gap_primary_job": 0.0027827999176753826,
+      "nonzero_pairs_primary_job": 25,
+      "mean_gap_all_jobs": 9.252456656426669e-05,
+      "mean_gap_name_only_pairs": 0.0005778394183871745,
+      "mean_gap_name_and_tier_pairs": 0.00036392751396149305
+    },
+    {
+      "variant": "name only",
+      "masked_categories": "name",
+      "mean_gap_primary_job": 0.00014231481855134952,
+      "max_gap_primary_job": 0.000387211784582675,
+      "nonzero_pairs_primary_job": 21,
+      "mean_gap_all_jobs": 2.9041842154749798e-05,
+      "mean_gap_name_only_pairs": 0.00015075805190427685,
+      "mean_gap_name_and_tier_pairs": 0.00013452106468710894
+    },
+    {
+      "variant": "name + e-mail",
+      "masked_categories": "email, name",
+      "mean_gap_primary_job": 0.0,
+      "max_gap_primary_job": 0.0,
+      "nonzero_pairs_primary_job": 0,
+      "mean_gap_all_jobs": 0.0,
+      "mean_gap_name_only_pairs": 0.0,
+      "mean_gap_name_and_tier_pairs": 0.0
+    },
+    {
+      "variant": "name + e-mail + location",
+      "masked_categories": "email, location, name",
+      "mean_gap_primary_job": 0.0,
+      "max_gap_primary_job": 0.0,
+      "nonzero_pairs_primary_job": 0,
+      "mean_gap_all_jobs": 0.0,
+      "mean_gap_name_only_pairs": 0.0,
+      "mean_gap_name_and_tier_pairs": 0.0
+    },
+    {
+      "variant": "all categories (task12_fair)",
+      "masked_categories": "age, email, graduation, location, name, personal, phone, pronoun, tier, title",
+      "mean_gap_primary_job": 0.0,
+      "max_gap_primary_job": 0.0,
+      "nonzero_pairs_primary_job": 0,
+      "mean_gap_all_jobs": 0.0,
+      "mean_gap_name_only_pairs": 0.0,
+      "mean_gap_name_and_tier_pairs": 0.0
+    }
+  ],
+  "unintended_text_differences_total": 0,
+  "gender_direction": {
+    "task11_as_shipped": {
+      "mean_male_minus_female_score": 0.0,
+      "pairs_male_coded_higher": 0,
+      "pairs_female_coded_higher": 0,
+      "pairs_tied": 25,
+      "sign_test_p": null
+    },
+    "task11_text_only": {
+      "mean_male_minus_female_score": 5.420566969244922e-05,
+      "pairs_male_coded_higher": 13,
+      "pairs_female_coded_higher": 12,
+      "pairs_tied": 0,
+      "sign_test_p": 1.0
+    },
+    "task12_fair": {
+      "mean_male_minus_female_score": 0.0,
+      "pairs_male_coded_higher": 0,
+      "pairs_female_coded_higher": 0,
+      "pairs_tied": 25,
+      "sign_test_p": null
+    }
+  }
+}

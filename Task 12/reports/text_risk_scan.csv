@@ -1,0 +1,11 @@
+category,resumes_containing,of_resumes,testable_with_supplied_twins
+age,0,185,False
+email,185,185,True
+graduation,0,185,False
+location,185,185,True
+name,185,185,True
+personal,0,185,False
+phone,0,185,False
+pronoun,0,185,False
+tier,173,185,True
+title,0,185,False

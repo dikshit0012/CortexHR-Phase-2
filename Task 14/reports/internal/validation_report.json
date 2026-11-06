@@ -1,0 +1,329 @@
+{
+  "model": {
+    "model_version": "attrition-v2",
+    "estimator": "CalibratedClassifierCV",
+    "classes": [
+      0,
+      1
+    ],
+    "ensemble_members": 5,
+    "n_features": 33,
+    "feature_list": [
+      "job_level",
+      "tenure_months",
+      "total_experience_years",
+      "previous_employers_count",
+      "commute_distance_km",
+      "annual_fixed_pay",
+      "comp_ratio",
+      "raises_received",
+      "last_raise_pct",
+      "months_since_last_raise",
+      "promotions_received",
+      "months_since_last_promotion",
+      "internal_transfers",
+      "last_performance_rating",
+      "last_engagement_score",
+      "manager_changes_12m",
+      "training_hours_12m",
+      "attendance_rate_3m",
+      "late_arrivals_3m",
+      "avg_overtime_hours_per_month_3m",
+      "avg_hours_worked_3m",
+      "wfh_share_3m",
+      "unpaid_leave_days_6m",
+      "paid_leave_days_6m",
+      "attendance_rate_change_3m",
+      "avg_unpaid_absence_days_3m",
+      "avg_variable_pay_3m",
+      "department_id",
+      "role_id",
+      "work_location",
+      "work_mode",
+      "employment_type",
+      "highest_education"
+    ],
+    "calibration": "sigmoid",
+    "classifier": "LogisticRegression",
+    "trained_at_utc": "2026-11-02T08:58:38+00:00",
+    "trained_with_sklearn": "1.8.0",
+    "running_sklearn": "1.9.0"
+  },
+  "employees": 430,
+  "risk_bands": {
+    "counts": {
+      "Low": 301,
+      "Medium": 86,
+      "High": 43
+    },
+    "high_cutoff_p90": 0.23850670146701197,
+    "medium_cutoff_p70": 0.14859128423521975,
+    "min_score_by_band": {
+      "High": 0.23998631565617723,
+      "Low": 0.006283226144305284,
+      "Medium": 0.14872081491503392
+    },
+    "max_score_by_band": {
+      "High": 0.4911102000393389,
+      "Low": 0.14853577108672797,
+      "Medium": 0.238342299890438
+    },
+    "consistent": true
+  },
+  "missing_values_in_scoring_data": {
+    "last_raise_pct": 96,
+    "months_since_last_promotion": 393,
+    "last_performance_rating": 97,
+    "last_engagement_score": 73,
+    "attendance_rate_change_3m": 17
+  },
+  "shap": {
+    "explainer": "shap.KernelExplainer",
+    "output": "attrition-v2 predict_proba[:, 1] (probability units)",
+    "background_rows": 40,
+    "nsamples": 1500,
+    "seed": 42,
+    "features": 33,
+    "feature_masking": "whole input features (pipeline-aware)",
+    "from_cache": true
+  },
+  "shap_base_value": 0.12882972900916745,
+  "shap_max_additivity_error": 5.419881765611478e-10,
+  "probability_summary": {
+    "count": 430.0,
+    "mean": 0.1277259662717642,
+    "std": 0.0829550180411722,
+    "min": 0.006283226144305284,
+    "25%": 0.07003617936422796,
+    "50%": 0.10769094961163503,
+    "75%": 0.16350967710260716,
+    "max": 0.4911102000393389
+  },
+  "reasons": {
+    "employees_with_all_three_reasons": 430,
+    "employees_with_fewer": 0,
+    "employees_with_3_risk_raising_reasons": 386,
+    "employees_with_0_risk_raising_reasons": 1,
+    "materiality_threshold": 0.005
+  },
+  "top_features": [
+    {
+      "feature": "job_level",
+      "mean_abs_shap_percentage_points": 3.419087306255814,
+      "named_in_reasons": true
+    },
+    {
+      "feature": "total_experience_years",
+      "mean_abs_shap_percentage_points": 2.968436042767441,
+      "named_in_reasons": false
+    },
+    {
+      "feature": "tenure_months",
+      "mean_abs_shap_percentage_points": 2.870618410116279,
+      "named_in_reasons": true
+    },
+    {
+      "feature": "last_engagement_score",
+      "mean_abs_shap_percentage_points": 2.5186656765348836,
+      "named_in_reasons": true
+    },
+    {
+      "feature": "comp_ratio",
+      "mean_abs_shap_percentage_points": 2.2356024078372094,
+      "named_in_reasons": true
+    },
+    {
+      "feature": "manager_changes_12m",
+      "mean_abs_shap_percentage_points": 1.9611675416976744,
+      "named_in_reasons": true
+    },
+    {
+      "feature": "role_id",
+      "mean_abs_shap_percentage_points": 1.9572604601627903,
+      "named_in_reasons": true
+    },
+    {
+      "feature": "work_mode",
+      "mean_abs_shap_percentage_points": 1.6531023916744187,
+      "named_in_reasons": true
+    },
+    {
+      "feature": "last_raise_pct",
+      "mean_abs_shap_percentage_points": 1.437013994372093,
+      "named_in_reasons": true
+    },
+    {
+      "feature": "highest_education",
+      "mean_abs_shap_percentage_points": 1.2788648989069766,
+      "named_in_reasons": false
+    }
+  ],
+  "counterfactual_direction_check": {
+    "employees_checked": 429,
+    "prediction_decreased": 428,
+    "share": 0.9976689976689976,
+    "note": "informational: replacing the top risk-raising feature by its typical value should usually lower the prediction"
+  },
+  "explanation_stability": {
+    "employees": 12,
+    "nsamples_reference": 6000,
+    "nsamples_used": 1500,
+    "identical_top3_sets": 12,
+    "mean_top3_overlap": 1.0,
+    "max_abs_difference": 0.0014820113403712927
+  },
+  "validation": [
+    {
+      "check": "exactly 430 employees",
+      "passed": true,
+      "evidence": 430
+    },
+    {
+      "check": "columns and order match the official sample",
+      "passed": true,
+      "evidence": [
+        "prediction_id",
+        "employee_id",
+        "department_id",
+        "as_of_date",
+        "risk_score_12m",
+        "risk_band",
+        "top_reason_1",
+        "top_reason_2",
+        "top_reason_3",
+        "model_version",
+        "model_note"
+      ]
+    },
+    {
+      "check": "employee ids preserved (same set, same order)",
+      "passed": true,
+      "evidence": "430 of 430"
+    },
+    {
+      "check": "no duplicate employee ids",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "prediction ids unique and sequential",
+      "passed": true,
+      "evidence": "AR-0001..."
+    },
+    {
+      "check": "risk scores numeric and within [0, 1]",
+      "passed": true,
+      "evidence": [
+        0.006,
+        0.491
+      ]
+    },
+    {
+      "check": "risk scores rounded to 3 decimals like the sample",
+      "passed": true,
+      "evidence": 3
+    },
+    {
+      "check": "risk bands valid",
+      "passed": true,
+      "evidence": {
+        "Low": 301,
+        "Medium": 86,
+        "High": 43
+      }
+    },
+    {
+      "check": "band matches the unrounded probability (official helper, monotone)",
+      "passed": true,
+      "evidence": "max Low <= min Medium <= max Medium <= min High"
+    },
+    {
+      "check": "SHAP additivity: base + sum(contributions) = prediction",
+      "passed": true,
+      "evidence": 5.419881765611478e-10
+    },
+    {
+      "check": "model probability in the CSV equals the explained probability",
+      "passed": true,
+      "evidence": "same attrition-v2 output"
+    },
+    {
+      "check": "no empty / NaN reason cells",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "no NaN anywhere",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "reasons readable (ends with a full stop, 20-340 characters)",
+      "passed": true,
+      "evidence": 248
+    },
+    {
+      "check": "no duplicated reason within an employee",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "three reasons for every employee where three drivers exist (shortfalls reported honestly)",
+      "passed": true,
+      "evidence": {
+        "employees_with_all_three_reasons": 430,
+        "employees_with_fewer": 0,
+        "empty_slots": 0
+      }
+    },
+    {
+      "check": "no protected / sensitive terms, certainty claims or names in reasons",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "no technical feature names or jargon in reasons",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "every tenure reason carries the neutral sentence",
+      "passed": true,
+      "evidence": "163 tenure reasons"
+    },
+    {
+      "check": "model version is attrition-v2",
+      "passed": true,
+      "evidence": [
+        "attrition-v2"
+      ]
+    },
+    {
+      "check": "human review requirement + mandatory notice present on every row",
+      "passed": true,
+      "evidence": "model_note"
+    },
+    {
+      "check": "human_review_required = true for all (internal report)",
+      "passed": true,
+      "evidence": "all True"
+    },
+    {
+      "check": "every named feature is allowed by the policy",
+      "passed": true,
+      "evidence": [
+        "annual_fixed_pay",
+        "attendance_rate_change_3m",
+        "avg_hours_worked_3m",
+        "avg_overtime_hours_per_month_3m",
+        "comp_ratio"
+      ]
+    },
+    {
+      "check": "reason direction matches the SHAP sign",
+      "passed": true,
+      "evidence": "raises > 0, lowers < 0"
+    }
+  ],
+  "all_checks_passed": true
+}

@@ -1,0 +1,19 @@
+screener,attribute_changed,gender_direction_orig_to_twin,tier_direction,n_pairs,mean_signed_gap_twin_minus_original,mean_abs_gap,max_abs_gap,pairs_exceeding_tolerance
+task11_as_shipped,candidate_name (gender-coded) and college tier,Female->Male,twin higher tier,7,0.00000000,0.00000000,0.00000000,0
+task11_as_shipped,candidate_name (gender-coded) and college tier,Female->Male,twin lower tier,1,0.00000000,0.00000000,0.00000000,0
+task11_as_shipped,candidate_name (gender-coded) and college tier,Male->Female,twin higher tier,4,0.00000000,0.00000000,0.00000000,0
+task11_as_shipped,candidate_name (gender-coded) and college tier,Male->Female,twin lower tier,1,0.00000000,0.00000000,0.00000000,0
+task11_as_shipped,candidate_name (gender-coded) only,Female->Male,unchanged,6,0.00000000,0.00000000,0.00000000,0
+task11_as_shipped,candidate_name (gender-coded) only,Male->Female,unchanged,6,0.00000000,0.00000000,0.00000000,0
+task11_text_only,candidate_name (gender-coded) and college tier,Female->Male,twin higher tier,7,-0.00007305,0.00016962,0.00024589,0
+task11_text_only,candidate_name (gender-coded) and college tier,Female->Male,twin lower tier,1,0.00033968,0.00033968,0.00033968,0
+task11_text_only,candidate_name (gender-coded) and college tier,Male->Female,twin higher tier,4,-0.00006814,0.00011282,0.00020997,0
+task11_text_only,candidate_name (gender-coded) and college tier,Male->Female,twin lower tier,1,-0.00001835,0.00001835,0.00001835,0
+task11_text_only,candidate_name (gender-coded) only,Female->Male,unchanged,6,0.00013291,0.00018380,0.00067665,0
+task11_text_only,candidate_name (gender-coded) only,Male->Female,unchanged,6,-0.00007308,0.00023325,0.00054725,0
+task12_fair,candidate_name (gender-coded) and college tier,Female->Male,twin higher tier,7,0.00000000,0.00000000,0.00000000,0
+task12_fair,candidate_name (gender-coded) and college tier,Female->Male,twin lower tier,1,0.00000000,0.00000000,0.00000000,0
+task12_fair,candidate_name (gender-coded) and college tier,Male->Female,twin higher tier,4,0.00000000,0.00000000,0.00000000,0
+task12_fair,candidate_name (gender-coded) and college tier,Male->Female,twin lower tier,1,0.00000000,0.00000000,0.00000000,0
+task12_fair,candidate_name (gender-coded) only,Female->Male,unchanged,6,0.00000000,0.00000000,0.00000000,0
+task12_fair,candidate_name (gender-coded) only,Male->Female,unchanged,6,0.00000000,0.00000000,0.00000000,0

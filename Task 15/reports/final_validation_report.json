@@ -1,0 +1,648 @@
+{
+  "data": {
+    "rows": 2934,
+    "duplicate_rows": 0,
+    "missing_by_column": {},
+    "audit": {
+      "rows": 2934,
+      "columns": [
+        "hire_id",
+        "hire_date",
+        "hire_year",
+        "department_id",
+        "role_id",
+        "job_level",
+        "band_min_2026",
+        "band_mid_2026",
+        "band_max_2026",
+        "prior_experience_years",
+        "career_gap_months",
+        "work_location",
+        "highest_education",
+        "skills_count",
+        "market_index",
+        "offered_annual_fixed",
+        "source"
+      ],
+      "dtypes": {
+        "hire_id": "str",
+        "hire_date": "datetime64[us]",
+        "hire_year": "int64",
+        "department_id": "str",
+        "role_id": "str",
+        "job_level": "int64",
+        "band_min_2026": "int64",
+        "band_mid_2026": "int64",
+        "band_max_2026": "int64",
+        "prior_experience_years": "float64",
+        "career_gap_months": "int64",
+        "work_location": "str",
+        "highest_education": "str",
+        "skills_count": "int64",
+        "market_index": "float64",
+        "offered_annual_fixed": "int64",
+        "source": "str"
+      },
+      "missing_by_column": {},
+      "duplicate_rows": 0,
+      "duplicate_ids": 0,
+      "target": "offered_annual_fixed",
+      "target_summary": {
+        "count": 2934.0,
+        "mean": 834428.0490797546,
+        "std": 641315.3807793936,
+        "min": 114432.0,
+        "25%": 380541.0,
+        "50%": 624192.0,
+        "75%": 1114299.0,
+        "max": 4197972.0
+      },
+      "target_skew": 1.7601886285914727,
+      "target_log_skew": 0.2797645206238954,
+      "iqr_outliers": 134,
+      "iqr_outlier_bounds": {
+        "low": -720096.0,
+        "high": 2214936.0
+      },
+      "non_positive": 0,
+      "roles": 47,
+      "departments": 10,
+      "min_rows_per_role": 5,
+      "role_distribution": {
+        "R002": 279,
+        "R003": 192,
+        "R004": 164,
+        "R034": 144,
+        "R006": 136,
+        "R033": 130,
+        "R005": 127,
+        "R007": 120,
+        "R016": 110,
+        "R023": 96,
+        "R051": 95,
+        "R022": 77,
+        "R011": 75,
+        "R035": 73,
+        "R015": 72,
+        "R024": 72,
+        "R052": 69,
+        "R050": 65,
+        "R010": 57,
+        "R012": 50,
+        "R028": 47,
+        "R036": 46,
+        "R025": 45,
+        "R029": 44,
+        "R008": 40,
+        "R017": 36,
+        "R019": 35,
+        "R045": 35,
+        "R018": 34,
+        "R030": 33,
+        "R039": 31,
+        "R055": 30,
+        "R053": 30,
+        "R013": 30,
+        "R046": 28,
+        "R040": 24,
+        "R044": 24,
+        "R041": 24,
+        "R042": 18,
+        "R031": 18,
+        "R047": 14,
+        "R057": 13,
+        "R056": 12,
+        "R037": 12,
+        "R020": 12,
+        "R026": 11,
+        "R048": 5
+      },
+      "department_distribution": {
+        "D01": 1058,
+        "D06": 405,
+        "D04": 301,
+        "D03": 299,
+        "D09": 259,
+        "D02": 212,
+        "D05": 142,
+        "D08": 106,
+        "D07": 97,
+        "D10": 55
+      },
+      "job_levels": {
+        "1": 794,
+        "2": 997,
+        "3": 694,
+        "4": 348,
+        "5": 101
+      },
+      "work_locations": {
+        "Bengaluru": 1126,
+        "Chennai": 505,
+        "Hyderabad": 353,
+        "Pune": 293,
+        "Mumbai": 187,
+        "Coimbatore": 184,
+        "Delhi NCR": 176,
+        "Kochi": 56,
+        "Erode": 54
+      },
+      "employment_type_present": false,
+      "employment_type_distribution": {},
+      "source_counts": {
+        "historical_extension": 2200,
+        "master_hire": 734
+      },
+      "hire_year_range": [
+        2012,
+        2026
+      ],
+      "prior_experience_summary": {
+        "count": 2934.0,
+        "mean": 4.683878663940014,
+        "std": 4.014849162175791,
+        "min": 0.0,
+        "25%": 1.4,
+        "50%": 3.9,
+        "75%": 7.3,
+        "max": 20.6
+      },
+      "career_gap_months_counts": {
+        "0": 2549,
+        "3": 71,
+        "6": 53,
+        "9": 62,
+        "12": 60,
+        "18": 53,
+        "24": 41,
+        "36": 45
+      },
+      "career_gap_share": 0.13122017723244717,
+      "band_circularity": {
+        "mean_target_over_band_mid_x_index": 0.9921344156374158,
+        "sd": 0.08056513370257279,
+        "log_correlation": 0.9929266792798244
+      },
+      "gender_in_table": false,
+      "age_in_table": false,
+      "sensitive_columns_in_table": [
+        "hire_id",
+        "career_gap_months"
+      ],
+      "historical_salary_field": []
+    }
+  },
+  "split": {
+    "strategy": "random 80/20 stratified by source; hire IDs are unique, but no separate stable employee identifier is available to rule out repeat-person leakage",
+    "seed": 42,
+    "train": 2347,
+    "test": 587
+  },
+  "model_comparison": [
+    {
+      "Model": "Average-by-role baseline",
+      "MAE": 110298.27808780946,
+      "R2": 0.9277670447700755,
+      "CV_MAE_train_only": 116140.23894029838,
+      "CV_R2_train_only": 0.9274386860737858,
+      "train_MAE": 113569.36716575947,
+      "train_R2": 0.9312354851595148,
+      "selected": false
+    },
+    {
+      "Model": "Linear Regression",
+      "MAE": 82826.13172816842,
+      "R2": 0.9609042395213482,
+      "CV_MAE_train_only": 84584.68542879449,
+      "CV_R2_train_only": 0.9622974795419237,
+      "train_MAE": 81168.37898125344,
+      "train_R2": 0.9655936071673941,
+      "selected": false
+    },
+    {
+      "Model": "Gradient Boosting Regression",
+      "MAE": 60795.91639336603,
+      "R2": 0.977715532805239,
+      "CV_MAE_train_only": 65719.29117038353,
+      "CV_R2_train_only": 0.9731769192067864,
+      "train_MAE": 53964.34918990005,
+      "train_R2": 0.985764251079576,
+      "selected": true
+    }
+  ],
+  "selected_model": "gradient_boosting",
+  "non_positive_test_predictions": {
+    "average_by_role_baseline": 0,
+    "linear_regression": 1,
+    "gradient_boosting": 0
+  },
+  "selection_rule": "lowest 5-fold out-of-fold MAE on TRAIN rows between Linear Regression and Gradient Boosting",
+  "band": {
+    "method": "Mid = prediction; Low/High = Mid x 10th/90th percentile of (actual/predicted) in training out-of-fold residuals, per job level",
+    "global_low_ratio": 0.871664821244025,
+    "global_high_ratio": 1.1298625626917806,
+    "ratios_by_level": {
+      "1": [
+        0.8639103826165307,
+        1.1784872439038543,
+        632
+      ],
+      "2": [
+        0.8875367993885592,
+        1.122403099408684,
+        801
+      ],
+      "3": [
+        0.8615695121766286,
+        1.112074758587083,
+        551
+      ],
+      "4": [
+        0.8801418886276583,
+        1.1121622370019175,
+        277
+      ],
+      "5": [
+        0.8262810481213481,
+        1.1247361472304305,
+        86
+      ]
+    },
+    "nominal_level": 0.8,
+    "test_coverage": {
+      "coverage": 0.8006814310051107,
+      "below_low": 0.10221465076660988,
+      "above_high": 0.09710391822827939,
+      "mean_relative_width": 0.2619552542641085
+    },
+    "test_coverage_by_job_level": {
+      "1": {
+        "coverage": 0.808641975308642,
+        "below_low": 0.10493827160493827,
+        "above_high": 0.08641975308641975,
+        "mean_relative_width": 0.31457670069310123,
+        "n": 162
+      },
+      "2": {
+        "coverage": 0.8214285714285714,
+        "below_low": 0.11734693877551021,
+        "above_high": 0.061224489795918366,
+        "mean_relative_width": 0.23486623264473674,
+        "n": 196
+      },
+      "3": {
+        "coverage": 0.7622377622377622,
+        "below_low": 0.08391608391608392,
+        "above_high": 0.15384615384615385,
+        "mean_relative_width": 0.2505052653949924,
+        "n": 143
+      },
+      "4": {
+        "coverage": 0.7887323943661971,
+        "below_low": 0.09859154929577464,
+        "above_high": 0.11267605633802817,
+        "mean_relative_width": 0.23202038332407332,
+        "n": 71
+      },
+      "5": {
+        "coverage": 0.8666666666666667,
+        "below_low": 0.06666666666666667,
+        "above_high": 0.06666666666666667,
+        "mean_relative_width": 0.2984551316591845,
+        "n": 15
+      }
+    }
+  },
+  "bias_investigation": {
+    "historical_salary_in_features": [],
+    "gender_in_features": [],
+    "career_gap_in_features": [],
+    "proxy_checks": {
+      "career_gap_from_allowed_features_auc": {
+        "auc": 0.4893174303138995,
+        "n": 2934,
+        "positives": 385
+      },
+      "gender_female_vs_nonfemale_from_allowed_features_auc": {
+        "auc": 0.5040491113082582,
+        "n": 2934,
+        "positives": 1222
+      }
+    },
+    "historical_pay_difference_controlled_for_job_factors": {
+      "career_gap": [
+        {
+          "group": "Career gap 12+ months",
+          "reference": "No career gap",
+          "n_group": 199,
+          "n_reference": 2549,
+          "pay_difference_pct": -3.99769106571497,
+          "ci95_low_pct": -4.985954075216281,
+          "ci95_high_pct": -2.8609522055019876,
+          "interval_excludes_zero": true
+        },
+        {
+          "group": "Career gap 3-9 months",
+          "reference": "No career gap",
+          "n_group": 186,
+          "n_reference": 2549,
+          "pay_difference_pct": -1.1095683551164526,
+          "ci95_low_pct": -2.4377076501351347,
+          "ci95_high_pct": 0.21456423899790522,
+          "interval_excludes_zero": false
+        }
+      ],
+      "gender": [
+        {
+          "group": "Female",
+          "reference": "Male",
+          "n_group": 1222,
+          "n_reference": 1652,
+          "pay_difference_pct": -1.4996102686446244,
+          "ci95_low_pct": -2.0949535033391142,
+          "ci95_high_pct": -0.9109893759975618,
+          "interval_excludes_zero": true
+        },
+        {
+          "group": "Other",
+          "reference": "Male",
+          "n_group": 60,
+          "n_reference": 1652,
+          "pay_difference_pct": 0.525484583545488,
+          "ci95_low_pct": -1.5969018252235512,
+          "ci95_high_pct": 2.1314291622236636,
+          "interval_excludes_zero": false
+        }
+      ]
+    },
+    "gender_audit": {
+      "run": true,
+      "required_file": "one of ('unlock_CX-15_protected_attributes.csv', 'unlock_CX-15.csv', 'protected_attributes.csv') in C:\\Users\\mruni\\OneDrive\\Desktop\\Context HR Phase 3\\task15\\private",
+      "matched_test_rows": 587,
+      "unmatched_test_rows": 0,
+      "gender_counts_test": {
+        "Male": 330,
+        "Female": 246,
+        "Other": 11
+      },
+      "gender_categories": [
+        "Female",
+        "Male",
+        "Other"
+      ],
+      "unlock_rows": 2934
+    }
+  },
+  "features": {
+    "allowed": [
+      "job_level",
+      "prior_experience_years",
+      "market_index",
+      "role_id",
+      "department_id",
+      "work_location",
+      "highest_education"
+    ],
+    "audit_only": [
+      "career_gap_months",
+      "gender",
+      "age_years",
+      "age_band"
+    ]
+  },
+  "feature_importance": [
+    {
+      "feature": "num__job_level",
+      "importance": 0.7244036858044953,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__department_id_D06",
+      "importance": 0.06539696247014466,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "num__market_index",
+      "importance": 0.05405200507140676,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R008",
+      "importance": 0.04227016520699772,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "num__prior_experience_years",
+      "importance": 0.017031887608905952,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__department_id_D01",
+      "importance": 0.015248839761715129,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__department_id_D09",
+      "importance": 0.013878098924712928,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__department_id_D02",
+      "importance": 0.00882473563882879,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__department_id_D03",
+      "importance": 0.008340782839381234,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R035",
+      "importance": 0.006364728853915544,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R012",
+      "importance": 0.006066152571900633,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R003",
+      "importance": 0.004692322165733985,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R013",
+      "importance": 0.003365298390601456,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R020",
+      "importance": 0.0032962883072541393,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R026",
+      "importance": 0.002956171337598209,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R036",
+      "importance": 0.0027647823489681937,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__department_id_D08",
+      "importance": 0.00272837383157837,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__department_id_D07",
+      "importance": 0.0025084481061721717,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__role_id_R034",
+      "importance": 0.0015756048588611055,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    },
+    {
+      "feature": "cat__department_id_D05",
+      "importance": 0.0015270307209874093,
+      "method": "GradientBoostingRegressor.feature_importances_"
+    }
+  ],
+  "gender_audit": {
+    "run": true,
+    "required_file": "one of ('unlock_CX-15_protected_attributes.csv', 'unlock_CX-15.csv', 'protected_attributes.csv') in C:\\Users\\mruni\\OneDrive\\Desktop\\Context HR Phase 3\\task15\\private",
+    "matched_test_rows": 587,
+    "unmatched_test_rows": 0,
+    "gender_counts_test": {
+      "Male": 330,
+      "Female": 246,
+      "Other": 11
+    },
+    "gender_categories": [
+      "Female",
+      "Male",
+      "Other"
+    ],
+    "unlock_rows": 2934
+  },
+  "recommendations": 587,
+  "validation": [
+    {
+      "check": "recommendation rows = held-out test rows",
+      "passed": true,
+      "evidence": "587 / 587"
+    },
+    {
+      "check": "no duplicate record ids",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "no missing recommendations",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "no negative salaries",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "low <= mid <= high for every row",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "role association preserved",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "model version correct",
+      "passed": true,
+      "evidence": "paybands-v1"
+    },
+    {
+      "check": "human review flagged on every row",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "columns equal the production schema",
+      "passed": true,
+      "evidence": [
+        "record_id",
+        "role_id",
+        "predicted_salary_mid",
+        "recommended_salary_low",
+        "recommended_salary_high",
+        "model_version",
+        "human_review_required",
+        "model_note"
+      ]
+    },
+    {
+      "check": "no protected / audit attribute in the production CSV",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "no protected attribute in the predictive feature set",
+      "passed": true,
+      "evidence": [
+        "job_level",
+        "prior_experience_years",
+        "market_index",
+        "role_id",
+        "department_id",
+        "work_location",
+        "highest_education"
+      ]
+    },
+    {
+      "check": "metrics finite for all three models",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "train and test rows are disjoint",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "official gender audit data loaded",
+      "passed": true,
+      "evidence": "one of ('unlock_CX-15_protected_attributes.csv', 'unlock_CX-15.csv', 'protected_attributes.csv') in C:\\Users\\mruni\\OneDrive\\Desktop\\Context HR Phase 3\\task15\\private"
+    },
+    {
+      "check": "gender audit covers test records",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "gender fairness results generated",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "model feature importance generated",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "band ratios are ordered and positive (every level)",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "check": "role reference bands ordered",
+      "passed": true,
+      "evidence": ""
+    }
+  ],
+  "all_checks_passed": true
+}

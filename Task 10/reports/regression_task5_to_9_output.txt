@@ -1,0 +1,7 @@
+# Regression record. Tasks 5-7 lines: results of 'python -m pytest tests' in each folder, run earlier in this session (unchanged files). Task 9 / Task 8 lines: run 2026-10-30 03:27 UTC (Linux, Python 3.12).
+task 5: 14 passed
+task 6: 96 passed
+task 7: 132 passed
+task 9: 152 passed in 7.47s  (incl. tests/test_chat_api.py, now collectable with the real Task 8 app; ONE assertion changed, see README)
+task 8 (stub scoring service, real app code): 5 passed in 1.47s
+task 8 own test-suite: NOT RUN (tests/ folder of task 8 was not supplied); real artifact loading NOT RUN (workbook + Python 3.14.6 needed)

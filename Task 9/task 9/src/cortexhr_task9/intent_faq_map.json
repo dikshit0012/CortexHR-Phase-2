@@ -1,0 +1,500 @@
+{
+ "version": "intent-faq-map-v1",
+ "how_it_works": "For a predicted intent the cleaned message is tested against that intent's rules in order. A rule matches when (require_any is empty or at least one require_any regex hits) AND at least one match_any regex hits AND no veto_any regex hits. The matching rule with the most distinct match_any hits wins; ties go to the rule listed first. A rule returns the verbatim answer(s) of its faq_ids. No matching rule = no approved answer = safe fallback. require_any pins a rule to its topic word (e.g. the PF answer needs 'pf' or 'provident' in the message).",
+ "intents": {
+  "apply_leave_howto": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "hr_faq has no entry about the leave-application steps (FAQ-04 is about unpaid leave only)."
+  },
+  "attendance_summary": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Needs the employee's own data (Task 10)."
+  },
+  "attrition_risk_query": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Analytics / permissioned data, not an FAQ."
+  },
+  "chitchat": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Conversational intent. hr_faq contains no approved wording for it, so the bot falls back instead of inventing a reply."
+  },
+  "goodbye": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Conversational intent. hr_faq contains no approved wording for it, so the bot falls back instead of inventing a reply."
+  },
+  "greet": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Conversational intent. hr_faq contains no approved wording for it, so the bot falls back instead of inventing a reply."
+  },
+  "headcount_forecast": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Forecast data, not an FAQ."
+  },
+  "help": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Conversational intent. hr_faq contains no approved wording for it, so the bot falls back instead of inventing a reply."
+  },
+  "holiday_list": {
+   "rules": [
+    {
+     "name": "how holidays are decided",
+     "faq_ids": [
+      "FAQ-30"
+     ],
+     "match_any": [
+      "decided",
+      "calendar",
+      "how are holidays",
+      "published"
+     ],
+     "veto_any": []
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "hr_faq has no holiday list, only how the calendar is decided: requests for the list itself fall back."
+  },
+  "hr_policy_leave": {
+   "rules": [
+    {
+     "name": "casual leave",
+     "faq_ids": [
+      "FAQ-01"
+     ],
+     "match_any": [
+      "\\bcasual\\b",
+      "\\bcl\\b"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "sick leave",
+     "faq_ids": [
+      "FAQ-02"
+     ],
+     "match_any": [
+      "\\bsick\\b",
+      "\\bsl\\b"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "earned leave / carry forward",
+     "faq_ids": [
+      "FAQ-03"
+     ],
+     "match_any": [
+      "\\bearned\\b",
+      "\\bel\\b",
+      "carry\\s*forward"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "leave without pay",
+     "faq_ids": [
+      "FAQ-04"
+     ],
+     "match_any": [
+      "without pay",
+      "\\blop\\b",
+      "\\bunpaid\\b"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "maternity leave",
+     "faq_ids": [
+      "FAQ-05"
+     ],
+     "match_any": [
+      "maternity"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "leave overview (casual + sick + earned)",
+     "faq_ids": [
+      "FAQ-01",
+      "FAQ-02",
+      "FAQ-03"
+     ],
+     "match_any": [
+      "leave policy",
+      "entitlement",
+      "how many leaves",
+      "leaves (do we|are|can)"
+     ],
+     "veto_any": []
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "Specific leave types first; a generic entitlement question gets the three approved entitlement answers. Rule order breaks ties."
+  },
+  "insurance_benefits": {
+   "rules": [
+    {
+     "name": "add a dependent",
+     "faq_ids": [
+      "FAQ-25"
+     ],
+     "match_any": [
+      "dependent"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "benefits overview (insurance + training)",
+     "faq_ids": [
+      "FAQ-24",
+      "FAQ-26"
+     ],
+     "match_any": [
+      "what benefits",
+      "benefits do we"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "insurance cover",
+     "faq_ids": [
+      "FAQ-24"
+     ],
+     "match_any": [
+      "health",
+      "covered",
+      "coverage",
+      "family",
+      "details",
+      "what insurance",
+      "insurance do (i|we) have"
+     ],
+     "veto_any": [
+      "amount",
+      "claim",
+      "\\braise",
+      "dependent"
+     ]
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "Coverage amount and the claim procedure are not in hr_faq."
+  },
+  "leave_balance": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Needs the employee's own data (Task 10)."
+  },
+  "leave_request_status": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Needs the employee's own data (Task 10)."
+  },
+  "my_department": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Needs the employee's own data (Task 10)."
+  },
+  "my_manager": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Needs the employee's own data (Task 10)."
+  },
+  "notice_period_policy": {
+   "rules": [
+    {
+     "name": "notice period buy-out",
+     "faq_ids": [
+      "FAQ-19"
+     ],
+     "match_any": [
+      "\\bbuy",
+      "\\bbought",
+      "buyout"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "notice period length",
+     "faq_ids": [
+      "FAQ-18"
+     ],
+     "match_any": [
+      "notice"
+     ],
+     "veto_any": [
+      "\\bbuy",
+      "\\bbought",
+      "buyout",
+      "\\bresign",
+      "\\bquit"
+     ]
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "The resignation process itself is not in hr_faq."
+  },
+  "out_of_scope": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Not an HR question: always the safe fallback."
+  },
+  "payroll_flags": {
+   "rules": [],
+   "contact_faq_id": "FAQ-28",
+   "note": "Output of the Task 6/7 detectors, not an FAQ topic. Fallback may show the approved payroll contact."
+  },
+  "payslip_date": {
+   "rules": [
+    {
+     "name": "salary payment date",
+     "faq_ids": [
+      "FAQ-09"
+     ],
+     "match_any": [
+      "\\bwhen\\b",
+      "\\bdate\\b",
+      "\\bday\\b",
+      "payday",
+      "\\bpaid\\b",
+      "credit"
+     ],
+     "veto_any": [
+      "process"
+     ]
+    }
+   ],
+   "contact_faq_id": "FAQ-28",
+   "note": "'When does payroll get processed' is vetoed (FAQ-09 gives the payment day, not the processing day). A date/when/payday cue is required, so a bare mention of 'salary' is not answered."
+  },
+  "payslip_status": {
+   "rules": [],
+   "contact_faq_id": "FAQ-28",
+   "note": "Needs the employee's own data (Task 10). Fallback may show the approved payroll contact."
+  },
+  "pf_info": {
+   "rules": [
+    {
+     "name": "PF calculation",
+     "faq_ids": [
+      "FAQ-13"
+     ],
+     "match_any": [
+      "calculat",
+      "contribution",
+      "employer",
+      "\\bceiling\\b"
+     ],
+     "veto_any": [
+      "balance",
+      "withdraw",
+      "\\buan\\b"
+     ],
+     "require_any": [
+      "\\bpf\\b",
+      "provident"
+     ]
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "PF balance, withdrawal and UAN activation are not in hr_faq."
+  },
+  "probation_policy": {
+   "rules": [
+    {
+     "name": "probation period",
+     "faq_ids": [
+      "FAQ-20"
+     ],
+     "match_any": [
+      "how long",
+      "\\bperiod\\b",
+      "review"
+     ],
+     "veto_any": [
+      "leave",
+      "confirm",
+      "after"
+     ],
+     "require_any": [
+      "probation"
+     ]
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "FAQ-20 gives length and who reviews. 'What happens after', 'confirmation' and leave rules are not in hr_faq."
+  },
+  "reimbursement_policy": {
+   "rules": [
+    {
+     "name": "who approves expenses",
+     "faq_ids": [
+      "FAQ-23"
+     ],
+     "match_any": [
+      "approv"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "claim travel expenses",
+     "faq_ids": [
+      "FAQ-22"
+     ],
+     "match_any": [
+      "\\bclaim",
+      "\\bsubmit",
+      "\\bbills?\\b",
+      "travel"
+     ],
+     "veto_any": [
+      "\\blimits?\\b",
+      "\\bwhich\\b",
+      "\\bapprov"
+     ]
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "Limits and 'which expenses' are not in hr_faq, so they fall back."
+  },
+  "resume_score_request": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Recruiting tool, not an FAQ."
+  },
+  "salary_band_query": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Compensation data, permissioned; not in hr_faq."
+  },
+  "salary_of_other": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Must never be answered from FAQ; needs permissions (Task 10)."
+  },
+  "tax_declaration": {
+   "rules": [
+    {
+     "name": "Form 16",
+     "faq_ids": [
+      "FAQ-17"
+     ],
+     "match_any": [
+      "form\\s*16"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "TDS",
+     "faq_ids": [
+      "FAQ-16"
+     ],
+     "match_any": [
+      "\\btds\\b"
+     ],
+     "veto_any": [
+      "proof",
+      "upload"
+     ]
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "Declaration steps, old/new regime and investment-proof upload are not in hr_faq."
+  },
+  "team_members": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Needs the employee's own data (Task 10)."
+  },
+  "thanks": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Conversational intent. hr_faq contains no approved wording for it, so the bot falls back instead of inventing a reply."
+  },
+  "unusual_attendance": {
+   "rules": [],
+   "contact_faq_id": null,
+   "note": "Needs the employee's own data (Task 10)."
+  },
+  "wfh_policy": {
+   "rules": [
+    {
+     "name": "work from home",
+     "faq_ids": [
+      "FAQ-21"
+     ],
+     "match_any": [
+      "work from home",
+      "\\bwfh\\b",
+      "hybrid",
+      "remote",
+      "in (the )?office",
+      "office days?"
+     ],
+     "veto_any": []
+    }
+   ],
+   "contact_faq_id": null,
+   "note": ""
+  },
+  "who_to_contact": {
+   "rules": [
+    {
+     "name": "payroll contact",
+     "faq_ids": [
+      "FAQ-28"
+     ],
+     "match_any": [
+      "payroll"
+     ],
+     "veto_any": []
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "The only approved contact in hr_faq is for payroll queries. HR contact details / HR business partner / IT / benefits contacts are not in the data."
+  },
+  "working_hours": {
+   "rules": [
+    {
+     "name": "weekly off",
+     "faq_ids": [
+      "FAQ-07"
+     ],
+     "match_any": [
+      "saturday",
+      "sunday",
+      "weekly off",
+      "weekend"
+     ],
+     "veto_any": []
+    },
+    {
+     "name": "office hours",
+     "faq_ids": [
+      "FAQ-06"
+     ],
+     "match_any": [
+      "\\bhours\\b",
+      "\\btimings?\\b",
+      "\\bcore\\b",
+      "what time",
+      "when does the work ?day"
+     ],
+     "veto_any": [
+      "flexible",
+      "overtime"
+     ]
+    }
+   ],
+   "contact_faq_id": null,
+   "note": "'Flexible timings' is vetoed: FAQ-06 states fixed hours and core hours, not a flexibility rule."
+  }
+ }
+}

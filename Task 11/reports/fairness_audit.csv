@@ -1,0 +1,12 @@
+attribute,group,labelled_pairs,human_shortlisted,mean_final_score,mean_human_score,selection_rate_top_R,human_shortlisted_captured_in_top_R
+college_tier,Tier 1,147,29,0.159860,2.442177,0.204082,0.965517
+college_tier,Tier 2,213,31,0.151533,2.281690,0.136150,0.870968
+college_tier,Tier 3,195,35,0.158893,2.317949,0.184615,0.914286
+layout_difficulty,All-caps,54,9,0.170175,2.240741,0.203704,1.000000
+layout_difficulty,Clean,288,46,0.160632,2.326389,0.166667,0.956522
+layout_difficulty,Missing sections,63,10,0.126193,2.349206,0.111111,0.700000
+layout_difficulty,Tables,75,13,0.155012,2.346667,0.200000,1.000000
+layout_difficulty,Two-column,75,17,0.156431,2.426667,0.186667,0.823529
+source_format,DOCX,192,30,0.151170,2.276042,0.161458,0.933333
+source_format,PDF,303,52,0.160949,2.372937,0.168317,0.903846
+source_format,Plain text,60,13,0.149464,2.350000,0.216667,0.923077

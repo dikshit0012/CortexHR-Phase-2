@@ -1,0 +1,751 @@
+screener,pair_id,resume_a_id,resume_b_id,job_id,attribute_changed,score_a,score_b,signed_gap_b_minus_a,twin_gap,relative_gap_pct,tfidf_gap,skill_overlap_gap,rank_a,rank_b,rank_difference,higher_scored,non_zero_gap,exceeds_tolerance
+task11_as_shipped,BP-01,RES-0123,RES-0161,J01,candidate_name (gender-coded) and college tier,0.52805908,0.52805908,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,2,2,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J02,candidate_name (gender-coded) and college tier,0.40319385,0.40319385,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,2,2,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J03,candidate_name (gender-coded) and college tier,0.17508462,0.17508462,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,40,40,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J04,candidate_name (gender-coded) and college tier,0.18175833,0.18175833,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,30,30,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J05,candidate_name (gender-coded) and college tier,0.00852851,0.00852851,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,110,110,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J06,candidate_name (gender-coded) and college tier,0.01710944,0.01710944,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,54,54,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J07,candidate_name (gender-coded) and college tier,0.09034203,0.09034203,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,74,74,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J08,candidate_name (gender-coded) and college tier,0.00748662,0.00748662,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,101,101,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J09,candidate_name (gender-coded) and college tier,0.09828466,0.09828466,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,33,33,0,tie,False,False
+task11_as_shipped,BP-01,RES-0123,RES-0161,J10,candidate_name (gender-coded) and college tier,0.00613462,0.00613462,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,122,122,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J01,candidate_name (gender-coded) only,0.00055421,0.00055421,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J02,candidate_name (gender-coded) only,0.00054376,0.00054376,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J03,candidate_name (gender-coded) only,0.08685167,0.08685167,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,95,95,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J04,candidate_name (gender-coded) only,0.00055034,0.00055034,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J05,candidate_name (gender-coded) only,0.08790740,0.08790740,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,64,64,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J06,candidate_name (gender-coded) only,0.00052215,0.00052215,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,168,168,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J07,candidate_name (gender-coded) only,0.18198160,0.18198160,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,25,25,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J08,candidate_name (gender-coded) only,0.48687385,0.48687385,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,6,6,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J09,candidate_name (gender-coded) only,0.00122801,0.00122801,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,158,158,0,tie,False,False
+task11_as_shipped,BP-02,RES-0114,RES-0162,J10,candidate_name (gender-coded) only,0.00322280,0.00322280,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,148,148,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J01,candidate_name (gender-coded) and college tier,0.08675541,0.08675541,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,77,77,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J02,candidate_name (gender-coded) and college tier,0.08204181,0.08204181,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,104,104,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J03,candidate_name (gender-coded) and college tier,0.32438038,0.32438038,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,17,17,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J04,candidate_name (gender-coded) and college tier,0.08836487,0.08836487,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,77,77,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J05,candidate_name (gender-coded) and college tier,0.00322590,0.00322590,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,145,145,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J06,candidate_name (gender-coded) and college tier,0.00610540,0.00610540,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,115,115,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J07,candidate_name (gender-coded) and college tier,0.00053090,0.00053090,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,180,180,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J08,candidate_name (gender-coded) and college tier,0.01711555,0.01711555,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,79,79,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J09,candidate_name (gender-coded) and college tier,0.08718953,0.08718953,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,58,58,0,tie,False,False
+task11_as_shipped,BP-03,RES-0005,RES-0163,J10,candidate_name (gender-coded) and college tier,0.00055709,0.00055709,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,168,168,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J01,candidate_name (gender-coded) only,0.08533008,0.08533008,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,86,86,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J02,candidate_name (gender-coded) only,0.08224773,0.08224773,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,95,95,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J03,candidate_name (gender-coded) only,0.17459471,0.17459471,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,42,42,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J04,candidate_name (gender-coded) only,0.08636997,0.08636997,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,86,86,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J05,candidate_name (gender-coded) only,0.11616525,0.11616525,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,27,27,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J06,candidate_name (gender-coded) only,0.10227367,0.10227367,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,32,32,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J07,candidate_name (gender-coded) only,0.01053756,0.01053756,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,136,136,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J08,candidate_name (gender-coded) only,0.00396118,0.00396118,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,122,122,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J09,candidate_name (gender-coded) only,0.00819097,0.00819097,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,78,78,0,tie,False,False
+task11_as_shipped,BP-04,RES-0117,RES-0164,J10,candidate_name (gender-coded) only,0.00746794,0.00746794,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,105,105,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J01,candidate_name (gender-coded) and college tier,0.00527935,0.00527935,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,146,146,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J02,candidate_name (gender-coded) and college tier,0.00517986,0.00517986,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,132,132,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J03,candidate_name (gender-coded) and college tier,0.00568363,0.00568363,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J04,candidate_name (gender-coded) and college tier,0.00524249,0.00524249,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,150,150,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J05,candidate_name (gender-coded) and college tier,0.10734988,0.10734988,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,33,33,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J06,candidate_name (gender-coded) and college tier,0.00497394,0.00497394,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,122,122,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J07,candidate_name (gender-coded) and college tier,0.21550572,0.21550572,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,16,16,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J08,candidate_name (gender-coded) and college tier,0.00501585,0.00501585,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,114,114,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J09,candidate_name (gender-coded) and college tier,0.00531259,0.00531259,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,111,111,0,tie,False,False
+task11_as_shipped,BP-05,RES-0118,RES-0165,J10,candidate_name (gender-coded) and college tier,0.00532173,0.00532173,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,127,127,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J01,candidate_name (gender-coded) only,0.17073183,0.17073183,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,46,46,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J02,candidate_name (gender-coded) only,0.08198939,0.08198939,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,107,107,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J03,candidate_name (gender-coded) only,0.17563505,0.17563505,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,38,38,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J04,candidate_name (gender-coded) only,0.16522572,0.16522572,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,47,47,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J05,candidate_name (gender-coded) only,0.52400407,0.52400407,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,6,6,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J06,candidate_name (gender-coded) only,0.00050731,0.00050731,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,176,176,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J07,candidate_name (gender-coded) only,0.09431887,0.09431887,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,61,61,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J08,candidate_name (gender-coded) only,0.00051158,0.00051158,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,172,172,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J09,candidate_name (gender-coded) only,0.00119312,0.00119312,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,166,166,0,tie,False,False
+task11_as_shipped,BP-06,RES-0023,RES-0166,J10,candidate_name (gender-coded) only,0.01246602,0.01246602,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,64,64,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J01,candidate_name (gender-coded) and college tier,0.16757310,0.16757310,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,55,55,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J02,candidate_name (gender-coded) and college tier,0.08438575,0.08438575,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,71,71,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J03,candidate_name (gender-coded) and college tier,0.24821264,0.24821264,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,22,22,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J04,candidate_name (gender-coded) and college tier,0.16925819,0.16925819,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,39,39,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J05,candidate_name (gender-coded) and college tier,0.00389416,0.00389416,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,142,142,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J06,candidate_name (gender-coded) and college tier,0.00840530,0.00840530,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,88,88,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J07,candidate_name (gender-coded) and college tier,0.08933415,0.08933415,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,83,83,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J08,candidate_name (gender-coded) and college tier,0.55626446,0.55626446,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1,1,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J09,candidate_name (gender-coded) and college tier,0.00114453,0.00114453,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,177,177,0,tie,False,False
+task11_as_shipped,BP-07,RES-0076,RES-0167,J10,candidate_name (gender-coded) and college tier,0.00052068,0.00052068,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,180,180,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J01,candidate_name (gender-coded) only,0.04361874,0.04361874,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,128,128,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J02,candidate_name (gender-coded) only,0.16725537,0.16725537,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,24,24,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J03,candidate_name (gender-coded) only,0.00088713,0.00088713,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,174,174,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J04,candidate_name (gender-coded) only,0.11340199,0.11340199,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,55,55,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J05,candidate_name (gender-coded) only,0.08429742,0.08429742,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,74,74,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J06,candidate_name (gender-coded) only,0.00077636,0.00077636,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,153,153,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J07,candidate_name (gender-coded) only,0.00079159,0.00079159,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J08,candidate_name (gender-coded) only,0.00078290,0.00078290,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J09,candidate_name (gender-coded) only,0.00082922,0.00082922,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,184,184,0,tie,False,False
+task11_as_shipped,BP-08,RES-0026,RES-0168,J10,candidate_name (gender-coded) only,0.01013874,0.01013874,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,74,74,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J01,candidate_name (gender-coded) and college tier,0.08502445,0.08502445,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,89,89,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J02,candidate_name (gender-coded) and college tier,0.08492976,0.08492976,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,65,65,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J03,candidate_name (gender-coded) and college tier,0.08176393,0.08176393,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,147,147,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J04,candidate_name (gender-coded) and college tier,0.08731998,0.08731998,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,81,81,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J05,candidate_name (gender-coded) and college tier,0.00054553,0.00054553,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,181,181,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J06,candidate_name (gender-coded) and college tier,0.00461185,0.00461185,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,126,126,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J07,candidate_name (gender-coded) and college tier,0.08630661,0.08630661,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,106,106,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J08,candidate_name (gender-coded) and college tier,0.00182540,0.00182540,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,157,157,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J09,candidate_name (gender-coded) and college tier,0.51880487,0.51880487,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,4,4,0,tie,False,False
+task11_as_shipped,BP-09,RES-0007,RES-0169,J10,candidate_name (gender-coded) and college tier,0.00051114,0.00051114,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,182,182,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J01,candidate_name (gender-coded) only,0.00580348,0.00580348,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,140,140,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J02,candidate_name (gender-coded) only,0.00569411,0.00569411,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,126,126,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J03,candidate_name (gender-coded) only,0.08918950,0.08918950,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,89,89,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J04,candidate_name (gender-coded) only,0.00576296,0.00576296,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,145,145,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J05,candidate_name (gender-coded) only,0.18530137,0.18530137,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,20,20,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J06,candidate_name (gender-coded) only,0.13813636,0.13813636,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,13,13,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J07,candidate_name (gender-coded) only,0.17112147,0.17112147,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,42,42,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J08,candidate_name (gender-coded) only,0.09859061,0.09859061,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,32,32,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J09,candidate_name (gender-coded) only,0.00650158,0.00650158,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,96,96,0,tie,False,False
+task11_as_shipped,BP-10,RES-0110,RES-0170,J10,candidate_name (gender-coded) only,0.00847939,0.00847939,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,93,93,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J01,candidate_name (gender-coded) and college tier,0.08247972,0.08247972,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,113,113,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J02,candidate_name (gender-coded) and college tier,0.16649049,0.16649049,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,27,27,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J03,candidate_name (gender-coded) and college tier,0.16492158,0.16492158,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,63,63,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J04,candidate_name (gender-coded) and college tier,0.08246241,0.08246241,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,120,120,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J05,candidate_name (gender-coded) and college tier,0.08419580,0.08419580,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,76,76,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J06,candidate_name (gender-coded) and college tier,0.00619414,0.00619414,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,112,112,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J07,candidate_name (gender-coded) and college tier,0.46805519,0.46805519,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,5,5,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J08,candidate_name (gender-coded) and college tier,0.08757907,0.08757907,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,46,46,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J09,candidate_name (gender-coded) and college tier,0.00608957,0.00608957,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,102,102,0,tie,False,False
+task11_as_shipped,BP-11,RES-0071,RES-0171,J10,candidate_name (gender-coded) and college tier,0.00864920,0.00864920,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,90,90,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J01,candidate_name (gender-coded) only,0.16855680,0.16855680,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,53,53,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J02,candidate_name (gender-coded) only,0.08214060,0.08214060,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,99,99,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J03,candidate_name (gender-coded) only,0.36166831,0.36166831,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,14,14,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J04,candidate_name (gender-coded) only,0.27316250,0.27316250,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,21,21,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J05,candidate_name (gender-coded) only,0.00712671,0.00712671,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,117,117,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J06,candidate_name (gender-coded) only,0.00054587,0.00054587,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J07,candidate_name (gender-coded) only,0.00381427,0.00381427,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J08,candidate_name (gender-coded) only,0.02116558,0.02116558,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,75,75,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J09,candidate_name (gender-coded) only,0.00128381,0.00128381,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,148,148,0,tie,False,False
+task11_as_shipped,BP-12,RES-0128,RES-0172,J10,candidate_name (gender-coded) only,0.00058404,0.00058404,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,162,162,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J01,candidate_name (gender-coded) and college tier,0.17369090,0.17369090,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,39,39,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J02,candidate_name (gender-coded) and college tier,0.08386690,0.08386690,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,77,77,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J03,candidate_name (gender-coded) and college tier,0.42082004,0.42082004,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,6,6,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J04,candidate_name (gender-coded) and college tier,0.17081834,0.17081834,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,36,36,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J05,candidate_name (gender-coded) and college tier,0.00872615,0.00872615,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,107,107,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J06,candidate_name (gender-coded) and college tier,0.00229622,0.00229622,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,145,145,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J07,candidate_name (gender-coded) and college tier,0.17026219,0.17026219,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,45,45,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J08,candidate_name (gender-coded) and college tier,0.08668567,0.08668567,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,55,55,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J09,candidate_name (gender-coded) and college tier,0.00311032,0.00311032,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,131,131,0,tie,False,False
+task11_as_shipped,BP-13,RES-0099,RES-0173,J10,candidate_name (gender-coded) and college tier,0.09656133,0.09656133,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,34,34,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J01,candidate_name (gender-coded) only,0.08244431,0.08244431,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,115,115,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J02,candidate_name (gender-coded) only,0.08934455,0.08934455,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,47,47,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J03,candidate_name (gender-coded) only,0.08263149,0.08263149,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,134,134,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J04,candidate_name (gender-coded) only,0.08242725,0.08242725,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,123,123,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J05,candidate_name (gender-coded) only,0.52486375,0.52486375,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,4,4,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J06,candidate_name (gender-coded) only,0.00050633,0.00050633,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,179,179,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J07,candidate_name (gender-coded) only,0.00051627,0.00051627,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,183,183,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J08,candidate_name (gender-coded) only,0.00051060,0.00051060,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,176,176,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J09,candidate_name (gender-coded) only,0.00119083,0.00119083,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,169,169,0,tie,False,False
+task11_as_shipped,BP-14,RES-0044,RES-0174,J10,candidate_name (gender-coded) only,0.00491593,0.00491593,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,132,132,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J01,candidate_name (gender-coded) and college tier,0.17331895,0.17331895,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,41,41,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J02,candidate_name (gender-coded) and college tier,0.08422458,0.08422458,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,73,73,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J03,candidate_name (gender-coded) and college tier,0.40086630,0.40086630,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,9,9,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J04,candidate_name (gender-coded) and college tier,0.16687024,0.16687024,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,43,43,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J05,candidate_name (gender-coded) and college tier,0.00614924,0.00614924,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,128,128,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J06,candidate_name (gender-coded) and college tier,0.10351363,0.10351363,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,26,26,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J07,candidate_name (gender-coded) and college tier,0.17319761,0.17319761,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,36,36,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J08,candidate_name (gender-coded) and college tier,0.08501226,0.08501226,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,63,63,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J09,candidate_name (gender-coded) and college tier,0.01009569,0.01009569,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,70,70,0,tie,False,False
+task11_as_shipped,BP-15,RES-0142,RES-0175,J10,candidate_name (gender-coded) and college tier,0.00922085,0.00922085,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,78,78,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J01,candidate_name (gender-coded) only,0.00670825,0.00670825,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,136,136,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J02,candidate_name (gender-coded) only,0.00658184,0.00658184,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,122,122,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J03,candidate_name (gender-coded) only,0.00722196,0.00722196,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,154,154,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J04,candidate_name (gender-coded) only,0.00666142,0.00666142,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,139,139,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J05,candidate_name (gender-coded) only,0.10703771,0.10703771,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,36,36,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J06,candidate_name (gender-coded) only,0.10474825,0.10474825,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,22,22,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J07,candidate_name (gender-coded) only,0.08858410,0.08858410,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,88,88,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J08,candidate_name (gender-coded) only,0.01591851,0.01591851,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,81,81,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J09,candidate_name (gender-coded) only,0.00757091,0.00757091,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,84,84,0,tie,False,False
+task11_as_shipped,BP-16,RES-0086,RES-0176,J10,candidate_name (gender-coded) only,0.09152944,0.09152944,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,48,48,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J01,candidate_name (gender-coded) and college tier,0.20203183,0.20203183,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,18,18,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J02,candidate_name (gender-coded) and college tier,0.19661644,0.19661644,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,11,11,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J03,candidate_name (gender-coded) and college tier,0.08354001,0.08354001,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,119,119,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J04,candidate_name (gender-coded) and college tier,0.08326525,0.08326525,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,107,107,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J05,candidate_name (gender-coded) and college tier,0.18755588,0.18755588,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,18,18,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J06,candidate_name (gender-coded) and college tier,0.00054518,0.00054518,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,161,161,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J07,candidate_name (gender-coded) and college tier,0.00055588,0.00055588,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,175,175,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J08,candidate_name (gender-coded) and college tier,0.00054978,0.00054978,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,164,164,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J09,candidate_name (gender-coded) and college tier,0.00128219,0.00128219,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,150,150,0,tie,False,False
+task11_as_shipped,BP-17,RES-0039,RES-0177,J10,candidate_name (gender-coded) and college tier,0.00336498,0.00336498,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,146,146,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J01,candidate_name (gender-coded) only,0.18646852,0.18646852,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,25,25,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J02,candidate_name (gender-coded) only,0.18140655,0.18140655,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,19,19,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J03,candidate_name (gender-coded) only,0.16953565,0.16953565,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,53,53,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J04,candidate_name (gender-coded) only,0.52421820,0.52421820,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,4,4,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J05,candidate_name (gender-coded) only,0.00525546,0.00525546,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,133,133,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J06,candidate_name (gender-coded) only,0.09152400,0.09152400,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,50,50,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J07,candidate_name (gender-coded) only,0.08224027,0.08224027,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,131,131,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J08,candidate_name (gender-coded) only,0.00051719,0.00051719,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J09,candidate_name (gender-coded) only,0.09330236,0.09330236,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,41,41,0,tie,False,False
+task11_as_shipped,BP-18,RES-0066,RES-0178,J10,candidate_name (gender-coded) only,0.00054873,0.00054873,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,171,171,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J01,candidate_name (gender-coded) and college tier,0.08330274,0.08330274,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,103,103,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J02,candidate_name (gender-coded) and college tier,0.08324050,0.08324050,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,83,83,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J03,candidate_name (gender-coded) and college tier,0.16668146,0.16668146,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,59,59,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J04,candidate_name (gender-coded) and college tier,0.08327968,0.08327968,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,105,105,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J05,candidate_name (gender-coded) and college tier,0.08360723,0.08360723,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,78,78,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J06,candidate_name (gender-coded) and college tier,0.00895455,0.00895455,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,83,83,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J07,candidate_name (gender-coded) and college tier,0.08838244,0.08838244,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,91,91,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J08,candidate_name (gender-coded) and college tier,0.08331075,0.08331075,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,67,67,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J09,candidate_name (gender-coded) and college tier,0.44222784,0.44222784,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,8,8,0,tie,False,False
+task11_as_shipped,BP-19,RES-0038,RES-0179,J10,candidate_name (gender-coded) and college tier,0.00866318,0.00866318,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,88,88,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J01,candidate_name (gender-coded) only,0.18269382,0.18269382,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,29,29,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J02,candidate_name (gender-coded) only,0.09709072,0.09709072,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,38,38,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J03,candidate_name (gender-coded) only,0.18925964,0.18925964,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,26,26,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J04,candidate_name (gender-coded) only,0.45112391,0.45112391,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,10,10,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J05,candidate_name (gender-coded) only,0.01014532,0.01014532,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,98,98,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J06,candidate_name (gender-coded) only,0.00682069,0.00682069,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,101,101,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J07,candidate_name (gender-coded) only,0.00900478,0.00900478,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,139,139,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J08,candidate_name (gender-coded) only,0.00890592,0.00890592,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,93,93,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J09,candidate_name (gender-coded) only,0.10175102,0.10175102,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,29,29,0,tie,False,False
+task11_as_shipped,BP-20,RES-0132,RES-0180,J10,candidate_name (gender-coded) only,0.09464465,0.09464465,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,42,42,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J01,candidate_name (gender-coded) and college tier,0.17763839,0.17763839,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,35,35,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J02,candidate_name (gender-coded) and college tier,0.19166387,0.19166387,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,14,14,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J03,candidate_name (gender-coded) and college tier,0.17290237,0.17290237,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,47,47,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J04,candidate_name (gender-coded) and college tier,0.42630027,0.42630027,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,13,13,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J05,candidate_name (gender-coded) and college tier,0.00954041,0.00954041,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,103,103,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J06,candidate_name (gender-coded) and college tier,0.00703772,0.00703772,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,99,99,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J07,candidate_name (gender-coded) and college tier,0.08717581,0.08717581,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,98,98,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J08,candidate_name (gender-coded) and college tier,0.00403679,0.00403679,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,120,120,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J09,candidate_name (gender-coded) and college tier,0.00497624,0.00497624,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,114,114,0,tie,False,False
+task11_as_shipped,BP-21,RES-0034,RES-0181,J10,candidate_name (gender-coded) and college tier,0.09930703,0.09930703,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,31,31,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J01,candidate_name (gender-coded) only,0.16995509,0.16995509,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,50,50,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J02,candidate_name (gender-coded) only,0.08178354,0.08178354,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,114,114,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J03,candidate_name (gender-coded) only,0.39156934,0.39156934,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,12,12,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J04,candidate_name (gender-coded) only,0.16451280,0.16451280,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,51,51,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J05,candidate_name (gender-coded) only,0.00569982,0.00569982,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,131,131,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J06,candidate_name (gender-coded) only,0.00053003,0.00053003,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,166,166,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J07,candidate_name (gender-coded) only,0.08271853,0.08271853,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,127,127,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J08,candidate_name (gender-coded) only,0.08268868,0.08268868,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,73,73,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J09,candidate_name (gender-coded) only,0.09158126,0.09158126,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,48,48,0,tie,False,False
+task11_as_shipped,BP-22,RES-0083,RES-0182,J10,candidate_name (gender-coded) only,0.09233900,0.09233900,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,46,46,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J01,candidate_name (gender-coded) and college tier,0.09201148,0.09201148,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,65,65,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J02,candidate_name (gender-coded) and college tier,0.00979772,0.00979772,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,120,120,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J03,candidate_name (gender-coded) and college tier,0.08668863,0.08668863,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,97,97,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J04,candidate_name (gender-coded) and college tier,0.18946179,0.18946179,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,26,26,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J05,candidate_name (gender-coded) and college tier,0.00668405,0.00668405,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,122,122,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J06,candidate_name (gender-coded) and college tier,0.00956887,0.00956887,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,78,78,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J07,candidate_name (gender-coded) and college tier,0.00723228,0.00723228,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,145,145,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J08,candidate_name (gender-coded) and college tier,0.00715288,0.00715288,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,105,105,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J09,candidate_name (gender-coded) and college tier,0.00490413,0.00490413,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,116,116,0,tie,False,False
+task11_as_shipped,BP-23,RES-0134,RES-0183,J10,candidate_name (gender-coded) and college tier,0.08823321,0.08823321,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,54,54,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J01,candidate_name (gender-coded) only,0.08266775,0.08266775,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,108,108,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J02,candidate_name (gender-coded) only,0.00057550,0.00057550,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,161,161,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J03,candidate_name (gender-coded) only,0.08287204,0.08287204,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,130,130,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J04,candidate_name (gender-coded) only,0.08264912,0.08264912,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,114,114,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J05,candidate_name (gender-coded) only,0.00287007,0.00287007,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,149,149,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J06,candidate_name (gender-coded) only,0.11178666,0.11178666,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,16,16,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J07,candidate_name (gender-coded) only,0.08699453,0.08699453,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,102,102,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J08,candidate_name (gender-coded) only,0.01505842,0.01505842,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,84,84,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J09,candidate_name (gender-coded) only,0.00129968,0.00129968,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,144,144,0,tie,False,False
+task11_as_shipped,BP-24,RES-0122,RES-0184,J10,candidate_name (gender-coded) only,0.09580420,0.09580420,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,38,38,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J01,candidate_name (gender-coded) and college tier,0.35131621,0.35131621,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,7,7,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J02,candidate_name (gender-coded) and college tier,0.13686783,0.13686783,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,29,29,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J03,candidate_name (gender-coded) and college tier,0.08668340,0.08668340,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,99,99,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J04,candidate_name (gender-coded) and college tier,0.09310202,0.09310202,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,68,68,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J05,candidate_name (gender-coded) and college tier,0.00262121,0.00262121,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,155,155,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J06,candidate_name (gender-coded) and college tier,0.09248943,0.09248943,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,45,45,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J07,candidate_name (gender-coded) and college tier,0.17710665,0.17710665,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,30,30,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J08,candidate_name (gender-coded) and college tier,0.00050895,0.00050895,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,178,178,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J09,candidate_name (gender-coded) and college tier,0.00118699,0.00118699,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,171,171,0,tie,False,False
+task11_as_shipped,BP-25,RES-0127,RES-0185,J10,candidate_name (gender-coded) and college tier,0.00053999,0.00053999,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,176,176,0,tie,False,False
+task11_text_only,BP-01,RES-0123,RES-0161,J01,candidate_name (gender-coded) and college tier,0.52357484,0.52367081,0.00009597,0.00009597,0.01832797,0.00015995,0.00000000,3,2,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J02,candidate_name (gender-coded) and college tier,0.40435829,0.40442380,0.00006551,0.00006551,0.01620053,0.00010919,0.00000000,3,2,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J03,candidate_name (gender-coded) and college tier,0.17436109,0.17437224,0.00001115,0.00001115,0.00639627,0.00001859,0.00000000,46,45,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J04,candidate_name (gender-coded) and college tier,0.18081270,0.18082886,0.00001616,0.00001616,0.00893888,0.00002694,0.00000000,31,30,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J05,candidate_name (gender-coded) and college tier,0.00810160,0.00810790,0.00000629,0.00000629,0.07763083,0.00001049,0.00000000,111,110,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J06,candidate_name (gender-coded) and college tier,0.01622090,0.01623350,0.00001260,0.00001260,0.07763083,0.00002100,0.00000000,55,54,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J07,candidate_name (gender-coded) and college tier,0.08979147,0.08979907,0.00000760,0.00000760,0.00846832,0.00001267,0.00000000,76,75,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J08,candidate_name (gender-coded) and college tier,0.00724238,0.00724800,0.00000562,0.00000562,0.07763083,0.00000937,0.00000000,103,102,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J09,candidate_name (gender-coded) and college tier,0.09736940,0.09738289,0.00001349,0.00001349,0.01385272,0.00002248,0.00000000,34,33,1,B,True,False
+task11_text_only,BP-01,RES-0123,RES-0161,J10,candidate_name (gender-coded) and college tier,0.00582754,0.00583207,0.00000453,0.00000453,0.07763083,0.00000754,0.00000000,123,122,1,B,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J01,candidate_name (gender-coded) only,0.00053858,0.00053525,-0.00000333,0.00000333,0.62071679,0.00000555,0.00000000,171,173,2,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J02,candidate_name (gender-coded) only,0.00052201,0.00051878,-0.00000323,0.00000323,0.62071679,0.00000538,0.00000000,170,172,2,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J03,candidate_name (gender-coded) only,0.08656918,0.08652853,-0.00004065,0.00004065,0.04696753,0.00006775,0.00000000,97,98,1,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J04,candidate_name (gender-coded) only,0.00053014,0.00052686,-0.00000328,0.00000328,0.62071679,0.00000547,0.00000000,170,172,2,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J05,candidate_name (gender-coded) only,0.08756473,0.08751791,-0.00004681,0.00004681,0.05347217,0.00007802,0.00000000,63,64,1,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J06,candidate_name (gender-coded) only,0.00049953,0.00049644,-0.00000309,0.00000309,0.62071679,0.00000515,0.00000000,168,171,3,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J07,candidate_name (gender-coded) only,0.18102953,0.18089940,-0.00013013,0.00013013,0.07190911,0.00021688,0.00000000,25,26,1,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J08,candidate_name (gender-coded) only,0.48843716,0.48788992,-0.00054725,0.00054725,0.11210298,0.00091208,0.00000000,6,7,1,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J09,candidate_name (gender-coded) only,0.00117480,0.00116753,-0.00000727,0.00000727,0.62071679,0.00001212,0.00000000,158,162,4,A,True,False
+task11_text_only,BP-02,RES-0114,RES-0162,J10,candidate_name (gender-coded) only,0.00308314,0.00306406,-0.00001908,0.00001908,0.62071679,0.00003180,0.00000000,148,149,1,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J01,candidate_name (gender-coded) and college tier,0.08656225,0.08654156,-0.00002070,0.00002070,0.02391081,0.00003449,0.00000000,83,84,1,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J02,candidate_name (gender-coded) and college tier,0.08195931,0.08195313,-0.00000618,0.00000618,0.00753943,0.00001030,0.00000000,103,105,2,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J03,candidate_name (gender-coded) and college tier,0.31796774,0.31772185,-0.00024589,0.00024589,0.07736026,0.00040981,0.00000000,17,18,1,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J04,candidate_name (gender-coded) and college tier,0.08646721,0.08644681,-0.00002040,0.00002040,0.02359036,0.00003399,0.00000000,83,84,1,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J05,candidate_name (gender-coded) and college tier,0.00308482,0.00307509,-0.00000973,0.00000973,0.31586640,0.00001621,0.00000000,145,146,1,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J06,candidate_name (gender-coded) and college tier,0.00583853,0.00582011,-0.00001841,0.00001841,0.31586640,0.00003069,0.00000000,115,116,1,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J07,candidate_name (gender-coded) and college tier,0.00050769,0.00050609,-0.00000160,0.00000160,0.31586640,0.00000267,0.00000000,179,181,2,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J08,candidate_name (gender-coded) and college tier,0.02045802,0.02039350,-0.00006452,0.00006452,0.31586640,0.00010753,0.00000000,75,76,1,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J09,candidate_name (gender-coded) and college tier,0.08687511,0.08685342,-0.00002168,0.00002168,0.02496068,0.00003614,0.00000000,59,60,1,A,True,False
+task11_text_only,BP-03,RES-0005,RES-0163,J10,candidate_name (gender-coded) and college tier,0.00053272,0.00053104,-0.00000168,0.00000168,0.31586640,0.00000280,0.00000000,166,169,3,A,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J01,candidate_name (gender-coded) only,0.08517190,0.08517358,0.00000168,0.00000168,0.00197022,0.00000280,0.00000000,91,90,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J02,candidate_name (gender-coded) only,0.08215449,0.08215519,0.00000070,0.00000070,0.00085090,0.00000117,0.00000000,96,95,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J03,candidate_name (gender-coded) only,0.17208808,0.17209200,0.00000392,0.00000392,0.00227912,0.00000654,0.00000000,51,50,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J04,candidate_name (gender-coded) only,0.08509591,0.08509756,0.00000165,0.00000165,0.00194300,0.00000276,0.00000000,95,94,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J05,candidate_name (gender-coded) only,0.11454505,0.11455626,0.00001121,0.00001121,0.00978482,0.00001868,0.00000000,28,27,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J06,candidate_name (gender-coded) only,0.10127630,0.10128320,0.00000690,0.00000690,0.00681613,0.00001151,0.00000000,33,32,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J07,candidate_name (gender-coded) only,0.01006572,0.01006899,0.00000327,0.00000327,0.03244099,0.00000544,0.00000000,137,136,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J08,candidate_name (gender-coded) only,0.00385316,0.00385441,0.00000125,0.00000125,0.03244099,0.00000208,0.00000000,127,126,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J09,candidate_name (gender-coded) only,0.00782401,0.00782655,0.00000254,0.00000254,0.03244099,0.00000423,0.00000000,78,77,1,B,True,False
+task11_text_only,BP-04,RES-0117,RES-0164,J10,candidate_name (gender-coded) only,0.00713338,0.00713569,0.00000231,0.00000231,0.03244099,0.00000386,0.00000000,105,104,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J01,candidate_name (gender-coded) and college tier,0.00495974,0.00496339,0.00000365,0.00000365,0.07357905,0.00000608,0.00000000,149,148,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J02,candidate_name (gender-coded) and college tier,0.00480708,0.00481062,0.00000354,0.00000354,0.07357905,0.00000590,0.00000000,134,133,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J03,candidate_name (gender-coded) and college tier,0.00526790,0.00527178,0.00000388,0.00000388,0.07357905,0.00000646,0.00000000,160,159,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J04,candidate_name (gender-coded) and college tier,0.00488202,0.00488561,0.00000359,0.00000359,0.07357905,0.00000599,0.00000000,150,149,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J05,candidate_name (gender-coded) and college tier,0.10529368,0.10531229,0.00001862,0.00001862,0.01768012,0.00003103,0.00000000,37,36,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J06,candidate_name (gender-coded) and college tier,0.00460010,0.00460348,0.00000339,0.00000339,0.07357905,0.00000564,0.00000000,125,124,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J07,candidate_name (gender-coded) and college tier,0.21133394,0.21137173,0.00003778,0.00003778,0.01787765,0.00006297,0.00000000,17,16,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J08,candidate_name (gender-coded) and college tier,0.00472388,0.00472735,0.00000348,0.00000348,0.07357905,0.00000580,0.00000000,118,117,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J09,candidate_name (gender-coded) and college tier,0.00491318,0.00491680,0.00000362,0.00000362,0.07357905,0.00000603,0.00000000,111,110,1,B,True,False
+task11_text_only,BP-05,RES-0118,RES-0165,J10,candidate_name (gender-coded) and college tier,0.00492163,0.00492525,0.00000362,0.00000362,0.07357905,0.00000604,0.00000000,128,127,1,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J01,candidate_name (gender-coded) only,0.17829319,0.17835146,0.00005827,0.00005827,0.03267756,0.00009712,0.00000000,37,36,1,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J02,candidate_name (gender-coded) only,0.08189093,0.08189695,0.00000602,0.00000602,0.00735511,0.00001004,0.00000000,108,107,1,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J03,candidate_name (gender-coded) only,0.17484237,0.17488964,0.00004728,0.00004728,0.02703732,0.00007880,0.00000000,44,43,1,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J04,candidate_name (gender-coded) only,0.16498425,0.16500013,0.00001588,0.00001588,0.00962282,0.00002646,0.00000000,48,47,1,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J05,candidate_name (gender-coded) only,0.51745850,0.51783265,0.00037415,0.00037415,0.07227996,0.00062359,0.00000000,7,6,1,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J06,candidate_name (gender-coded) only,0.00048054,0.00048207,0.00000153,0.00000153,0.31803492,0.00000255,0.00000000,180,177,3,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J07,candidate_name (gender-coded) only,0.09356337,0.09360658,0.00004320,0.00004320,0.04616656,0.00007201,0.00000000,63,62,1,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J08,candidate_name (gender-coded) only,0.00049347,0.00049505,0.00000157,0.00000157,0.31803492,0.00000262,0.00000000,174,173,1,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J09,candidate_name (gender-coded) only,0.00113014,0.00113374,0.00000360,0.00000360,0.31803492,0.00000600,0.00000000,170,168,2,B,True,False
+task11_text_only,BP-06,RES-0023,RES-0166,J10,candidate_name (gender-coded) only,0.01180800,0.01184561,0.00003761,0.00003761,0.31803492,0.00006269,0.00000000,65,64,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J01,candidate_name (gender-coded) and college tier,0.16656644,0.16657423,0.00000779,0.00000779,0.00467628,0.00001298,0.00000000,56,55,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J02,candidate_name (gender-coded) and college tier,0.08342876,0.08343283,0.00000407,0.00000407,0.00487505,0.00000678,0.00000000,79,78,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J03,candidate_name (gender-coded) and college tier,0.24790838,0.24791777,0.00000938,0.00000938,0.00378405,0.00001564,0.00000000,27,26,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J04,candidate_name (gender-coded) and college tier,0.16758195,0.16759094,0.00000899,0.00000899,0.00536674,0.00001499,0.00000000,42,41,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J05,candidate_name (gender-coded) and college tier,0.00374165,0.00374609,0.00000444,0.00000444,0.11855256,0.00000740,0.00000000,143,142,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J06,candidate_name (gender-coded) and college tier,0.00807630,0.00808588,0.00000958,0.00000958,0.11855256,0.00001597,0.00000000,90,89,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J07,candidate_name (gender-coded) and college tier,0.08896880,0.08897944,0.00001064,0.00001064,0.01195746,0.00001773,0.00000000,83,82,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J08,candidate_name (gender-coded) and college tier,0.55645964,0.55664524,0.00018560,0.00018560,0.03334761,0.00030933,0.00000000,2,1,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J09,candidate_name (gender-coded) and college tier,0.00109971,0.00110101,0.00000130,0.00000130,0.11855256,0.00000217,0.00000000,178,177,1,B,True,False
+task11_text_only,BP-07,RES-0076,RES-0167,J10,candidate_name (gender-coded) and college tier,0.00050028,0.00050088,0.00000059,0.00000059,0.11855256,0.00000099,0.00000000,181,180,1,B,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J01,candidate_name (gender-coded) only,0.05083555,0.05082131,-0.00001423,0.00001423,0.02800504,0.00002372,0.00000000,127,128,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J02,candidate_name (gender-coded) only,0.16138176,0.16135897,-0.00002279,0.00002279,0.01412143,0.00003798,0.00000000,27,28,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J03,candidate_name (gender-coded) only,0.00082637,0.00082613,-0.00000023,0.00000023,0.02800504,0.00000039,0.00000000,174,175,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J04,candidate_name (gender-coded) only,0.11126116,0.11125241,-0.00000875,0.00000875,0.00786781,0.00001459,0.00000000,56,57,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J05,candidate_name (gender-coded) only,0.08399425,0.08399313,-0.00000112,0.00000112,0.00133157,0.00000186,0.00000000,76,77,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J06,candidate_name (gender-coded) only,0.00072161,0.00072141,-0.00000020,0.00000020,0.02800504,0.00000034,0.00000000,153,154,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J07,candidate_name (gender-coded) only,0.00073577,0.00073556,-0.00000021,0.00000021,0.02800504,0.00000034,0.00000000,170,171,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J08,candidate_name (gender-coded) only,0.00074103,0.00074082,-0.00000021,0.00000021,0.02800504,0.00000035,0.00000000,159,160,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J09,candidate_name (gender-coded) only,0.00077072,0.00077051,-0.00000022,0.00000022,0.02800504,0.00000036,0.00000000,184,185,1,A,True,False
+task11_text_only,BP-08,RES-0026,RES-0168,J10,candidate_name (gender-coded) only,0.00942349,0.00942085,-0.00000264,0.00000264,0.02800504,0.00000440,0.00000000,74,75,1,A,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J01,candidate_name (gender-coded) and college tier,0.08385186,0.08386316,0.00001130,0.00001130,0.01347515,0.00001883,0.00000000,102,101,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J02,candidate_name (gender-coded) and college tier,0.08373330,0.08374425,0.00001095,0.00001095,0.01307892,0.00001825,0.00000000,73,72,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J03,candidate_name (gender-coded) and college tier,0.08172294,0.08172799,0.00000505,0.00000505,0.00618468,0.00000842,0.00000000,150,149,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J04,candidate_name (gender-coded) and college tier,0.08531279,0.08532838,0.00001559,0.00001559,0.01826731,0.00002598,0.00000000,93,92,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J05,candidate_name (gender-coded) and college tier,0.00053168,0.00053324,0.00000156,0.00000156,0.29293345,0.00000260,0.00000000,181,180,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J06,candidate_name (gender-coded) and college tier,0.00449488,0.00450806,0.00001319,0.00001319,0.29293345,0.00002198,0.00000000,127,126,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J07,candidate_name (gender-coded) and college tier,0.08614666,0.08616469,0.00001803,0.00001803,0.02092958,0.00003005,0.00000000,107,106,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J08,candidate_name (gender-coded) and college tier,0.00181171,0.00181702,0.00000531,0.00000531,0.29293345,0.00000886,0.00000000,158,157,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J09,candidate_name (gender-coded) and college tier,0.51578880,0.51612849,0.00033968,0.00033968,0.06583505,0.00056614,0.00000000,5,4,1,B,True,False
+task11_text_only,BP-09,RES-0007,RES-0169,J10,candidate_name (gender-coded) and college tier,0.00049816,0.00049963,0.00000146,0.00000146,0.29293345,0.00000244,0.00000000,183,182,1,B,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J01,candidate_name (gender-coded) only,0.00567860,0.00565984,-0.00001877,0.00001877,0.33100337,0.00003128,0.00000000,141,142,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J02,candidate_name (gender-coded) only,0.00550382,0.00548564,-0.00001819,0.00001819,0.33100337,0.00003031,0.00000000,126,127,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J03,candidate_name (gender-coded) only,0.08887112,0.08884180,-0.00002932,0.00002932,0.03299161,0.00004886,0.00000000,91,92,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J04,candidate_name (gender-coded) only,0.00558962,0.00557115,-0.00001847,0.00001847,0.33100337,0.00003079,0.00000000,142,143,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J05,candidate_name (gender-coded) only,0.18437111,0.18429057,-0.00008054,0.00008054,0.04369095,0.00013423,0.00000000,20,21,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J06,candidate_name (gender-coded) only,0.13596543,0.13578049,-0.00018494,0.00018494,0.13611346,0.00030824,0.00000000,13,14,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J07,candidate_name (gender-coded) only,0.17067743,0.17064215,-0.00003528,0.00003528,0.02067521,0.00005881,0.00000000,42,43,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J08,candidate_name (gender-coded) only,0.09823569,0.09817543,-0.00006026,0.00006026,0.06136213,0.00010044,0.00000000,32,33,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J09,candidate_name (gender-coded) only,0.00626253,0.00624184,-0.00002069,0.00002069,0.33100337,0.00003449,0.00000000,96,97,1,A,True,False
+task11_text_only,BP-10,RES-0110,RES-0170,J10,candidate_name (gender-coded) only,0.00816762,0.00814063,-0.00002699,0.00002699,0.33100337,0.00004498,0.00000000,91,92,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J01,candidate_name (gender-coded) and college tier,0.08243972,0.08243646,-0.00000326,0.00000326,0.00395581,0.00000544,0.00000000,115,116,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J02,candidate_name (gender-coded) and college tier,0.16630812,0.16629969,-0.00000843,0.00000843,0.00507015,0.00001405,0.00000000,24,25,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J03,candidate_name (gender-coded) and college tier,0.16477722,0.16477083,-0.00000639,0.00000639,0.00387534,0.00001064,0.00000000,66,67,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J04,candidate_name (gender-coded) and college tier,0.08240149,0.08239828,-0.00000321,0.00000321,0.00389562,0.00000535,0.00000000,119,120,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J05,candidate_name (gender-coded) and college tier,0.08406377,0.08405834,-0.00000543,0.00000543,0.00646187,0.00000905,0.00000000,74,75,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J06,candidate_name (gender-coded) and college tier,0.00598360,0.00597560,-0.00000800,0.00000800,0.13375618,0.00001333,0.00000000,113,114,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J07,candidate_name (gender-coded) and college tier,0.46338385,0.46319219,-0.00019166,0.00019166,0.04136877,0.00031943,0.00000000,5,6,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J08,candidate_name (gender-coded) and college tier,0.08747529,0.08746530,-0.00000999,0.00000999,0.01142328,0.00001665,0.00000000,48,49,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J09,candidate_name (gender-coded) and college tier,0.00589796,0.00589008,-0.00000788,0.00000788,0.13375618,0.00001314,0.00000000,101,102,1,A,True,False
+task11_text_only,BP-11,RES-0071,RES-0171,J10,candidate_name (gender-coded) and college tier,0.00837705,0.00836585,-0.00001120,0.00001120,0.13375618,0.00001866,0.00000000,84,85,1,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J01,candidate_name (gender-coded) only,0.17669438,0.17661128,-0.00008310,0.00008310,0.04704388,0.00013851,0.00000000,41,42,1,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J02,candidate_name (gender-coded) only,0.08202116,0.08201109,-0.00001006,0.00001006,0.01226744,0.00001677,0.00000000,99,101,2,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J03,candidate_name (gender-coded) only,0.35752632,0.35733952,-0.00018681,0.00018681,0.05226306,0.00031134,0.00000000,14,15,1,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J04,candidate_name (gender-coded) only,0.27045306,0.27030147,-0.00015159,0.00015159,0.05606789,0.00025266,0.00000000,21,22,1,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J05,candidate_name (gender-coded) only,0.00670572,0.00667234,-0.00003338,0.00003338,0.49904041,0.00005563,0.00000000,118,119,1,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J06,candidate_name (gender-coded) only,0.00051364,0.00051108,-0.00000256,0.00000256,0.49904041,0.00000426,0.00000000,159,162,3,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J07,candidate_name (gender-coded) only,0.00358905,0.00357118,-0.00001787,0.00001787,0.49904041,0.00002978,0.00000000,159,160,1,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J08,candidate_name (gender-coded) only,0.02028076,0.02017980,-0.00010096,0.00010096,0.49904041,0.00016826,0.00000000,77,78,1,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J09,candidate_name (gender-coded) only,0.00120798,0.00120196,-0.00000601,0.00000601,0.49904041,0.00001002,0.00000000,148,149,1,A,True,False
+task11_text_only,BP-12,RES-0128,RES-0172,J10,candidate_name (gender-coded) only,0.00054954,0.00054680,-0.00000274,0.00000274,0.49904041,0.00000456,0.00000000,162,163,1,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J01,candidate_name (gender-coded) and college tier,0.17315783,0.17313006,-0.00002777,0.00002777,0.01603903,0.00004628,0.00000000,47,48,1,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J02,candidate_name (gender-coded) and college tier,0.08367113,0.08366338,-0.00000775,0.00000775,0.00926074,0.00001291,0.00000000,75,76,1,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J03,candidate_name (gender-coded) and college tier,0.41718705,0.41698193,-0.00020512,0.00020512,0.04917966,0.00034187,0.00000000,8,9,1,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J04,candidate_name (gender-coded) and college tier,0.17435489,0.17432459,-0.00003030,0.00003030,0.01737819,0.00005050,0.00000000,34,35,1,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J05,candidate_name (gender-coded) and college tier,0.00825568,0.00823826,-0.00001742,0.00001742,0.21128064,0.00002904,0.00000000,107,109,2,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J06,candidate_name (gender-coded) and college tier,0.00217247,0.00216789,-0.00000459,0.00000459,0.21128064,0.00000764,0.00000000,145,146,1,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J07,candidate_name (gender-coded) and college tier,0.16970913,0.16968864,-0.00002049,0.00002049,0.01207543,0.00003415,0.00000000,46,47,1,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J08,candidate_name (gender-coded) and college tier,0.08644128,0.08642769,-0.00001359,0.00001359,0.01572847,0.00002266,0.00000000,57,58,1,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J09,candidate_name (gender-coded) and college tier,0.00294262,0.00293641,-0.00000621,0.00000621,0.21128064,0.00001035,0.00000000,131,133,2,A,True,False
+task11_text_only,BP-13,RES-0099,RES-0173,J10,candidate_name (gender-coded) and college tier,0.09566843,0.09563536,-0.00003307,0.00003307,0.03457269,0.00005512,0.00000000,34,35,1,A,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J01,candidate_name (gender-coded) only,0.09030620,0.09031513,0.00000893,0.00000893,0.00988269,0.00001488,0.00000000,73,72,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J02,candidate_name (gender-coded) only,0.08888438,0.08889208,0.00000769,0.00000769,0.00865563,0.00001282,0.00000000,50,49,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J03,candidate_name (gender-coded) only,0.08249873,0.08250089,0.00000216,0.00000216,0.00262290,0.00000361,0.00000000,137,136,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J04,candidate_name (gender-coded) only,0.08231569,0.08231770,0.00000201,0.00000201,0.00243617,0.00000334,0.00000000,124,123,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J05,candidate_name (gender-coded) only,0.51830360,0.51840605,0.00010245,0.00010245,0.01976452,0.00017075,0.00000000,5,4,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J06,candidate_name (gender-coded) only,0.00047974,0.00048016,0.00000042,0.00000042,0.08656205,0.00000069,0.00000000,182,181,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J07,candidate_name (gender-coded) only,0.00048916,0.00048958,0.00000042,0.00000042,0.08656205,0.00000071,0.00000000,184,183,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J08,candidate_name (gender-coded) only,0.00049265,0.00049308,0.00000043,0.00000043,0.08656205,0.00000071,0.00000000,176,175,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J09,candidate_name (gender-coded) only,0.00112826,0.00112924,0.00000098,0.00000098,0.08656205,0.00000163,0.00000000,172,171,1,B,True,False
+task11_text_only,BP-14,RES-0044,RES-0174,J10,candidate_name (gender-coded) only,0.00465766,0.00466169,0.00000403,0.00000403,0.08656205,0.00000672,0.00000000,134,133,1,B,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J01,candidate_name (gender-coded) and college tier,0.17309744,0.17306403,-0.00003341,0.00003341,0.01930540,0.00005569,0.00000000,49,50,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J02,candidate_name (gender-coded) and college tier,0.08410379,0.08409332,-0.00001047,0.00001047,0.01244909,0.00001745,0.00000000,69,70,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J03,candidate_name (gender-coded) and college tier,0.48230332,0.48209335,-0.00020997,0.00020997,0.04354445,0.00034995,0.00000000,4,5,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J04,candidate_name (gender-coded) and college tier,0.17140337,0.17137427,-0.00002909,0.00002909,0.01697429,0.00004849,0.00000000,36,37,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J05,candidate_name (gender-coded) and college tier,0.00595273,0.00593754,-0.00001519,0.00001519,0.25544386,0.00002531,0.00000000,128,129,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J06,candidate_name (gender-coded) and college tier,0.10273500,0.10267699,-0.00005800,0.00005800,0.05647292,0.00009667,0.00000000,24,25,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J07,candidate_name (gender-coded) and college tier,0.17274788,0.17271536,-0.00003252,0.00003252,0.01882813,0.00005420,0.00000000,36,37,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J08,candidate_name (gender-coded) and college tier,0.08494112,0.08492852,-0.00001261,0.00001261,0.01484161,0.00002101,0.00000000,65,66,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J09,candidate_name (gender-coded) and college tier,0.00977306,0.00974812,-0.00002493,0.00002493,0.25544386,0.00004155,0.00000000,70,71,1,A,True,False
+task11_text_only,BP-15,RES-0142,RES-0175,J10,candidate_name (gender-coded) and college tier,0.00892618,0.00890341,-0.00002277,0.00002277,0.25544386,0.00003795,0.00000000,77,78,1,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J01,candidate_name (gender-coded) only,0.00664365,0.00663177,-0.00001187,0.00001187,0.17888583,0.00001979,0.00000000,137,138,1,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J02,candidate_name (gender-coded) only,0.00643916,0.00642765,-0.00001151,0.00001151,0.17888583,0.00001918,0.00000000,122,124,2,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J03,candidate_name (gender-coded) only,0.00705644,0.00704383,-0.00001261,0.00001261,0.17888583,0.00002102,0.00000000,154,155,1,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J04,candidate_name (gender-coded) only,0.00653954,0.00652785,-0.00001169,0.00001169,0.17888583,0.00001948,0.00000000,139,140,1,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J05,candidate_name (gender-coded) only,0.10635998,0.10631287,-0.00004711,0.00004711,0.04430479,0.00007852,0.00000000,33,34,1,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J06,candidate_name (gender-coded) only,0.10410274,0.10405966,-0.00004308,0.00004308,0.04138870,0.00007180,0.00000000,21,22,1,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J07,candidate_name (gender-coded) only,0.08834290,0.08832799,-0.00001491,0.00001491,0.01687990,0.00002485,0.00000000,89,90,1,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J08,candidate_name (gender-coded) only,0.01580429,0.01577605,-0.00002825,0.00002825,0.17888583,0.00004708,0.00000000,81,82,1,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J09,candidate_name (gender-coded) only,0.00738113,0.00736794,-0.00001319,0.00001319,0.17888583,0.00002199,0.00000000,80,82,2,A,True,False
+task11_text_only,BP-16,RES-0086,RES-0176,J10,candidate_name (gender-coded) only,0.09124045,0.09122036,-0.00002009,0.00002009,0.02202072,0.00003348,0.00000000,48,49,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J01,candidate_name (gender-coded) and college tier,0.20176732,0.20174897,-0.00001835,0.00001835,0.00909290,0.00003058,0.00000000,19,20,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J02,candidate_name (gender-coded) and college tier,0.19613788,0.19612201,-0.00001587,0.00001587,0.00809311,0.00002646,0.00000000,11,12,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J03,candidate_name (gender-coded) and college tier,0.08332184,0.08332039,-0.00000146,0.00000146,0.00175114,0.00000243,0.00000000,122,123,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J04,candidate_name (gender-coded) and college tier,0.08606091,0.08605825,-0.00000266,0.00000266,0.00309339,0.00000444,0.00000000,85,86,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J05,candidate_name (gender-coded) and college tier,0.18580080,0.18578947,-0.00001133,0.00001133,0.00609952,0.00001889,0.00000000,18,19,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J06,candidate_name (gender-coded) and college tier,0.00051047,0.00051025,-0.00000022,0.00000022,0.04393314,0.00000037,0.00000000,163,164,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J07,candidate_name (gender-coded) and college tier,0.00052049,0.00052026,-0.00000023,0.00000023,0.04393314,0.00000038,0.00000000,175,176,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J08,candidate_name (gender-coded) and college tier,0.00052421,0.00052398,-0.00000023,0.00000023,0.04393314,0.00000038,0.00000000,164,165,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J09,candidate_name (gender-coded) and college tier,0.00120053,0.00120000,-0.00000053,0.00000053,0.04393314,0.00000088,0.00000000,150,151,1,A,True,False
+task11_text_only,BP-17,RES-0039,RES-0177,J10,candidate_name (gender-coded) and college tier,0.00315066,0.00314928,-0.00000138,0.00000138,0.04393314,0.00000231,0.00000000,146,147,1,A,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J01,candidate_name (gender-coded) only,0.18502120,0.18505250,0.00003130,0.00003130,0.01691715,0.00005217,0.00000000,26,25,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J02,candidate_name (gender-coded) only,0.17984144,0.17986626,0.00002482,0.00002482,0.01380164,0.00004137,0.00000000,20,19,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J03,candidate_name (gender-coded) only,0.16920311,0.16921463,0.00001151,0.00001151,0.00680438,0.00001919,0.00000000,57,56,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J04,candidate_name (gender-coded) only,0.51900069,0.51914957,0.00014888,0.00014888,0.02868114,0.00024813,0.00000000,6,5,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J05,candidate_name (gender-coded) only,0.00506104,0.00506737,0.00000633,0.00000633,0.12502753,0.00001055,0.00000000,134,133,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J06,candidate_name (gender-coded) only,0.09107754,0.09109140,0.00001386,0.00001386,0.01521515,0.00002310,0.00000000,51,50,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J07,candidate_name (gender-coded) only,0.08213665,0.08213933,0.00000267,0.00000267,0.00325437,0.00000446,0.00000000,133,132,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J08,candidate_name (gender-coded) only,0.00050719,0.00050783,0.00000063,0.00000063,0.12502753,0.00000106,0.00000000,171,170,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J09,candidate_name (gender-coded) only,0.09281025,0.09282628,0.00001603,0.00001603,0.01726639,0.00002671,0.00000000,42,41,1,B,True,False
+task11_text_only,BP-18,RES-0066,RES-0178,J10,candidate_name (gender-coded) only,0.00052843,0.00052909,0.00000066,0.00000066,0.12502753,0.00000110,0.00000000,172,170,2,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J01,candidate_name (gender-coded) and college tier,0.08317608,0.08317749,0.00000142,0.00000142,0.00170228,0.00000236,0.00000000,108,107,1,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J02,candidate_name (gender-coded) and college tier,0.08307832,0.08307969,0.00000137,0.00000137,0.00165183,0.00000229,0.00000000,84,83,1,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J03,candidate_name (gender-coded) and college tier,0.16633902,0.16634184,0.00000283,0.00000283,0.00169889,0.00000471,0.00000000,63,62,1,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J04,candidate_name (gender-coded) and college tier,0.08312631,0.08312770,0.00000139,0.00000139,0.00167661,0.00000232,0.00000000,108,107,1,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J05,candidate_name (gender-coded) and college tier,0.08341483,0.08341635,0.00000152,0.00000152,0.00182500,0.00000254,0.00000000,79,78,1,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J06,candidate_name (gender-coded) and college tier,0.00847713,0.00848091,0.00000378,0.00000378,0.04457025,0.00000630,0.00000000,84,82,2,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J07,candidate_name (gender-coded) and college tier,0.08793553,0.08793907,0.00000354,0.00000354,0.00402295,0.00000590,0.00000000,93,92,1,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J08,candidate_name (gender-coded) and college tier,0.08319168,0.08319310,0.00000142,0.00000142,0.00171032,0.00000237,0.00000000,70,69,1,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J09,candidate_name (gender-coded) and college tier,0.43570854,0.43576013,0.00005158,0.00005158,0.01183819,0.00008597,0.00000000,9,8,1,B,True,False
+task11_text_only,BP-19,RES-0038,RES-0179,J10,candidate_name (gender-coded) and college tier,0.00820111,0.00820477,0.00000366,0.00000366,0.04457025,0.00000609,0.00000000,90,89,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J01,candidate_name (gender-coded) only,0.18365423,0.18377960,0.00012537,0.00012537,0.06823868,0.00020894,0.00000000,28,27,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J02,candidate_name (gender-coded) only,0.09803039,0.09812595,0.00009556,0.00009556,0.09743245,0.00015927,0.00000000,39,38,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J03,candidate_name (gender-coded) only,0.18764349,0.18779000,0.00014651,0.00014651,0.07804784,0.00024418,0.00000000,31,30,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J04,candidate_name (gender-coded) only,0.44767109,0.44834774,0.00067665,0.00067665,0.15103458,0.00112775,0.00000000,11,10,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J05,candidate_name (gender-coded) only,0.00956389,0.00961458,0.00005069,0.00005069,0.52859326,0.00008448,0.00000000,99,98,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J06,candidate_name (gender-coded) only,0.00642994,0.00646402,0.00003408,0.00003408,0.52859326,0.00005680,0.00000000,102,101,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J07,candidate_name (gender-coded) only,0.00848891,0.00853390,0.00004499,0.00004499,0.52859326,0.00007498,0.00000000,140,139,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J08,candidate_name (gender-coded) only,0.00854958,0.00859489,0.00004531,0.00004531,0.52859326,0.00007552,0.00000000,94,93,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J09,candidate_name (gender-coded) only,0.10050445,0.10061312,0.00010867,0.00010867,0.10806850,0.00018112,0.00000000,30,29,1,B,True,False
+task11_text_only,BP-20,RES-0132,RES-0180,J10,candidate_name (gender-coded) only,0.09380536,0.09387852,0.00007317,0.00007317,0.07796893,0.00012195,0.00000000,43,42,1,B,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J01,candidate_name (gender-coded) and college tier,0.17684962,0.17682563,-0.00002399,0.00002399,0.01356351,0.00003998,0.00000000,39,40,1,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J02,candidate_name (gender-coded) and college tier,0.18987998,0.18983745,-0.00004253,0.00004253,0.02240302,0.00007089,0.00000000,15,16,1,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J03,candidate_name (gender-coded) and college tier,0.25713992,0.25711552,-0.00002440,0.00002440,0.00948892,0.00004066,0.00000000,23,24,1,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J04,candidate_name (gender-coded) and college tier,0.42674761,0.42659565,-0.00015195,0.00015195,0.03561403,0.00025326,0.00000000,12,13,1,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J05,candidate_name (gender-coded) and college tier,0.00897173,0.00895896,-0.00001277,0.00001277,0.14245115,0.00002129,0.00000000,104,105,1,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J06,candidate_name (gender-coded) and college tier,0.00658249,0.00657312,-0.00000937,0.00000937,0.14245115,0.00001562,0.00000000,98,99,1,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J07,candidate_name (gender-coded) and college tier,0.08671165,0.08670210,-0.00000955,0.00000955,0.01101876,0.00001592,0.00000000,98,100,2,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J08,candidate_name (gender-coded) and college tier,0.00386583,0.00386033,-0.00000550,0.00000550,0.14245115,0.00000917,0.00000000,124,125,1,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J09,candidate_name (gender-coded) and college tier,0.00467962,0.00467296,-0.00000666,0.00000666,0.14245115,0.00001110,0.00000000,114,115,1,A,True,False
+task11_text_only,BP-21,RES-0034,RES-0181,J10,candidate_name (gender-coded) and college tier,0.09815619,0.09813035,-0.00002585,0.00002585,0.02633425,0.00004308,0.00000000,31,32,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J01,candidate_name (gender-coded) only,0.16977293,0.16976069,-0.00001224,0.00001224,0.00721022,0.00002040,0.00000000,53,54,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J02,candidate_name (gender-coded) only,0.08172960,0.08172744,-0.00000217,0.00000217,0.00265063,0.00000361,0.00000000,114,115,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J03,candidate_name (gender-coded) only,0.38931702,0.38923020,-0.00008682,0.00008682,0.02230290,0.00014470,0.00000000,12,13,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J04,candidate_name (gender-coded) only,0.16439145,0.16438595,-0.00000550,0.00000550,0.00334590,0.00000917,0.00000000,51,52,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J05,candidate_name (gender-coded) only,0.00550831,0.00550141,-0.00000690,0.00000690,0.12532809,0.00001150,0.00000000,131,132,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J06,candidate_name (gender-coded) only,0.00051223,0.00051159,-0.00000064,0.00000064,0.12532809,0.00000107,0.00000000,160,161,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J07,candidate_name (gender-coded) only,0.08262725,0.08262396,-0.00000329,0.00000329,0.00398257,0.00000548,0.00000000,128,129,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J08,candidate_name (gender-coded) only,0.08579218,0.08578492,-0.00000725,0.00000725,0.00845647,0.00001209,0.00000000,61,62,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J09,candidate_name (gender-coded) only,0.09119214,0.09117812,-0.00001402,0.00001402,0.01537324,0.00002336,0.00000000,48,49,1,A,True,False
+task11_text_only,BP-22,RES-0083,RES-0182,J10,candidate_name (gender-coded) only,0.09192442,0.09190949,-0.00001494,0.00001494,0.01624868,0.00002489,0.00000000,46,47,1,A,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J01,candidate_name (gender-coded) and college tier,0.09997823,0.10003464,0.00005641,0.00005641,0.05640469,0.00009401,0.00000000,63,62,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J02,candidate_name (gender-coded) and college tier,0.00930078,0.00932704,0.00002626,0.00002626,0.28195093,0.00004377,0.00000000,120,119,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J03,candidate_name (gender-coded) and college tier,0.08634132,0.08635922,0.00001790,0.00001790,0.02073491,0.00002984,0.00000000,100,99,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J04,candidate_name (gender-coded) and college tier,0.18806409,0.18814333,0.00007924,0.00007924,0.04212499,0.00013206,0.00000000,28,27,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J05,candidate_name (gender-coded) and college tier,0.00632305,0.00634090,0.00001785,0.00001785,0.28195093,0.00002976,0.00000000,123,122,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J06,candidate_name (gender-coded) and college tier,0.00905227,0.00907783,0.00002556,0.00002556,0.28195093,0.00004260,0.00000000,81,80,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J07,candidate_name (gender-coded) and college tier,0.00684183,0.00686115,0.00001932,0.00001932,0.28195093,0.00003220,0.00000000,145,144,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J08,candidate_name (gender-coded) and college tier,0.00689073,0.00691018,0.00001946,0.00001946,0.28195093,0.00003243,0.00000000,106,105,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J09,candidate_name (gender-coded) and college tier,0.00463926,0.00465236,0.00001310,0.00001310,0.28195093,0.00002183,0.00000000,117,116,1,B,True,False
+task11_text_only,BP-23,RES-0134,RES-0183,J10,candidate_name (gender-coded) and college tier,0.08778854,0.08781053,0.00002199,0.00002199,0.02504668,0.00003665,0.00000000,55,54,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J01,candidate_name (gender-coded) only,0.08258487,0.08259551,0.00001064,0.00001064,0.01287803,0.00001773,0.00000000,112,111,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J02,candidate_name (gender-coded) only,0.00055084,0.00055310,0.00000227,0.00000227,0.41062595,0.00000378,0.00000000,163,162,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J03,candidate_name (gender-coded) only,0.08274548,0.08275677,0.00001130,0.00001130,0.01365158,0.00001883,0.00000000,133,132,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J04,candidate_name (gender-coded) only,0.08254436,0.08255483,0.00001047,0.00001047,0.01268245,0.00001745,0.00000000,115,114,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J05,candidate_name (gender-coded) only,0.00273757,0.00274883,0.00001126,0.00001126,0.41062595,0.00001877,0.00000000,150,149,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J06,candidate_name (gender-coded) only,0.11028300,0.11040761,0.00012461,0.00012461,0.11292342,0.00020768,0.00000000,17,16,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J07,candidate_name (gender-coded) only,0.08663419,0.08666149,0.00002730,0.00002730,0.03150426,0.00004550,0.00000000,102,101,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J08,candidate_name (gender-coded) only,0.01462679,0.01468697,0.00006018,0.00006018,0.41062595,0.00010031,0.00000000,86,85,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J09,candidate_name (gender-coded) only,0.00123968,0.00124478,0.00000510,0.00000510,0.41062595,0.00000850,0.00000000,145,144,1,B,True,False
+task11_text_only,BP-24,RES-0122,RES-0184,J10,candidate_name (gender-coded) only,0.09507455,0.09513658,0.00006203,0.00006203,0.06521951,0.00010338,0.00000000,39,38,1,B,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J01,candidate_name (gender-coded) and college tier,0.34711533,0.34690866,-0.00020667,0.00020667,0.05955636,0.00034445,0.00000000,7,8,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J02,candidate_name (gender-coded) and college tier,0.13420341,0.13409883,-0.00010458,0.00010458,0.07795669,0.00017430,0.00000000,29,30,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J03,candidate_name (gender-coded) and college tier,0.08632612,0.08631391,-0.00001221,0.00001221,0.01413991,0.00002034,0.00000000,101,102,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J04,candidate_name (gender-coded) and college tier,0.09298855,0.09296349,-0.00002506,0.00002506,0.02695322,0.00004177,0.00000000,69,70,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J05,candidate_name (gender-coded) and college tier,0.00247563,0.00247085,-0.00000478,0.00000478,0.19312576,0.00000796,0.00000000,157,158,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J06,candidate_name (gender-coded) and college tier,0.09176273,0.09174003,-0.00002269,0.00002269,0.02473526,0.00003782,0.00000000,46,47,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J07,candidate_name (gender-coded) and college tier,0.17612298,0.17609187,-0.00003111,0.00003111,0.01766399,0.00005185,0.00000000,30,31,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J08,candidate_name (gender-coded) and college tier,0.00048951,0.00048856,-0.00000094,0.00000094,0.19312576,0.00000157,0.00000000,178,179,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J09,candidate_name (gender-coded) and college tier,0.00112106,0.00111890,-0.00000216,0.00000216,0.19312576,0.00000360,0.00000000,173,174,1,A,True,False
+task11_text_only,BP-25,RES-0127,RES-0185,J10,candidate_name (gender-coded) and college tier,0.00051000,0.00050902,-0.00000098,0.00000098,0.19312576,0.00000164,0.00000000,176,177,1,A,True,False
+task12_fair,BP-01,RES-0123,RES-0161,J01,candidate_name (gender-coded) and college tier,0.52812322,0.52812322,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,2,2,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J02,candidate_name (gender-coded) and college tier,0.40746323,0.40746323,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,2,2,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J03,candidate_name (gender-coded) and college tier,0.17488968,0.17488968,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,45,45,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J04,candidate_name (gender-coded) and college tier,0.18157874,0.18157874,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,30,30,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J05,candidate_name (gender-coded) and college tier,0.00839980,0.00839980,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,110,110,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J06,candidate_name (gender-coded) and college tier,0.01681794,0.01681794,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,54,54,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J07,candidate_name (gender-coded) and college tier,0.09015186,0.09015186,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,75,75,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J08,candidate_name (gender-coded) and college tier,0.00750895,0.00750895,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,102,102,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J09,candidate_name (gender-coded) and college tier,0.09800871,0.09800871,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,33,33,0,tie,False,False
+task12_fair,BP-01,RES-0123,RES-0161,J10,candidate_name (gender-coded) and college tier,0.00604204,0.00604204,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,123,123,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J01,candidate_name (gender-coded) only,0.00055858,0.00055858,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,171,171,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J02,candidate_name (gender-coded) only,0.00054139,0.00054139,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J03,candidate_name (gender-coded) only,0.08681310,0.08681310,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,97,97,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J04,candidate_name (gender-coded) only,0.00054983,0.00054983,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J05,candidate_name (gender-coded) only,0.08784561,0.08784561,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,63,63,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J06,candidate_name (gender-coded) only,0.00051808,0.00051808,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,169,169,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J07,candidate_name (gender-coded) only,0.18181038,0.18181038,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,25,25,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J08,candidate_name (gender-coded) only,0.49172094,0.49172094,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,6,6,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J09,candidate_name (gender-coded) only,0.00121842,0.00121842,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task12_fair,BP-02,RES-0114,RES-0162,J10,candidate_name (gender-coded) only,0.00319762,0.00319762,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,148,148,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J01,candidate_name (gender-coded) and college tier,0.08682855,0.08682855,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,83,83,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J02,candidate_name (gender-coded) and college tier,0.08203881,0.08203881,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,103,103,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J03,candidate_name (gender-coded) and college tier,0.32113168,0.32113168,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,17,17,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J04,candidate_name (gender-coded) and college tier,0.08672965,0.08672965,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,83,83,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J05,candidate_name (gender-coded) and college tier,0.00321001,0.00321001,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,145,145,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J06,candidate_name (gender-coded) and college tier,0.00607546,0.00607546,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,115,115,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J07,candidate_name (gender-coded) and college tier,0.00052829,0.00052829,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,179,179,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J08,candidate_name (gender-coded) and college tier,0.02128820,0.02128820,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,77,77,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J09,candidate_name (gender-coded) and college tier,0.08715410,0.08715410,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,59,59,0,tie,False,False
+task12_fair,BP-03,RES-0005,RES-0163,J10,candidate_name (gender-coded) and college tier,0.00055434,0.00055434,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,166,166,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J01,candidate_name (gender-coded) only,0.08542111,0.08542111,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,90,90,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J02,candidate_name (gender-coded) only,0.08225831,0.08225831,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,95,95,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J03,candidate_name (gender-coded) only,0.17267055,0.17267055,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,50,50,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J04,candidate_name (gender-coded) only,0.08534146,0.08534146,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,94,94,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J05,candidate_name (gender-coded) only,0.11620962,0.11620962,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,27,27,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J06,candidate_name (gender-coded) only,0.10230151,0.10230151,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,32,32,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J07,candidate_name (gender-coded) only,0.01055074,0.01055074,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,136,136,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J08,candidate_name (gender-coded) only,0.00403882,0.00403882,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,124,124,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J09,candidate_name (gender-coded) only,0.00820102,0.00820102,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,77,77,0,tie,False,False
+task12_fair,BP-04,RES-0117,RES-0164,J10,candidate_name (gender-coded) only,0.00747710,0.00747710,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,103,103,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J01,candidate_name (gender-coded) and college tier,0.00530507,0.00530507,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,148,148,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J02,candidate_name (gender-coded) and college tier,0.00514178,0.00514178,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,133,133,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J03,candidate_name (gender-coded) and college tier,0.00563469,0.00563469,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J04,candidate_name (gender-coded) and college tier,0.00522194,0.00522194,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,149,149,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J05,candidate_name (gender-coded) and college tier,0.10705480,0.10705480,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,33,33,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J06,candidate_name (gender-coded) and college tier,0.00492039,0.00492039,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,123,123,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J07,candidate_name (gender-coded) and college tier,0.21490817,0.21490817,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,16,16,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J08,candidate_name (gender-coded) and college tier,0.00505279,0.00505279,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,117,117,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J09,candidate_name (gender-coded) and college tier,0.00525527,0.00525527,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,109,109,0,tie,False,False
+task12_fair,BP-05,RES-0118,RES-0165,J10,candidate_name (gender-coded) and college tier,0.00526431,0.00526431,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,127,127,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J01,candidate_name (gender-coded) only,0.17904472,0.17904472,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,36,36,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J02,candidate_name (gender-coded) only,0.08196861,0.08196861,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,107,107,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J03,candidate_name (gender-coded) only,0.17545213,0.17545213,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,43,43,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J04,candidate_name (gender-coded) only,0.16518902,0.16518902,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,47,47,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J05,candidate_name (gender-coded) only,0.52228404,0.52228404,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,6,6,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J06,candidate_name (gender-coded) only,0.00050028,0.00050028,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,178,178,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J07,candidate_name (gender-coded) only,0.09412060,0.09412060,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,62,62,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J08,candidate_name (gender-coded) only,0.00051375,0.00051375,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,173,173,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J09,candidate_name (gender-coded) only,0.00117657,0.00117657,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,168,168,0,tie,False,False
+task12_fair,BP-06,RES-0023,RES-0166,J10,candidate_name (gender-coded) only,0.01229310,0.01229310,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,64,64,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J01,candidate_name (gender-coded) and college tier,0.16680969,0.16680969,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,55,55,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J02,candidate_name (gender-coded) and college tier,0.08355578,0.08355578,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,78,78,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J03,candidate_name (gender-coded) and college tier,0.24820135,0.24820135,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,26,26,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J04,candidate_name (gender-coded) and college tier,0.16786282,0.16786282,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,41,41,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J05,candidate_name (gender-coded) and college tier,0.00388026,0.00388026,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,142,142,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J06,candidate_name (gender-coded) and college tier,0.00837548,0.00837548,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,89,89,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J07,candidate_name (gender-coded) and college tier,0.08930105,0.08930105,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,82,82,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J08,candidate_name (gender-coded) and college tier,0.56225564,0.56225564,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1,1,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J09,candidate_name (gender-coded) and college tier,0.00114045,0.00114045,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,177,177,0,tie,False,False
+task12_fair,BP-07,RES-0076,RES-0167,J10,candidate_name (gender-coded) and college tier,0.00051882,0.00051882,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,180,180,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J01,candidate_name (gender-coded) only,0.05378704,0.05378704,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,127,127,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J02,candidate_name (gender-coded) only,0.16610676,0.16610676,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,27,27,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J03,candidate_name (gender-coded) only,0.00087434,0.00087434,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,174,174,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J04,candidate_name (gender-coded) only,0.11307617,0.11307617,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,56,56,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J05,candidate_name (gender-coded) only,0.08422616,0.08422616,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,74,74,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J06,candidate_name (gender-coded) only,0.00076350,0.00076350,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,153,153,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J07,candidate_name (gender-coded) only,0.00077849,0.00077849,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J08,candidate_name (gender-coded) only,0.00078405,0.00078405,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J09,candidate_name (gender-coded) only,0.00081547,0.00081547,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,184,184,0,tie,False,False
+task12_fair,BP-08,RES-0026,RES-0168,J10,candidate_name (gender-coded) only,0.00997062,0.00997062,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,74,74,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J01,candidate_name (gender-coded) and college tier,0.08394436,0.08394436,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,103,103,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J02,candidate_name (gender-coded) and college tier,0.08382296,0.08382296,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,73,73,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J03,candidate_name (gender-coded) and college tier,0.08176432,0.08176432,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,149,149,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J04,candidate_name (gender-coded) and college tier,0.08544039,0.08544039,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,92,92,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J05,candidate_name (gender-coded) and college tier,0.00054445,0.00054445,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,180,180,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J06,candidate_name (gender-coded) and college tier,0.00460283,0.00460283,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,126,126,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J07,candidate_name (gender-coded) and college tier,0.08629428,0.08629428,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,106,106,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J08,candidate_name (gender-coded) and college tier,0.00185522,0.00185522,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,157,157,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J09,candidate_name (gender-coded) and college tier,0.51856965,0.51856965,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,4,4,0,tie,False,False
+task12_fair,BP-09,RES-0007,RES-0169,J10,candidate_name (gender-coded) and college tier,0.00051013,0.00051013,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,182,182,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J01,candidate_name (gender-coded) only,0.00589559,0.00589559,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,141,141,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J02,candidate_name (gender-coded) only,0.00571413,0.00571413,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,126,126,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J03,candidate_name (gender-coded) only,0.08921009,0.08921009,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,91,91,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J04,candidate_name (gender-coded) only,0.00580320,0.00580320,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,142,142,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J05,candidate_name (gender-coded) only,0.18530236,0.18530236,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,20,20,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J06,candidate_name (gender-coded) only,0.13810395,0.13810395,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,13,13,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J07,candidate_name (gender-coded) only,0.17108543,0.17108543,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,42,42,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J08,candidate_name (gender-coded) only,0.09893250,0.09893250,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,32,32,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J09,candidate_name (gender-coded) only,0.00650183,0.00650183,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,96,96,0,tie,False,False
+task12_fair,BP-10,RES-0110,RES-0170,J10,candidate_name (gender-coded) only,0.00847972,0.00847972,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,91,91,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J01,candidate_name (gender-coded) and college tier,0.08250513,0.08250513,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,115,115,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J02,candidate_name (gender-coded) and college tier,0.16647725,0.16647725,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,25,25,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J03,candidate_name (gender-coded) and college tier,0.16490531,0.16490531,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,66,66,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J04,candidate_name (gender-coded) and college tier,0.08246587,0.08246587,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,120,120,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J05,candidate_name (gender-coded) and college tier,0.08417273,0.08417273,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,76,76,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J06,candidate_name (gender-coded) and college tier,0.00614403,0.00614403,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,113,113,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J07,candidate_name (gender-coded) and college tier,0.46722825,0.46722825,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,5,5,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J08,candidate_name (gender-coded) and college tier,0.08767572,0.08767572,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,49,49,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J09,candidate_name (gender-coded) and college tier,0.00605610,0.00605610,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,102,102,0,tie,False,False
+task12_fair,BP-11,RES-0071,RES-0171,J10,candidate_name (gender-coded) and college tier,0.00860165,0.00860165,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,86,86,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J01,candidate_name (gender-coded) only,0.17753666,0.17753666,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,41,41,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J02,candidate_name (gender-coded) only,0.08212313,0.08212313,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,99,99,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J03,candidate_name (gender-coded) only,0.35941963,0.35941963,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,14,14,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J04,candidate_name (gender-coded) only,0.27198951,0.27198951,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,21,21,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J05,candidate_name (gender-coded) only,0.00704404,0.00704404,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,117,117,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J06,candidate_name (gender-coded) only,0.00053955,0.00053955,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J07,candidate_name (gender-coded) only,0.00377012,0.00377012,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,159,159,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J08,candidate_name (gender-coded) only,0.02130398,0.02130398,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,75,75,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J09,candidate_name (gender-coded) only,0.00126892,0.00126892,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,148,148,0,tie,False,False
+task12_fair,BP-12,RES-0128,RES-0172,J10,candidate_name (gender-coded) only,0.00057727,0.00057727,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,162,162,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J01,candidate_name (gender-coded) and college tier,0.17364945,0.17364945,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,47,47,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J02,candidate_name (gender-coded) and college tier,0.08380830,0.08380830,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,75,75,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J03,candidate_name (gender-coded) and college tier,0.42081831,0.42081831,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,8,8,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J04,candidate_name (gender-coded) and college tier,0.17489124,0.17489124,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,34,34,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J05,candidate_name (gender-coded) and college tier,0.00856414,0.00856414,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,108,108,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J06,candidate_name (gender-coded) and college tier,0.00225365,0.00225365,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,145,145,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J07,candidate_name (gender-coded) and college tier,0.17007190,0.17007190,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,46,46,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J08,candidate_name (gender-coded) and college tier,0.08668195,0.08668195,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,57,57,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J09,candidate_name (gender-coded) and college tier,0.00305257,0.00305257,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,132,132,0,tie,False,False
+task12_fair,BP-13,RES-0099,RES-0173,J10,candidate_name (gender-coded) and college tier,0.09625386,0.09625386,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,34,34,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J01,candidate_name (gender-coded) only,0.09072738,0.09072738,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,72,72,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J02,candidate_name (gender-coded) only,0.08924746,0.08924746,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,49,49,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J03,candidate_name (gender-coded) only,0.08260084,0.08260084,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,136,136,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J04,candidate_name (gender-coded) only,0.08241032,0.08241032,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,123,123,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J05,candidate_name (gender-coded) only,0.52313831,0.52313831,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,4,4,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J06,candidate_name (gender-coded) only,0.00049935,0.00049935,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,180,180,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J07,candidate_name (gender-coded) only,0.00050915,0.00050915,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,183,183,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J08,candidate_name (gender-coded) only,0.00051279,0.00051279,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,175,175,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J09,candidate_name (gender-coded) only,0.00117437,0.00117437,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task12_fair,BP-14,RES-0044,RES-0174,J10,candidate_name (gender-coded) only,0.00484800,0.00484800,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,132,132,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J01,candidate_name (gender-coded) and college tier,0.17341330,0.17341330,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,49,49,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J02,candidate_name (gender-coded) and college tier,0.08420276,0.08420276,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,69,69,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J03,candidate_name (gender-coded) and college tier,0.48428819,0.48428819,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,4,4,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J04,candidate_name (gender-coded) and college tier,0.17167837,0.17167837,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,36,36,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J05,candidate_name (gender-coded) and college tier,0.00609629,0.00609629,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,128,128,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J06,candidate_name (gender-coded) and college tier,0.10328328,0.10328328,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,26,26,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J07,candidate_name (gender-coded) and college tier,0.17305532,0.17305532,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,36,36,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J08,candidate_name (gender-coded) and college tier,0.08506029,0.08506029,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,65,65,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J09,candidate_name (gender-coded) and college tier,0.01000875,0.01000875,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,70,70,0,tie,False,False
+task12_fair,BP-15,RES-0142,RES-0175,J10,candidate_name (gender-coded) and college tier,0.00914145,0.00914145,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,78,78,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J01,candidate_name (gender-coded) only,0.00681460,0.00681460,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,138,138,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J02,candidate_name (gender-coded) only,0.00660486,0.00660486,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,123,123,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J03,candidate_name (gender-coded) only,0.00723802,0.00723802,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,154,154,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J04,candidate_name (gender-coded) only,0.00670781,0.00670781,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,139,139,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J05,candidate_name (gender-coded) only,0.10703828,0.10703828,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,35,35,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J06,candidate_name (gender-coded) only,0.10472295,0.10472295,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,22,22,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J07,candidate_name (gender-coded) only,0.08855758,0.08855758,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,89,89,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J08,candidate_name (gender-coded) only,0.01621097,0.01621097,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,81,81,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J09,candidate_name (gender-coded) only,0.00757106,0.00757106,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,82,82,0,tie,False,False
+task12_fair,BP-16,RES-0086,RES-0176,J10,candidate_name (gender-coded) only,0.09152968,0.09152968,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,48,48,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J01,candidate_name (gender-coded) and college tier,0.20353268,0.20353268,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,19,19,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J02,candidate_name (gender-coded) and college tier,0.19766531,0.19766531,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,11,11,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J03,candidate_name (gender-coded) and college tier,0.08346225,0.08346225,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,122,122,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J04,candidate_name (gender-coded) and college tier,0.08631708,0.08631708,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,85,85,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J05,candidate_name (gender-coded) and college tier,0.18689132,0.18689132,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,18,18,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J06,candidate_name (gender-coded) and college tier,0.00053205,0.00053205,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,161,161,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J07,candidate_name (gender-coded) and college tier,0.00054249,0.00054249,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,175,175,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J08,candidate_name (gender-coded) and college tier,0.00054636,0.00054636,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,165,165,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J09,candidate_name (gender-coded) and college tier,0.00125127,0.00125127,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,151,151,0,tie,False,False
+task12_fair,BP-17,RES-0039,RES-0177,J10,candidate_name (gender-coded) and college tier,0.00328383,0.00328383,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,146,146,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J01,candidate_name (gender-coded) only,0.18600627,0.18600627,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,25,25,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J02,candidate_name (gender-coded) only,0.18062259,0.18062259,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,19,19,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J03,candidate_name (gender-coded) only,0.16956543,0.16956543,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,56,56,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J04,candidate_name (gender-coded) only,0.52368569,0.52368569,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,5,5,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J05,candidate_name (gender-coded) only,0.00526029,0.00526029,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,133,133,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J06,candidate_name (gender-coded) only,0.09151366,0.09151366,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,50,50,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J07,candidate_name (gender-coded) only,0.08222077,0.08222077,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,132,132,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J08,candidate_name (gender-coded) only,0.00052716,0.00052716,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J09,candidate_name (gender-coded) only,0.09331458,0.09331458,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,41,41,0,tie,False,False
+task12_fair,BP-18,RES-0066,RES-0178,J10,candidate_name (gender-coded) only,0.00054923,0.00054923,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,170,170,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J01,candidate_name (gender-coded) and college tier,0.08331971,0.08331971,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,107,107,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J02,candidate_name (gender-coded) and college tier,0.08321753,0.08321753,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,83,83,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J03,candidate_name (gender-coded) and college tier,0.16662568,0.16662568,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,62,62,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J04,candidate_name (gender-coded) and college tier,0.08326769,0.08326769,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,107,107,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J05,candidate_name (gender-coded) and college tier,0.08356925,0.08356925,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,78,78,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J06,candidate_name (gender-coded) and college tier,0.00886049,0.00886049,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,83,83,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J07,candidate_name (gender-coded) and college tier,0.08829440,0.08829440,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,92,92,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J08,candidate_name (gender-coded) and college tier,0.08333601,0.08333601,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,69,69,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J09,candidate_name (gender-coded) and college tier,0.44094119,0.44094119,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,8,8,0,tie,False,False
+task12_fair,BP-19,RES-0038,RES-0179,J10,candidate_name (gender-coded) and college tier,0.00857199,0.00857199,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,89,89,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J01,candidate_name (gender-coded) only,0.18493715,0.18493715,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,27,27,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J02,candidate_name (gender-coded) only,0.09900829,0.09900829,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,38,38,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J03,candidate_name (gender-coded) only,0.18914278,0.18914278,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,30,30,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J04,candidate_name (gender-coded) only,0.45459550,0.45459550,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,10,10,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J05,candidate_name (gender-coded) only,0.01008260,0.01008260,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,98,98,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J06,candidate_name (gender-coded) only,0.00677867,0.00677867,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,101,101,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J07,candidate_name (gender-coded) only,0.00894932,0.00894932,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,139,139,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J08,candidate_name (gender-coded) only,0.00901328,0.00901328,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,93,93,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J09,candidate_name (gender-coded) only,0.10161654,0.10161654,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,28,28,0,tie,False,False
+task12_fair,BP-20,RES-0132,RES-0180,J10,candidate_name (gender-coded) only,0.09455411,0.09455411,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,42,42,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J01,candidate_name (gender-coded) and college tier,0.17756937,0.17756937,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,39,39,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J02,candidate_name (gender-coded) and college tier,0.19115635,0.19115635,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,15,15,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J03,candidate_name (gender-coded) and college tier,0.25787207,0.25787207,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,23,23,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J04,candidate_name (gender-coded) and college tier,0.43130748,0.43130748,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,12,12,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J05,candidate_name (gender-coded) and college tier,0.00935497,0.00935497,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,104,104,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J06,candidate_name (gender-coded) and college tier,0.00686367,0.00686367,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,99,99,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J07,candidate_name (gender-coded) and college tier,0.08699835,0.08699835,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,99,99,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J08,candidate_name (gender-coded) and college tier,0.00403097,0.00403097,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,126,126,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J09,candidate_name (gender-coded) and college tier,0.00487952,0.00487952,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,114,114,0,tie,False,False
+task12_fair,BP-21,RES-0034,RES-0181,J10,candidate_name (gender-coded) and college tier,0.09893176,0.09893176,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,31,31,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J01,candidate_name (gender-coded) only,0.17007849,0.17007849,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,53,53,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J02,candidate_name (gender-coded) only,0.08178368,0.08178368,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,114,114,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J03,candidate_name (gender-coded) only,0.39148431,0.39148431,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,12,12,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J04,candidate_name (gender-coded) only,0.16452876,0.16452876,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,51,51,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J05,candidate_name (gender-coded) only,0.00568054,0.00568054,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,131,131,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J06,candidate_name (gender-coded) only,0.00052825,0.00052825,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,166,166,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J07,candidate_name (gender-coded) only,0.08270939,0.08270939,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,128,128,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J08,candidate_name (gender-coded) only,0.08597328,0.08597328,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,61,61,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J09,candidate_name (gender-coded) only,0.09154208,0.09154208,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,48,48,0,tie,False,False
+task12_fair,BP-22,RES-0083,RES-0182,J10,candidate_name (gender-coded) only,0.09229725,0.09229725,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,46,46,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J01,candidate_name (gender-coded) and college tier,0.10085893,0.10085893,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,62,62,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J02,candidate_name (gender-coded) and college tier,0.00971078,0.00971078,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,119,119,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J03,candidate_name (gender-coded) and college tier,0.08662086,0.08662086,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,99,99,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J04,candidate_name (gender-coded) and college tier,0.18930124,0.18930124,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,27,27,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J05,candidate_name (gender-coded) and college tier,0.00660179,0.00660179,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,122,122,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J06,candidate_name (gender-coded) and college tier,0.00945132,0.00945132,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,80,80,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J07,candidate_name (gender-coded) and college tier,0.00714344,0.00714344,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,144,144,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J08,candidate_name (gender-coded) and college tier,0.00719449,0.00719449,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,105,105,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J09,candidate_name (gender-coded) and college tier,0.00484378,0.00484378,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,116,116,0,tie,False,False
+task12_fair,BP-23,RES-0134,RES-0183,J10,candidate_name (gender-coded) and college tier,0.08813189,0.08813189,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,54,54,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J01,candidate_name (gender-coded) only,0.08271011,0.08271011,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,111,111,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J02,candidate_name (gender-coded) only,0.00057752,0.00057752,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,161,161,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J03,candidate_name (gender-coded) only,0.08287849,0.08287849,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,131,131,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J04,candidate_name (gender-coded) only,0.08266764,0.08266764,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,114,114,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J05,candidate_name (gender-coded) only,0.00287020,0.00287020,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,149,149,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J06,candidate_name (gender-coded) only,0.11175019,0.11175019,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,16,16,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J07,candidate_name (gender-coded) only,0.08695561,0.08695561,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,102,102,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J08,candidate_name (gender-coded) only,0.01533544,0.01533544,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,84,84,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J09,candidate_name (gender-coded) only,0.00129974,0.00129974,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,143,143,0,tie,False,False
+task12_fair,BP-24,RES-0122,RES-0184,J10,candidate_name (gender-coded) only,0.09580490,0.09580490,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,38,38,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J01,candidate_name (gender-coded) and college tier,0.35099473,0.35099473,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,7,7,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J02,candidate_name (gender-coded) and college tier,0.13616650,0.13616650,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,29,29,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J03,candidate_name (gender-coded) and college tier,0.08655523,0.08655523,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,101,101,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J04,candidate_name (gender-coded) and college tier,0.09345895,0.09345895,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,69,69,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J05,candidate_name (gender-coded) and college tier,0.00256529,0.00256529,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,157,157,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J06,candidate_name (gender-coded) and college tier,0.09218874,0.09218874,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,46,46,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J07,candidate_name (gender-coded) and college tier,0.17670691,0.17670691,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,30,30,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J08,candidate_name (gender-coded) and college tier,0.00050724,0.00050724,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,179,179,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J09,candidate_name (gender-coded) and college tier,0.00116167,0.00116167,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,173,173,0,tie,False,False
+task12_fair,BP-25,RES-0127,RES-0185,J10,candidate_name (gender-coded) and college tier,0.00052847,0.00052847,0.00000000,0.00000000,0.00000000,0.00000000,0.00000000,176,176,0,tie,False,False

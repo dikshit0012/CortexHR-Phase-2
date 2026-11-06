@@ -1,0 +1,5 @@
+model,with_dept_attrition_rate_prior_12m,roc_auc_mean,roc_auc_sd
+LR balanced,False,0.7121,0.0184
+LR balanced,True,0.7103,0.0182
+LightGBM E09,False,0.7265,0.0195
+LightGBM E09,True,0.7258,0.019

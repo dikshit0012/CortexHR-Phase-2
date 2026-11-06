@@ -1,0 +1,8 @@
+label,model,calibration,brier,brier_reference_constant_prevalence,brier_skill_vs_prevalence,ece_quantile_10bins,max_bin_gap,log_loss,calibration_slope,calibration_intercept,mean_predicted,observed_rate,p_min,p_median,p_max,roc_auc
+LR balanced | none,Logistic Regression (balanced),none,0.2061,0.1252,-0.6465,0.2588,0.514,0.6014,0.5965,-1.6604,0.4055,0.1467,0.0042,0.3791,0.9773,0.7103
+LR balanced | sigmoid,Logistic Regression (balanced),sigmoid (Platt),0.1163,0.1252,0.071,0.02,0.0362,0.3828,1.1211,0.1822,0.148,0.1467,0.0126,0.1293,0.6264,0.708
+LR balanced | isotonic,Logistic Regression (balanced),isotonic,0.1169,0.1252,0.0665,0.0293,0.0611,0.3844,0.8503,-0.2497,0.1486,0.1467,0.0,0.1228,0.8564,0.7052
+Tuned V2 (nested) | none,"LightGBM tuned V2, class_weight=balanced",none,0.1983,0.1252,-0.5841,0.28,0.391,0.5808,1.1138,-1.6331,0.4267,0.1467,0.0245,0.4187,0.9218,0.7183
+Tuned V2 (nested) | sigmoid,"LightGBM tuned V2, class_weight=balanced",sigmoid (Platt),0.1138,0.1252,0.0908,0.0137,0.0318,0.3761,1.0625,0.0957,0.1469,0.1467,0.0085,0.1213,0.6565,0.7201
+Tuned V2 (nested) | isotonic,"LightGBM tuned V2, class_weight=balanced",isotonic,0.1149,0.1252,0.0818,0.0138,0.0473,0.3846,0.7783,-0.3514,0.1469,0.1467,0.0,0.1097,1.0,0.7125
+"LightGBM E09, unweighted | none","LightGBM (selected config), class_weight=None",none,0.1121,0.1252,0.1046,0.0237,0.0413,0.3713,1.115,0.1802,0.1466,0.1467,0.008,0.1176,0.818,0.728

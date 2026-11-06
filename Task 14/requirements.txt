@@ -1,0 +1,11 @@
+# Task 14 - explainable attrition risk. Reuses Task 13 (attrition_v2) and the Task 2-4 `cortexhr` package; no copy of their code.
+pandas>=2.2,<4
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.8,<1.9      # attrition-v2 was pickled with scikit-learn 1.8.0
+openpyxl>=3.1
+matplotlib>=3.8
+shap>=0.46
+lightgbm>=4.0               # imported by Task 13's package metadata only
+joblib>=1.3
+pytest>=8.0

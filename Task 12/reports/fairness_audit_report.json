@@ -1,0 +1,129 @@
+{
+  "pairs_tested": 25,
+  "all_jobs_pair_comparisons": 250,
+  "protected_attributes_available": [
+    "inferred_gender",
+    "college_tier"
+  ],
+  "fairness_before_fix": {
+    "n_pairs": 25,
+    "average_gap": 0.0,
+    "median_gap": 0.0,
+    "maximum_gap": 0.0,
+    "minimum_gap": 0.0,
+    "non_zero_gap_pairs": 0,
+    "pairs_exceeding_tolerance": 0,
+    "tolerance": 0.01
+  },
+  "fairness_text_only_reference": {
+    "n_pairs": 25,
+    "average_gap": 0.0001799584723491926,
+    "median_gap": 0.00015195496606396075,
+    "maximum_gap": 0.0006766491495946991,
+    "minimum_gap": 3.92212996450092e-06,
+    "non_zero_gap_pairs": 25,
+    "pairs_exceeding_tolerance": 0,
+    "tolerance": 0.01
+  },
+  "fairness_after_fix": {
+    "n_pairs": 25,
+    "average_gap": 0.0,
+    "median_gap": 0.0,
+    "maximum_gap": 0.0,
+    "minimum_gap": 0.0,
+    "non_zero_gap_pairs": 0,
+    "pairs_exceeding_tolerance": 0,
+    "tolerance": 0.01
+  },
+  "ranking_quality": [
+    {
+      "metric": "Precision@5",
+      "task11_as_shipped": 0.9199999999999999,
+      "task11_text_only": 0.9199999999999999,
+      "task12_fair": 0.9199999999999999,
+      "difference_fair_minus_as_shipped": 0.0,
+      "difference_fair_minus_text_only": 0.0
+    },
+    {
+      "metric": "Recall@5",
+      "task11_as_shipped": 0.5380140692640691,
+      "task11_text_only": 0.5380140692640691,
+      "task12_fair": 0.5380140692640691,
+      "difference_fair_minus_as_shipped": 0.0,
+      "difference_fair_minus_text_only": 0.0
+    },
+    {
+      "metric": "NDCG@5",
+      "task11_as_shipped": 0.9115312843448976,
+      "task11_text_only": 0.9225995863535079,
+      "task12_fair": 0.9212512768424009,
+      "difference_fair_minus_as_shipped": 0.009719992497503327,
+      "difference_fair_minus_text_only": -0.001348309511106982
+    },
+    {
+      "metric": "Top-5 Hits",
+      "task11_as_shipped": 46.0,
+      "task11_text_only": 46.0,
+      "task12_fair": 46.0,
+      "difference_fair_minus_as_shipped": 0.0,
+      "difference_fair_minus_text_only": 0.0
+    }
+  ],
+  "job_stratified_group_analysis": {
+    "inferred_gender": {
+      "min_group_size": 3,
+      "jobs_with_comparable_groups": 10,
+      "jobs_without_comparable_groups": 0,
+      "equal_job_weighted_mean_gap": 0.041330886909866374,
+      "maximum_within_job_gap": {
+        "job_id": "J02",
+        "max_group_gap": 0.06893331441961534
+      },
+      "mean_job_centered_score_by_group": {
+        "Female": 0.011446459814987217,
+        "Male": -0.007630973209991462
+      },
+      "mean_job_centered_skill_overlap_by_group": {
+        "Female": 0.023998642656537405,
+        "Male": -0.015999095104358266
+      },
+      "mean_job_centered_human_score_by_group": {
+        "Female": 0.08438313028096314,
+        "Male": -0.05625542018730869
+      }
+    },
+    "college_tier": {
+      "min_group_size": 3,
+      "jobs_with_comparable_groups": 9,
+      "jobs_without_comparable_groups": 1,
+      "equal_job_weighted_mean_gap": 0.10993948140095872,
+      "maximum_within_job_gap": {
+        "job_id": "J08",
+        "max_group_gap": 0.20545560842500565
+      },
+      "mean_job_centered_score_by_group": {
+        "Tier 1": 0.011644907770740766,
+        "Tier 2": -0.019030094041084723,
+        "Tier 3": 0.012008249171549534
+      },
+      "mean_job_centered_skill_overlap_by_group": {
+        "Tier 1": 0.015569071816118009,
+        "Tier 2": -0.031419686811829134,
+        "Tier 3": 0.02258328068692441
+      },
+      "mean_job_centered_human_score_by_group": {
+        "Tier 1": 0.09201121454944039,
+        "Tier 2": -0.09316328230556632,
+        "Tier 3": 0.032400669704194404
+      }
+    }
+  },
+  "limitations": [
+    "The 25-pair counterfactual set does not establish fairness for unrepresented groups or intersections.",
+    "Protected-group score gaps are descriptive and do not establish causal discrimination.",
+    "Job-stratified group cells are small and human labels may reflect historical reviewer bias.",
+    "Synthetic personal-information perturbations are not evidence about real applicants.",
+    "Header-based name masking may miss unusual layouts or names outside the header.",
+    "Human ranking labels may themselves be biased."
+  ]
+}

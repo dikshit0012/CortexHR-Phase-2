@@ -1,0 +1,51 @@
+job_id,job_title,resume_id,rank,final_score,tfidf_similarity,skill_overlap,matched_skills,missing_skills,preferred_skills_matched,n_required_skills,experience_years,experience_source,min_experience_years,meets_min_experience
+J01,Software Engineer,RES-0138,1,0.529993,0.216656,1.000000,Python; SQL; REST APIs; Git; Data Structures,,AWS; Django; FastAPI; PostgreSQL; Unit Testing,5,6.400000,summary_statement,2.000000,True
+J01,Software Engineer,RES-0123,2,0.528059,0.213432,1.000000,Python; SQL; REST APIs; Git; Data Structures,,Docker; AWS; FastAPI; PostgreSQL; Unit Testing,5,6.200000,summary_statement,2.000000,True
+J01,Software Engineer,RES-0161,3,0.528059,0.213432,1.000000,Python; SQL; REST APIs; Git; Data Structures,,Docker; AWS; FastAPI; PostgreSQL; Unit Testing,5,6.200000,summary_statement,2.000000,True
+J01,Software Engineer,RES-0151,4,0.463518,0.239197,0.800000,SQL; REST APIs; Git; Data Structures,Python,Docker; Django; FastAPI; PostgreSQL; Unit Testing,5,3.200000,summary_statement,2.000000,True
+J01,Software Engineer,RES-0112,5,0.406110,0.143516,0.800000,Python; SQL; REST APIs; Git,Data Structures,Docker; AWS; FastAPI; PostgreSQL,5,3.500000,summary_statement,2.000000,True
+J02,Senior Software Engineer,RES-0102,1,0.466214,0.243691,0.800000,Python; REST APIs; PostgreSQL; Docker,System Design,Kubernetes; AWS; CI/CD,5,7.900000,summary_statement,6.000000,True
+J02,Senior Software Engineer,RES-0123,2,0.403194,0.138656,0.800000,Python; REST APIs; PostgreSQL; Docker,System Design,AWS,5,6.200000,summary_statement,6.000000,True
+J02,Senior Software Engineer,RES-0161,3,0.403194,0.138656,0.800000,Python; REST APIs; PostgreSQL; Docker,System Design,AWS,5,6.200000,summary_statement,6.000000,True
+J02,Senior Software Engineer,RES-0112,4,0.393037,0.121729,0.800000,Python; REST APIs; PostgreSQL; Docker,System Design,AWS,5,3.500000,summary_statement,6.000000,False
+J02,Senior Software Engineer,RES-0042,5,0.391374,0.252290,0.600000,Python; REST APIs; PostgreSQL,System Design; Docker,Kubernetes; AWS; Microservices; CI/CD,5,5.200000,summary_statement,6.000000,False
+J03,Data Analyst,RES-0097,1,0.514709,0.191182,1.000000,SQL; Excel; Python; Data Visualization; Statistics,,Power BI; Tableau; pandas; A/B Testing,5,3.500000,summary_statement,2.000000,True
+J03,Data Analyst,RES-0155,2,0.492311,0.153852,1.000000,SQL; Excel; Python; Data Visualization; Statistics,,Power BI; pandas,5,2.900000,summary_statement,2.000000,True
+J03,Data Analyst,RES-0152,3,0.492254,0.287090,0.800000,SQL; Excel; Python; Data Visualization,Statistics,Power BI; Tableau; pandas; A/B Testing; Apache Superset,5,5.200000,summary_statement,2.000000,True
+J03,Data Analyst,RES-0016,4,0.470035,0.116724,1.000000,SQL; Excel; Python; Data Visualization; Statistics,,Tableau,5,4.200000,summary_statement,2.000000,True
+J03,Data Analyst,RES-0144,5,0.430631,0.184385,0.800000,SQL; Excel; Data Visualization; Statistics,Python,Power BI; Tableau; pandas; Apache Superset,5,2.800000,summary_statement,2.000000,True
+J04,ML Engineer,RES-0140,1,0.542297,0.237162,1.000000,Python; Machine Learning; scikit-learn; SQL; Model Deployment,,TensorFlow; PyTorch; MLOps; NLP,5,6.700000,summary_statement,3.000000,True
+J04,ML Engineer,RES-0031,2,0.527978,0.213296,1.000000,Python; Machine Learning; scikit-learn; SQL; Model Deployment,,TensorFlow; Docker; NLP,5,4.300000,summary_statement,3.000000,True
+J04,ML Engineer,RES-0001,3,0.527091,0.211818,1.000000,Python; Machine Learning; scikit-learn; SQL; Model Deployment,,TensorFlow; PyTorch; MLOps,5,4.800000,summary_statement,3.000000,True
+J04,ML Engineer,RES-0066,4,0.524218,0.207030,1.000000,Python; Machine Learning; scikit-learn; SQL; Model Deployment,,TensorFlow; MLOps; Docker,5,4.200000,summary_statement,3.000000,True
+J04,ML Engineer,RES-0178,5,0.524218,0.207030,1.000000,Python; Machine Learning; scikit-learn; SQL; Model Deployment,,TensorFlow; MLOps; Docker,5,4.200000,summary_statement,3.000000,True
+J05,Product Manager,RES-0068,1,0.557971,0.263285,1.000000,Product Roadmaps; User Research; Stakeholder Management; Agile; Analytics,,Figma; A/B Testing; Go-to-Market,5,7.000000,summary_statement,5.000000,True
+J05,Product Manager,RES-0011,2,0.538527,0.230878,1.000000,Product Roadmaps; User Research; Stakeholder Management; Agile; Analytics,,Figma; Go-to-Market,5,8.500000,summary_statement,5.000000,True
+J05,Product Manager,RES-0113,3,0.529170,0.215283,1.000000,Product Roadmaps; User Research; Stakeholder Management; Agile; Analytics,,,5,9.300000,summary_statement,5.000000,True
+J05,Product Manager,RES-0044,4,0.524864,0.208106,1.000000,Product Roadmaps; User Research; Stakeholder Management; Agile; Analytics,,SQL; Go-to-Market,5,7.400000,summary_statement,5.000000,True
+J05,Product Manager,RES-0174,5,0.524864,0.208106,1.000000,Product Roadmaps; User Research; Stakeholder Management; Agile; Analytics,,SQL; Go-to-Market,5,7.400000,summary_statement,5.000000,True
+J06,Customer Support Executive,RES-0150,1,0.619162,0.365270,1.000000,Customer Communication; Ticketing Tools; Problem Solving; Empathy; English Proficiency,,Zendesk; CRM; Regional Language Fluency; Escalation Handling,5,3.000000,summary_statement,1.000000,True
+J06,Customer Support Executive,RES-0040,2,0.599374,0.332290,1.000000,Customer Communication; Ticketing Tools; Problem Solving; Empathy; English Proficiency,,Zendesk; CRM; Escalation Handling,5,2.900000,summary_statement,1.000000,True
+J06,Customer Support Executive,RES-0108,3,0.534184,0.223640,1.000000,Customer Communication; Ticketing Tools; Problem Solving; Empathy; English Proficiency,,CRM,5,3.300000,summary_statement,1.000000,True
+J06,Customer Support Executive,RES-0025,4,0.529539,0.215898,1.000000,Customer Communication; Ticketing Tools; Problem Solving; Empathy; English Proficiency,,CRM; Regional Language Fluency; Escalation Handling,5,1.200000,summary_statement,1.000000,True
+J06,Customer Support Executive,RES-0035,5,0.529062,0.348437,0.800000,Ticketing Tools; Problem Solving; Empathy; English Proficiency,Customer Communication,CRM; Regional Language Fluency,5,3.000000,summary_statement,1.000000,True
+J07,HR Executive,RES-0069,1,0.537744,0.229574,1.000000,Recruitment; Employee Onboarding; HR Policies; MS Excel; Communication,,Labour Law Basics,5,3.300000,summary_statement,2.000000,True
+J07,HR Executive,RES-0041,2,0.523778,0.339630,0.800000,Employee Onboarding; HR Policies; MS Excel; Communication,Recruitment,Payroll Basics; Labour Law Basics; Engagement Surveys,5,3.100000,summary_statement,2.000000,True
+J07,HR Executive,RES-0050,3,0.513646,0.189411,1.000000,Recruitment; Employee Onboarding; HR Policies; MS Excel; Communication,,Payroll Basics,5,1.300000,summary_statement,2.000000,False
+J07,HR Executive,RES-0064,4,0.471305,0.252174,0.800000,Recruitment; HR Policies; MS Excel; Communication,Employee Onboarding,HRIS; Engagement Surveys,5,3.100000,summary_statement,2.000000,True
+J07,HR Executive,RES-0071,5,0.468055,0.246759,0.800000,Recruitment; HR Policies; MS Excel; Communication,Employee Onboarding,Labour Law Basics; Engagement Surveys,5,5.000000,summary_statement,2.000000,True
+J08,Accountant,RES-0076,1,0.556264,0.260441,1.000000,Tally; GST; Bookkeeping; MS Excel; Bank Reconciliation,,Financial Reporting; Audit Support,5,6.300000,summary_statement,2.000000,True
+J08,Accountant,RES-0167,2,0.556264,0.260441,1.000000,Tally; GST; Bookkeeping; MS Excel; Bank Reconciliation,,Financial Reporting; Audit Support,5,6.300000,summary_statement,2.000000,True
+J08,Accountant,RES-0103,3,0.501154,0.168590,1.000000,Tally; GST; Bookkeeping; MS Excel; Bank Reconciliation,,Financial Reporting,5,2.700000,summary_statement,2.000000,True
+J08,Accountant,RES-0029,4,0.500712,0.167854,1.000000,Tally; GST; Bookkeeping; MS Excel; Bank Reconciliation,,Audit Support,5,3.500000,summary_statement,2.000000,True
+J08,Accountant,RES-0126,5,0.492443,0.154071,1.000000,Tally; GST; Bookkeeping; MS Excel; Bank Reconciliation,,,5,2.200000,summary_statement,2.000000,True
+J09,Account Executive,RES-0153,1,0.592619,0.321031,1.000000,B2B Sales; CRM; Lead Generation; Negotiation; Presentation Skills,,Salesforce; Cold Outreach; Account Planning; SaaS Sales,5,4.500000,summary_statement,3.000000,True
+J09,Account Executive,RES-0067,2,0.583281,0.305468,1.000000,B2B Sales; CRM; Lead Generation; Negotiation; Presentation Skills,,Salesforce; Cold Outreach; Account Planning,5,5.700000,summary_statement,3.000000,True
+J09,Account Executive,RES-0139,3,0.570065,0.283441,1.000000,B2B Sales; CRM; Lead Generation; Negotiation; Presentation Skills,,Salesforce; Cold Outreach; Account Planning,5,7.700000,summary_statement,3.000000,True
+J09,Account Executive,RES-0007,4,0.518805,0.198008,1.000000,B2B Sales; CRM; Lead Generation; Negotiation; Presentation Skills,,Cold Outreach; Account Planning; SaaS Sales,5,2.800000,summary_statement,3.000000,False
+J09,Account Executive,RES-0169,5,0.518805,0.198008,1.000000,B2B Sales; CRM; Lead Generation; Negotiation; Presentation Skills,,Cold Outreach; Account Planning; SaaS Sales,5,2.800000,summary_statement,3.000000,False
+J10,Digital Marketing Executive,RES-0021,1,0.629580,0.382633,1.000000,SEO; Content Marketing; Google Analytics; Social Media Marketing; Email Campaigns,,Google Ads; HubSpot; A/B Testing,5,2.800000,summary_statement,2.000000,True
+J10,Digital Marketing Executive,RES-0051,2,0.624891,0.374819,1.000000,SEO; Content Marketing; Google Analytics; Social Media Marketing; Email Campaigns,,Google Ads; Copywriting,5,3.200000,summary_statement,2.000000,True
+J10,Digital Marketing Executive,RES-0062,3,0.605527,0.342546,1.000000,SEO; Content Marketing; Google Analytics; Social Media Marketing; Email Campaigns,,Google Ads; HubSpot; Copywriting,5,4.100000,summary_statement,2.000000,True
+J10,Digital Marketing Executive,RES-0096,4,0.595605,0.326008,1.000000,SEO; Content Marketing; Google Analytics; Social Media Marketing; Email Campaigns,,Google Ads; HubSpot; A/B Testing,5,5.200000,summary_statement,2.000000,True
+J10,Digital Marketing Executive,RES-0157,5,0.564553,0.274255,1.000000,SEO; Content Marketing; Google Analytics; Social Media Marketing; Email Campaigns,,,5,3.900000,summary_statement,2.000000,True
