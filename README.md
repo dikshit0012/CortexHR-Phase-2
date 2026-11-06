@@ -8,7 +8,7 @@ The programs are for research and decision support. They are not production-read
 
 | Phase | Folder | Project | Setup and availability |
 |---|---|---|---|
-| Phase 1 | [`task04/`](task04/README.md) | <a href="https://github.com/dikshit0012/CortexHR-" target="_blank"> <button> Phase 1 repo</button></a>Attrition audit, feature pipeline, baselines, and evaluation package (Tasks 1-4) | Source and tests included. The authorized workbook, row-level outputs, notebooks, and generated reports are omitted. |
+| Phase 1 | [`task04/`](task04/README.md) | <a href="https://github.com/dikshit0012/CortexHR-" target="_blank"> <button> Phase 1 repo link </button></a>Attrition audit, feature pipeline, baselines, and evaluation package (Tasks 1-4) | Source and tests included. The authorized workbook, row-level outputs, notebooks, and generated reports are omitted. |
 | Phase 2 | [`task05/`](task05/README.md) | Attendance anomaly detection | Source and synthetic tests included. The authorized workbook is needed to run the real-data pipeline. |
 | Phase 2 | [`task06/`](task06/README.md) | Payroll outlier detection | Detailed setup in [`task 6/`](task06/task%206/README.md). Real-data runs need the authorized workbook. |
 | Phase 2 | [`task07/`](task07/README.md) | Explanations for anomaly flags | Detailed setup in [`task 7/`](task07/task%207/README.md). Reuses Tasks 5-6; real-data runs need the workbook. |
